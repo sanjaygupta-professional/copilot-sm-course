@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base typography */
+body {
+  @apply font-sans text-corporate-800 bg-corporate-50;
+}
+
+/* Custom prose overrides for markdown content */
+.prose {
+  @apply max-w-none;
+}
+
+.prose h1 {
+  @apply text-3xl font-bold text-corporate-900 border-b border-corporate-200 pb-4 mb-6;
+}
+
+.prose h2 {
+  @apply text-2xl font-semibold text-corporate-900 mt-8 mb-4;
+}
+
+.prose h3 {
+  @apply text-xl font-semibold text-corporate-800 mt-6 mb-3;
+}
+
+.prose h4 {
+  @apply text-lg font-medium text-corporate-800 mt-4 mb-2;
+}
+
+.prose p {
+  @apply mb-4 leading-relaxed;
+}
+
+.prose ul {
+  @apply mb-4 ml-6 list-disc;
+}
+
+.prose ol {
+  @apply mb-4 ml-6 list-decimal;
+}
+
+.prose li {
+  @apply mb-2;
+}
+
+.prose li > ul,
+.prose li > ol {
+  @apply mt-2 mb-0;
+}
+
+.prose a {
+  @apply text-primary-500 hover:text-primary-600 underline;
+}
+
+.prose strong {
+  @apply font-semibold text-corporate-900;
+}
+
+.prose em {
+  @apply italic;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-primary-500 bg-primary-50 pl-4 py-3 pr-4 my-4 rounded-r-lg;
+}
+
+.prose blockquote p {
+  @apply mb-0 text-corporate-700;
+}
+
+.prose hr {
+  @apply my-8 border-corporate-200;
+}
+
+.prose img {
+  @apply rounded-lg shadow-md my-4;
+}
+
+/* Code styling */
+.prose code {
+  @apply bg-corporate-100 text-corporate-800 px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+.prose pre {
+  @apply bg-[#1a1a2e] rounded-lg p-4 overflow-x-auto my-4;
+  color: #4ade80; /* Terminal green */
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-sm;
+  color: #4ade80; /* Terminal green */
+}
+
+/* Table styling */
+.prose table {
+  @apply w-full border-collapse my-4;
+}
+
+.prose thead {
+  @apply bg-corporate-100;
+}
+
+.prose th {
+  @apply border border-corporate-200 px-4 py-2 text-left font-semibold text-corporate-900;
+}
+
+.prose td {
+  @apply border border-corporate-200 px-4 py-2;
+}
+
+.prose tbody tr:hover {
+  @apply bg-corporate-50;
+}
+
+/* Task list styling */
+.prose input[type="checkbox"] {
+  @apply mr-2 rounded border-corporate-300;
+}
+
+/* Sidebar active state */
+.sidebar-item-active {
+  @apply bg-primary-50 border-l-4 border-primary-500;
+}
+
+/* Animation for mobile menu */
+.slide-in {
+  animation: slideIn 0.2s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-primary-500;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
