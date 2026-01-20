@@ -1,0 +1,204 @@
+{
+  "course": {
+    "title": "Microsoft Copilot for Scrum Masters",
+    "version": "1.0.0",
+    "description": "A comprehensive course teaching Scrum Masters to leverage Microsoft Copilot for team facilitation and agile workflows",
+    "targetAudience": "Scrum Masters",
+    "prerequisites": [
+      "Microsoft 365 Copilot Enterprise license",
+      "OneDrive access",
+      "Basic familiarity with M365 apps",
+      "Scrum fundamentals knowledge"
+    ],
+    "estimatedDuration": "5.5 hours",
+    "lastUpdated": "2026-01-19"
+  },
+  "levels": [
+    {
+      "id": "1",
+      "title": "Foundation",
+      "description": "Core Copilot skills for Scrum Masters",
+      "modules": [
+        {
+          "id": "1.1",
+          "title": "Welcome to Microsoft Copilot",
+          "duration": "15 min",
+          "path": "lesson-modules/1-fundamentals/1.1-welcome/MODULE.md",
+          "objectives": [
+            "Understand what Microsoft Copilot is",
+            "Access Copilot via browser and shortcuts",
+            "Meet the Velocity Squad at Accenture"
+          ]
+        },
+        {
+          "id": "1.2",
+          "title": "Setting Up Your Workspace",
+          "duration": "15 min",
+          "path": "lesson-modules/1-fundamentals/1.2-workspace-setup/MODULE.md",
+          "objectives": [
+            "Set up optimal workspace for SM workflows",
+            "Upload sprint artifacts to Copilot",
+            "Use ContextIQ and OneDrive"
+          ]
+        },
+        {
+          "id": "1.3",
+          "title": "Your First Scrum Master Tasks",
+          "duration": "30 min",
+          "path": "lesson-modules/1-fundamentals/1.3-first-tasks/MODULE.md",
+          "objectives": [
+            "Process standup notes into actionable summaries",
+            "Synthesize retrospective feedback",
+            "Transform sprint updates for different audiences"
+          ]
+        },
+        {
+          "id": "1.4",
+          "title": "Researcher & Analyst Agents",
+          "duration": "25 min",
+          "path": "lesson-modules/1-fundamentals/1.4-researcher-analyst-agents/MODULE.md",
+          "objectives": [
+            "Use Researcher for agile best practices",
+            "Use Analyst for velocity and metrics analysis",
+            "Combine agents for SM workflows"
+          ]
+        },
+        {
+          "id": "1.5",
+          "title": "Persona Prompting",
+          "duration": "20 min",
+          "path": "lesson-modules/1-fundamentals/1.5-persona-prompting/MODULE.md",
+          "objectives": [
+            "Create persona prompts (developer, PO, stakeholder)",
+            "Get multi-perspective feedback on process changes",
+            "Build a prompt library for coaching"
+          ]
+        },
+        {
+          "id": "1.6",
+          "title": "Building Context with Memory",
+          "duration": "15 min",
+          "path": "lesson-modules/1-fundamentals/1.6-copilot-memory/MODULE.md",
+          "objectives": [
+            "Use Copilot Memory for team context",
+            "Create context documents for the Velocity Squad",
+            "Manage persistent team knowledge"
+          ]
+        },
+        {
+          "id": "1.7",
+          "title": "Copilot Across M365 Apps",
+          "duration": "15 min",
+          "path": "lesson-modules/1-fundamentals/1.7-m365-navigation/MODULE.md",
+          "objectives": [
+            "Use Copilot in Word for sprint documentation",
+            "Use Copilot in Excel for metrics tracking",
+            "Use Copilot in PowerPoint for sprint reviews"
+          ]
+        },
+        {
+          "id": "1.8",
+          "title": "Copilot in Microsoft Teams",
+          "duration": "25 min",
+          "path": "lesson-modules/1-fundamentals/1.8-teams-integration/MODULE.md",
+          "objectives": [
+            "Get meeting summaries from ceremonies",
+            "Catch up on missed standups",
+            "Track action items from retrospectives"
+          ]
+        },
+        {
+          "id": "1.9",
+          "title": "Copilot in Outlook",
+          "duration": "20 min",
+          "path": "lesson-modules/1-fundamentals/1.9-outlook-integration/MODULE.md",
+          "objectives": [
+            "Draft stakeholder updates with appropriate tone",
+            "Summarize impediment escalation threads",
+            "Prepare for 1:1s and coaching sessions"
+          ]
+        },
+        {
+          "id": "1.10",
+          "title": "SharePoint & Collaboration",
+          "duration": "20 min",
+          "path": "lesson-modules/1-fundamentals/1.10-sharepoint-collaboration/MODULE.md",
+          "objectives": [
+            "Find team documentation using natural language",
+            "Summarize agile playbook sites",
+            "Track wiki updates and process documentation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Advanced SM Workflows",
+      "description": "Complex Scrum Master tasks with Copilot",
+      "modules": [
+        {
+          "id": "2.1",
+          "title": "Facilitating Ceremonies with Copilot",
+          "duration": "35 min",
+          "path": "lesson-modules/2-advanced-sm-work/2.1-facilitating-ceremonies/MODULE.md",
+          "objectives": [
+            "Use Copilot as thinking partner for ceremony facilitation",
+            "Generate agendas and facilitation guides",
+            "Process ceremony outcomes into actionable items"
+          ]
+        },
+        {
+          "id": "2.2",
+          "title": "Impediment Management & Resolution",
+          "duration": "30 min",
+          "path": "lesson-modules/2-advanced-sm-work/2.2-impediment-management/MODULE.md",
+          "objectives": [
+            "Track and categorize impediments systematically",
+            "Analyze impediment patterns over time",
+            "Draft escalation communications"
+          ]
+        },
+        {
+          "id": "2.3",
+          "title": "Team Health & Continuous Improvement",
+          "duration": "30 min",
+          "path": "lesson-modules/2-advanced-sm-work/2.3-team-health/MODULE.md",
+          "objectives": [
+            "Analyze team health survey results",
+            "Prepare for coaching conversations",
+            "Track improvement over time"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Team Visuals",
+      "description": "Creating visuals with DALL-E and Designer",
+      "modules": [
+        {
+          "id": "3.1",
+          "title": "Image Generation Basics",
+          "duration": "20 min",
+          "path": "lesson-modules/3-team-visuals/3.1-image-basics/MODULE.md",
+          "objectives": [
+            "Generate images with DALL-E 3",
+            "Write effective image prompts",
+            "Iterate and refine outputs"
+          ]
+        },
+        {
+          "id": "3.2",
+          "title": "Scrum Master Visuals",
+          "duration": "25 min",
+          "path": "lesson-modules/3-team-visuals/3.2-sm-visuals/MODULE.md",
+          "objectives": [
+            "Create sprint review visuals",
+            "Generate retrospective facilitation aids",
+            "Build team celebration graphics"
+          ]
+        }
+      ]
+    }
+  ]
+}

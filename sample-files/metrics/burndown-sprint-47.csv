@@ -1,0 +1,15 @@
+Day,Date,Remaining Points,Ideal Burndown,Notes
+Day 0,Oct 16,52,52,Sprint start - 52 points committed
+Day 1,Oct 17,52,46.8,No completions yet - work starting
+Day 2,Oct 18,47,41.6,Pagination fix (2pts) and partial progress on notifications
+Day 3,Oct 19,47,36.4,Weekend - no work
+Day 4,Oct 20,47,31.2,Weekend - no work
+Day 5,Oct 21,42,26,Notification UI (5pts) completed
+Day 6,Oct 22,34,20.8,Search optimization (5pts) and partial caching done
+Day 7,Oct 23,34,15.6,QA testing in progress - no new completions
+Day 8,Oct 24,26,10.4,Email notifications (8pts) completed
+Day 9,Oct 25,21,5.2,Notification preferences (5pts) completed
+Day 10,Oct 26,21,0,Weekend - sprint ends Tuesday
+Day 11,Oct 27,21,0,Weekend
+Day 12,Oct 28,13,0,Rate limiting (5pts) and caching (5pts) expected - some may carry
+Day 13,Oct 29,10,0,Final day - push notifications may not complete
