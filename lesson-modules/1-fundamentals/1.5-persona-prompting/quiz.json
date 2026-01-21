@@ -1,0 +1,68 @@
+{
+  "id": "quiz-1.5",
+  "title": "Quiz: Persona Prompting",
+  "description": "Test your knowledge of using persona prompts to get multi-perspective feedback.",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the main benefit of using persona prompts when seeking feedback?",
+      "options": [
+        "It makes prompts longer and more detailed",
+        "It provides perspective from different stakeholder viewpoints",
+        "It reduces the need for human input",
+        "It automatically approves process changes"
+      ],
+      "correctAnswer": "It provides perspective from different stakeholder viewpoints",
+      "explanation": "Persona prompts help you see an issue from multiple angles (developer, PO, stakeholder perspectives), revealing concerns you might have missed.",
+      "points": 10
+    },
+    {
+      "id": "q2",
+      "type": "true-false",
+      "question": "A good persona prompt should include the role, concerns, and typical priorities of that persona.",
+      "options": ["True", "False"],
+      "correctAnswer": "True",
+      "explanation": "Effective persona prompts define the role clearly, including what they care about and what drives their decisions.",
+      "points": 10
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Which persona would be MOST concerned about technical debt and code quality?",
+      "options": [
+        "Product Owner",
+        "Stakeholder",
+        "Developer",
+        "Scrum Master"
+      ],
+      "correctAnswer": "Developer",
+      "explanation": "Developers work directly with the codebase and are most impacted by technical debt and code quality issues in their daily work.",
+      "points": 10
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "When building a prompt library for coaching, what should you prioritize?",
+      "options": [
+        "Having as many prompts as possible",
+        "Reusable prompts for common scenarios",
+        "Complex, lengthy prompts for every situation",
+        "Prompts that only you understand"
+      ],
+      "correctAnswer": "Reusable prompts for common scenarios",
+      "explanation": "A good prompt library focuses on quality over quantity, with well-crafted, reusable prompts for situations you encounter frequently.",
+      "points": 10
+    },
+    {
+      "id": "q5",
+      "type": "true-false",
+      "question": "Persona prompts can help you prepare for difficult conversations by anticipating concerns.",
+      "options": ["True", "False"],
+      "correctAnswer": "True",
+      "explanation": "By simulating different personas, you can anticipate objections and concerns before having actual conversations with team members.",
+      "points": 10
+    }
+  ]
+}

@@ -4,6 +4,7 @@ export interface CourseModule {
   duration: string
   path: string
   objectives: string[]
+  quizPath?: string // Optional path to quiz JSON file
 }
 
 export interface CourseLevel {

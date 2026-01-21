@@ -3,9 +3,11 @@ import { useEffect } from 'react'
 import { Clock, Target, Check, BookOpen } from 'lucide-react'
 import { MarkdownRenderer } from '../Markdown/MarkdownRenderer'
 import { ModuleNavigation } from './ModuleNavigation'
+import { QuizRenderer } from './QuizRenderer'
 import { Badge } from '../UI/Badge'
 import { useContent } from '../../hooks/useContent'
 import { useProgress } from '../../hooks/useProgress'
+import { useQuiz } from '../../hooks/useQuiz'
 import { getModuleById, getAdjacentModules, getLevelByModuleId } from '../../data/courseStructure'
 
 export function ModuleContent() {
@@ -15,6 +17,7 @@ export function ModuleContent() {
   const { prev, next } = moduleId ? getAdjacentModules(moduleId) : { prev: null, next: null }
 
   const { content, loading, error } = useContent(module?.path || null)
+  const { quiz, loading: quizLoading, error: quizError, saveAttempt } = useQuiz(module?.quizPath)
   const { isComplete, toggleComplete, setLastVisited } = useProgress()
 
   const completed = moduleId ? isComplete(moduleId) : false
@@ -130,6 +133,36 @@ export function ModuleContent() {
 
           {content && <MarkdownRenderer content={content} />}
         </article>
+
+        {/* Quiz section */}
+        {module.quizPath && (
+          <section className="mb-8">
+            {quizLoading && (
+              <div className="flex items-center justify-center py-8">
+                <div className="animate-spin rounded-full h-8 w-8 border-2 border-primary-500 border-t-transparent" />
+              </div>
+            )}
+
+            {quizError && (
+              <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+                <p className="text-yellow-700">Could not load quiz: {quizError}</p>
+              </div>
+            )}
+
+            {quiz && (
+              <QuizRenderer
+                quiz={quiz}
+                onComplete={(attempt) => {
+                  saveAttempt(attempt)
+                  // Auto-mark module complete if quiz passed
+                  if (attempt.passed && moduleId && !completed) {
+                    toggleComplete(moduleId)
+                  }
+                }}
+              />
+            )}
+          </section>
+        )}
 
         {/* Mark complete button */}
         <div className="flex justify-center mb-8">

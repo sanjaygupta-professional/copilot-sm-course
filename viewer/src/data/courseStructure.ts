@@ -48,6 +48,7 @@ export const courseStructure: CourseStructure = {
           title: "Your First Scrum Master Tasks",
           duration: "30 min",
           path: "lesson-modules/1-fundamentals/1.3-first-tasks/MODULE.md",
+          quizPath: "lesson-modules/1-fundamentals/1.3-first-tasks/quiz.json",
           objectives: [
             "Process standup notes into actionable summaries",
             "Synthesize retrospective feedback",
@@ -70,6 +71,7 @@ export const courseStructure: CourseStructure = {
           title: "Persona Prompting",
           duration: "20 min",
           path: "lesson-modules/1-fundamentals/1.5-persona-prompting/MODULE.md",
+          quizPath: "lesson-modules/1-fundamentals/1.5-persona-prompting/quiz.json",
           objectives: [
             "Create persona prompts (developer, PO, stakeholder)",
             "Get multi-perspective feedback on process changes",

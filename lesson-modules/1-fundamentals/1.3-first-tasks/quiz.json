@@ -1,0 +1,59 @@
+{
+  "id": "quiz-1.3",
+  "title": "Quiz: Your First Scrum Master Tasks",
+  "description": "Test your understanding of processing standup notes, retrospectives, and sprint updates.",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "What is the PRIMARY goal when processing standup notes with Copilot?",
+      "options": [
+        "Create detailed meeting minutes",
+        "Extract actionable items and blockers",
+        "Generate a transcript for the team",
+        "Schedule follow-up meetings"
+      ],
+      "correctAnswer": "Extract actionable items and blockers",
+      "explanation": "The primary goal is to synthesize standup notes into actionable insights, focusing on what needs attention and what's blocking progress.",
+      "points": 10
+    },
+    {
+      "id": "q2",
+      "type": "true-false",
+      "question": "When synthesizing retrospective feedback, Copilot can help identify recurring themes across multiple sprints.",
+      "options": ["True", "False"],
+      "correctAnswer": "True",
+      "explanation": "Copilot excels at pattern recognition and can analyze retrospective data across sprints to identify recurring issues and trends.",
+      "points": 10
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "When transforming sprint updates for different audiences, which factor is MOST important to consider?",
+      "options": [
+        "Length of the update",
+        "Technical detail level for the audience",
+        "Number of metrics included",
+        "Color scheme of the document"
+      ],
+      "correctAnswer": "Technical detail level for the audience",
+      "explanation": "Different audiences (developers, stakeholders, executives) need different levels of technical detail. Tailoring the depth and focus of content is crucial.",
+      "points": 10
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "Which Copilot feature helps maintain context about your team across multiple prompts?",
+      "options": [
+        "Copilot Memory",
+        "Copilot History",
+        "Copilot Cache",
+        "Copilot Sessions"
+      ],
+      "correctAnswer": "Copilot Memory",
+      "explanation": "Copilot Memory allows you to store persistent team context that Copilot can reference across different conversations.",
+      "points": 10
+    }
+  ]
+}
