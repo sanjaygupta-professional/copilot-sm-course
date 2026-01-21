@@ -36,7 +36,27 @@ export function useProgress() {
   // Sync with localStorage when progress changes
   useEffect(() => {
     saveProgress(progress)
+    // Dispatch custom event to notify other components
+    window.dispatchEvent(new CustomEvent('progressChanged'))
   }, [progress])
+
+  // Listen for progress changes from other components
+  useEffect(() => {
+    const handleProgressChange = () => {
+      setProgress(loadProgress())
+    }
+
+    // Listen for custom progress events
+    window.addEventListener('progressChanged', handleProgressChange)
+
+    // Also listen for storage events (from other tabs)
+    window.addEventListener('storage', handleProgressChange)
+
+    return () => {
+      window.removeEventListener('progressChanged', handleProgressChange)
+      window.removeEventListener('storage', handleProgressChange)
+    }
+  }, [])
 
   const markComplete = useCallback((moduleId: string) => {
     setProgress(prev => {
