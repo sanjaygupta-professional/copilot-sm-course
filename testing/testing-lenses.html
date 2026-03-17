@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 10 Testing Lenses - Copilot SM Course</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --white: #ffffff;
+  --cream: #F7F6F5;
+  --cream-dark: #F3F1EF;
+  --cream-darker: #EEEDEA;
+  --warm-gray: #D9D9D9;
+  --warm-gray-dark: #898584;
+  --border: #D9D9D9;
+  --text-primary: #292C33;
+  --text-secondary: #6B7280;
+  --text-muted: #6A6A6A;
+  --text-light: #F8F7F6;
+  --teal: #487265;
+  --teal-light: #DDEFEF;
+  --teal-border: #568788;
+  --teal-dark: #407967;
+  --sage: #A0C3C4;
+  --olive: #AAB788;
+  --gold: #D4C68B;
+  --copper: #BC976A;
+  --bronze: #CAAB84;
+  --max-w: 780px;
+  --header-h: 55px;
+  --l1-teal: #487265;
+  --l2-blue: #3B5998;
+  --l3-copper: #BC976A;
+  --l4-forest: #2D6A4F;
+  --l5-purple: #6B4C9A;
+  --l6-electric: #0891B2;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-primary);
+  background: var(--white);
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 1.15;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin: 0 0 0.75rem;
+}
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin: 1.25rem 0 0.5rem;
+}
+
+a { color: var(--teal); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ─── Header ─── */
+header.site-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  height: var(--header-h); background: var(--white);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+}
+.header-inner {
+  width: 100%; max-width: var(--max-w); padding: 0 18px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.header-brand .logo {
+  font-family: 'Playfair Display', serif; font-size: 1.15rem;
+  font-weight: 600; color: var(--text-primary); text-decoration: none;
+  letter-spacing: -0.02em;
+}
+.header-brand .logo:hover { text-decoration: none; }
+.header-nav { display: flex; align-items: center; gap: 6px; }
+.header-nav a {
+  font-size: 14px; color: var(--text-primary); text-decoration: none;
+  padding: 6px 12px; border-radius: 9999px; transition: background .2s;
+}
+.header-nav a:hover { background: var(--cream); text-decoration: none; }
+.header-nav a.active { background: var(--teal-light); color: var(--teal-dark); font-weight: 500; }
+
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 18px; }
+
+/* ─── Content ─── */
+.content {
+  padding: calc(var(--header-h) + 32px) 0 48px;
+}
+.content p { margin: 0.75rem 0; color: var(--text-secondary); }
+.content strong { color: var(--text-primary); }
+.content ul, .content ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+.content li { margin: 0.3rem 0; color: var(--text-secondary); }
+
+/* ─── Tables ─── */
+.content table {
+  width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px;
+}
+.content th {
+  text-align: left; padding: 10px 14px; font-weight: 600;
+  color: var(--text-primary); font-size: 13px;
+  border-bottom: 2px solid var(--border); background: var(--cream);
+  text-transform: uppercase; letter-spacing: 0.03em;
+}
+.content td {
+  padding: 12px 14px; border-bottom: 1px solid var(--cream-darker);
+  vertical-align: top; color: var(--text-secondary);
+}
+.content tr:last-child td { border-bottom: none; }
+
+.divider {
+  border: none; border-top: 1px solid var(--cream-darker);
+  margin: 2.5rem 0;
+}
+
+/* ─── Lens Sections ─── */
+.lens-section {
+  margin: 0 0 2.5rem;
+  padding: 28px; border-radius: 12px;
+  border: 1px solid var(--border);
+  position: relative;
+}
+.lens-section .lens-accent {
+  position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  border-radius: 12px 12px 0 0;
+}
+.lens-header {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 4px;
+}
+.lens-number {
+  font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.06em; padding: 3px 10px; border-radius: 4px;
+  color: white; flex-shrink: 0;
+}
+.lens-owner {
+  font-size: 0.75rem; color: var(--text-muted); font-style: italic;
+}
+.lens-question {
+  background: var(--cream); border-radius: 8px; padding: 12px 16px;
+  margin: 12px 0 16px; font-size: 0.95rem; font-style: italic;
+  color: var(--text-primary); border-left: 3px solid;
+}
+.lens-section table { margin: 12px 0; }
+.lens-report {
+  margin-top: 12px; padding: 10px 14px; background: var(--cream);
+  border-radius: 6px; font-size: 0.88rem;
+}
+.lens-report strong { color: var(--text-primary); }
+
+/* SM-specific callout */
+.sm-note {
+  background: #FEF3C7; border: 1px solid #F59E0B; border-radius: 8px;
+  padding: 12px 16px; margin: 16px 0; font-size: 0.88rem;
+}
+.sm-note::before {
+  content: 'SM-specific '; font-weight: 700; color: #92400E;
+}
+.sm-note p { color: #78350F; margin: 4px 0; }
+
+/* ─── How Focus Works ─── */
+.focus-grid {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 20px 0;
+}
+.focus-card {
+  padding: 16px; border-radius: 10px; text-align: center;
+}
+.focus-card.common { background: var(--teal-light); border: 1px solid var(--teal-border); }
+.focus-card.owned { background: #DBEAFE; border: 1px solid #93C5FD; }
+.focus-card.light { background: var(--cream); border: 1px solid var(--border); }
+.focus-card h4 { font-size: 0.8rem; margin: 0 0 4px; }
+.focus-card p { font-size: 0.82rem; margin: 0; }
+
+/* ─── Nav Footer ─── */
+.nav-footer {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 32px 0; gap: 1rem;
+}
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--text-primary); color: var(--text-light);
+  border: none; border-radius: 50px; padding: 14px 28px;
+  font-size: 16px; font-weight: 500; font-family: 'Inter', sans-serif;
+  cursor: pointer; text-decoration: none; transition: all .2s;
+}
+.btn-primary:hover { background: #3a3d44; color: var(--text-light); text-decoration: none; }
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--white); color: var(--text-primary);
+  border: 1px solid var(--border); border-radius: 50px; padding: 12px 24px;
+  font-size: 14px; font-family: 'Inter', sans-serif;
+  cursor: pointer; text-decoration: none; transition: border-color .2s;
+}
+.btn-outline:hover { border-color: var(--teal-border); text-decoration: none; }
+
+footer.site-footer {
+  padding: 32px 0 24px; text-align: center;
+  font-size: 14px; color: var(--text-muted);
+  border-top: 1px solid var(--cream-darker);
+}
+footer.site-footer a { color: var(--text-muted); text-decoration: none; margin: 0 8px; }
+footer.site-footer a:hover { text-decoration: underline; }
+
+@media (max-width: 640px) {
+  h1 { font-size: 1.8rem; }
+  .lens-section { padding: 20px 16px; }
+  .focus-grid { grid-template-columns: 1fr; }
+  .content table { font-size: 13px; }
+  .content th, .content td { padding: 8px 10px; }
+}
+
+@media print {
+  header.site-header, .nav-footer, footer.site-footer { display: none; }
+  .content { padding-top: 0; }
+  .lens-section { break-inside: avoid; border: 1px solid #ccc; margin-bottom: 16px; }
+}
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <a href="testing-strategy.html" class="logo">SM Course Testing</a>
+      </div>
+      <nav class="header-nav">
+        <a href="testing-strategy.html">Strategy</a>
+        <a href="testing-lenses.html" class="active">10 Lenses</a>
+        <a href="testing-feedback.html">Feedback</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="content">
+      <h1>The 10 Testing Lenses</h1>
+      <p>Every module is evaluated against 10 lenses. Two are <strong>common</strong> (applied by all teams with equal rigor). Eight are <strong>team-owned</strong> (2 per team &mdash; these teams go deeper and are the authoritative voice).</p>
+
+      <hr class="divider">
+
+      <!-- ═══════════════════════════════════════════════════════════════════ -->
+      <h2>Common Lenses (all teams, equal depth)</h2>
+      <!-- ═══════════════════════════════════════════════════════════════════ -->
+
+      <!-- L1 -->
+      <div class="lens-section">
+        <div class="lens-accent" style="background: var(--teal);"></div>
+        <div class="lens-header">
+          <span class="lens-number" style="background: var(--teal);">L1</span>
+          <h3 style="margin:0">Content Accuracy</h3>
+          <span class="lens-owner">All teams</span>
+        </div>
+        <div class="lens-question" style="border-color: var(--teal);">&ldquo;Is what this module states factually correct &mdash; about Copilot, about Scrum, and about the Velocity Squad?&rdquo;</div>
+        <table>
+          <thead><tr><th>Check</th><th>What to look for</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Technical correctness</strong></td><td>Are M365 Copilot features, UI elements, menu paths, and shortcuts described accurately? Do they match the current Copilot interface?</td></tr>
+            <tr><td><strong>Scrum terminology</strong></td><td>Are Scrum events (Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective), artifacts, and roles named correctly per the Scrum Guide? No &ldquo;standup&rdquo; when meaning &ldquo;Daily Scrum.&rdquo;</td></tr>
+            <tr><td><strong>Version currency</strong></td><td>Do references match current Copilot capabilities (March 2026)? Are deprecated features or non-existent buttons referenced?</td></tr>
+            <tr><td><strong>Data consistency</strong></td><td>Are Velocity Squad metrics, sprint numbers, team member names, and project details (AKX, Horizon Program) consistent across all 27 modules?</td></tr>
+            <tr><td><strong>Link &amp; reference integrity</strong></td><td>Do cross-references to other modules, resource pages, and sample files resolve correctly? Do <code>sample-files/...</code> links work?</td></tr>
+            <tr><td><strong>Terminology consistency</strong></td><td>Are terms used consistently? (e.g., &ldquo;Velocity Squad&rdquo; not &ldquo;velocity squad&rdquo;, &ldquo;Sprint 47&rdquo; not &ldquo;sprint 47&rdquo;, team member names spelled consistently)</td></tr>
+          </tbody>
+        </table>
+        <div class="sm-note"><p>The SM course uses Scrum terminology extensively. Watch for mixing up Scrum Guide terms with casual alternatives (e.g., &ldquo;sprint demo&rdquo; instead of &ldquo;Sprint Review&rdquo;, &ldquo;scrum meeting&rdquo; instead of &ldquo;Daily Scrum&rdquo;). These errors undermine credibility with experienced SMs.</p></div>
+        <div class="lens-report"><strong>Reporting standard:</strong> Flag with exact quote and correction. Severity is always Major or Critical for factual errors. For Scrum terminology, cite the Scrum Guide section if relevant.</div>
+      </div>
+
+      <!-- L2 -->
+      <div class="lens-section">
+        <div class="lens-accent" style="background: var(--teal);"></div>
+        <div class="lens-header">
+          <span class="lens-number" style="background: var(--teal);">L2</span>
+          <h3 style="margin:0">Learner Clarity</h3>
+          <span class="lens-owner">All teams</span>
+        </div>
+        <div class="lens-question" style="border-color: var(--teal);">&ldquo;If I were an experienced Scrum Master encountering AI-augmented workflows for the first time, could I follow every step without guessing?&rdquo;</div>
+        <table>
+          <thead><tr><th>Check</th><th>What to look for</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Instruction precision</strong></td><td>Can you complete each step exactly as written? Or did you have to interpret, infer, or Google? &ldquo;Upload the file to Copilot&rdquo; &mdash; which file, where, how?</td></tr>
+            <tr><td><strong>Assumed knowledge</strong></td><td>Does the module assume Copilot familiarity it hasn&rsquo;t taught yet? (SM expertise is assumed; AI expertise is not)</td></tr>
+            <tr><td><strong>Ambiguous language</strong></td><td>Are there phrases like &ldquo;configure your context&rdquo; or &ldquo;set up your workflow&rdquo; without specifying what that means?</td></tr>
+            <tr><td><strong>Visual orientation</strong></td><td>When UI is referenced, is it clear where to look? Are nav paths like &ldquo;Click the Copilot icon in the top-right&rdquo; specific enough?</td></tr>
+            <tr><td><strong>Cognitive signposting</strong></td><td>Are transitions between concepts clear? Does the learner know why they&rsquo;re doing each step, or is it &ldquo;just do this&rdquo;?</td></tr>
+            <tr><td><strong>Jargon calibration</strong></td><td>Scrum jargon is fine (target audience knows it). AI/Copilot jargon must be introduced before use. &ldquo;ContextIQ&rdquo;, &ldquo;grounding&rdquo;, &ldquo;chain-of-thought&rdquo; need explanation.</td></tr>
+          </tbody>
+        </table>
+        <div class="sm-note"><p>The SM audience is technically sophisticated about Scrum but may be AI novices. The jargon calibration is inverted compared to the PM course: Scrum terms need no explanation, but AI concepts need careful introduction. Watch for modules that assume prompt engineering knowledge from Level 1.</p></div>
+        <div class="lens-report"><strong>Reporting standard:</strong> Quote the confusing passage, explain what tripped you up, suggest clearer wording. Rate confusion severity: &ldquo;I paused&rdquo; vs &ldquo;I got stuck&rdquo; vs &ldquo;I couldn&rsquo;t continue.&rdquo;</div>
+      </div>
+
+      <hr class="divider">
+
+      <!-- ═══════════════════════════════════════════════════════════════════ -->
+      <h2>Team-Owned Lenses</h2>
+      <!-- ═══════════════════════════════════════════════════════════════════ -->
+
+      <!-- L3 -->
+      <div class="lens-section">
+        <div class="lens-accent" style="background: var(--l4-forest);"></div>
+        <div class="lens-header">
+          <span class="lens-number" style="background: var(--l4-forest);">L3</span>
+          <h3 style="margin:0">Prompt Effectiveness</h3>
+          <span class="lens-owner">Team 1 &mdash; &ldquo;Does it work?&rdquo;</span>
+        </div>
+        <div class="lens-question" style="border-color: var(--l4-forest);">&ldquo;When I copy this prompt into Copilot and run it with the provided context, does it produce output that would genuinely help a Scrum Master?&rdquo;</div>
+        <table>
+          <thead><tr><th>Check</th><th>What to look for</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Functional prompts</strong></td><td>Copy every prompt from the module into Copilot. Does it run without errors? Does it produce output matching what the module promises?</td></tr>
+            <tr><td><strong>Output quality</strong></td><td>Is Copilot&rsquo;s response genuinely useful for the stated SM task, or is it generic filler? Does the impediment analysis actually categorize impediments, or just list them?</td></tr>
+            <tr><td><strong>Prompt robustness</strong></td><td>Does the prompt work with slight variations (different team names, different sprint data)? Or is it brittle to the Velocity Squad context?</td></tr>
+            <tr><td><strong>Prompt rationale</strong></td><td>Does the module explain <em>why</em> the prompt is structured that way? SMs need to adapt prompts to their own teams &mdash; understanding the structure matters more than memorizing it.</td></tr>
+            <tr><td><strong>Context dependency</strong></td><td>Do prompts that reference uploaded files (ceremony notes, metrics CSVs) work with the provided sample files? Are file references correct?</td></tr>
+            <tr><td><strong>Multi-turn coherence</strong></td><td>For modules that build prompt chains (especially L2 and L6), does the conversation flow work? Does Copilot maintain context across steps?</td></tr>
+          </tbody>
+        </table>
+        <div class="sm-note"><p>The SM course has more complex prompts than the PM course &mdash; persona roleplay for conflict resolution (2.6), multi-step ceremony chains (6.1), meta-prompts that generate other prompts (2.5). Test these carefully; they&rsquo;re more likely to produce inconsistent output.</p></div>
+        <div class="lens-report"><strong>Reporting standard:</strong> Include the exact prompt used, Copilot&rsquo;s actual output (screenshot or paste), and what output was expected. For failed prompts, note whether the failure is the prompt&rsquo;s design or Copilot&rsquo;s limitation.</div>
+      </div>
+
+      <!-- L4 -->
+      <div class="lens-section">
+        <div class="lens-accent" style="background: var(--l4-forest);"></div>
+        <div class="lens-header">
+          <span class="lens-number" style="background: var(--l4-forest);">L4</span>
+          <h3 style="margin:0">Exercise Quality</h3>
+          <span class="lens-owner">Team 1 &mdash; &ldquo;Does it work?&rdquo;</span>
+        </div>
+        <div class="lens-question" style="border-color: var(--l4-forest);">&ldquo;Are the hands-on activities well-designed, completable with provided materials, and genuinely building the SM skill the module claims to teach?&rdquo;</div>
+        <table>
+          <thead><tr><th>Check</th><th>What to look for</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Completability</strong></td><td>Can you finish the exercise with the materials provided? Are sample files sufficient? Does the exercise work end-to-end without dead ends?</td></tr>
+            <tr><td><strong>Scaffolding</strong></td><td>Does the exercise build progressively (guided &rarr; semi-guided &rarr; independent)? Or does it dump complexity at once?</td></tr>
+            <tr><td><strong>Success criteria</strong></td><td>Is it clear what &ldquo;done well&rdquo; looks like? Can the learner self-assess their output? Are &ldquo;What You Should See&rdquo; sections accurate?</td></tr>
+            <tr><td><strong>Time realism</strong></td><td>Does the exercise fit within the module&rsquo;s stated duration? (Time yourself.) Modules claim 15-40 min &mdash; is that realistic including the exercises?</td></tr>
+            <tr><td><strong>Learning alignment</strong></td><td>Does the exercise practice the skill the module claims to teach? A module about &ldquo;predictive intelligence&rdquo; (4.2) should have exercises that build early warning prompts, not just analyze past data.</td></tr>
+            <tr><td><strong>Sample file quality</strong></td><td>Are the 78 resource files (ceremony notes, metrics CSVs, conflict scenarios) realistic enough to produce meaningful Copilot output? Are CSVs well-formatted?</td></tr>
+          </tbody>
+        </table>
+        <div class="sm-note"><p>Pay special attention to exercises in Levels 4-6 (data-driven, scaling, AI-native). These are more advanced and may assume capabilities or context that earlier modules didn&rsquo;t fully set up. Also test the conflict resolution roleplay exercises (2.6) &mdash; do the persona prompts produce psychologically realistic dialogue?</p></div>
+        <div class="lens-report"><strong>Reporting standard:</strong> Note which exercise, actual time taken vs stated, what was confusing or missing, and whether the exercise built the claimed skill.</div>
+      </div>
+
+      <!-- L5 -->
+      <div class="lens-section">
+        <div class="lens-accent" style="background: var(--l2-blue);"></div>
+        <div class="lens-header">
+          <span class="lens-number" style="background: var(--l2-blue);">L5</span>
+          <h3 style="margin:0">Instructional Design</h3>
+          <span class="lens-owner">Team 2 &mdash; &ldquo;Does it teach?&rdquo;</span>
+        </div>
+        <div class="lens-question" style="border-color: var(--l2-blue);">&ldquo;Does this module teach effectively? Would I recommend this design to a client building training for their Scrum Masters?&rdquo;</div>
+        <table>
+          <thead><tr><th>Check</th><th>What to look for</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Learning objectives</strong></td><td>Are objectives stated at the top? Are they measurable? Does the module content actually deliver on each stated objective?</td></tr>
+            <tr><td><strong>Cognitive load</strong></td><td>Is information density appropriate? ~13 hours is a lot &mdash; are there natural breathing spaces? Or is it a wall of prompts and exercises?</td></tr>
+            <tr><td><strong>Retention hooks</strong></td><td>Are there summaries, key takeaways, &ldquo;try this&rdquo; moments, or reflection prompts? Do modules end with a clear sense of &ldquo;what I learned&rdquo;?</td></tr>
+            <tr><td><strong>Multi-modal learning</strong></td><td>Is there a balance of reading, doing, and reflecting &mdash; or is every module the same format? Does the course leverage the Velocity Squad narrative as a learning device?</td></tr>
+            <tr><td><strong>Assessment opportunity</strong></td><td>Can the learner check their own understanding before moving on? Are there self-assessment moments beyond &ldquo;check your Copilot output&rdquo;?</td></tr>
+            <tr><td><strong>Module length calibration</strong></td><td>Are 35-40 min modules too dense? Would any benefit from being split? Are 15 min modules too shallow to build real skill?</td></tr>
+          </tbody>
+        </table>
+        <div class="sm-note"><p>The PM course feedback revealed cognitive overload in several modules (6 of 170 findings). With the SM course being ~2x longer, this risk is amplified. Pay attention to Levels 2 and 4 specifically &mdash; they pack the most conceptual density into their modules.</p></div>
+        <div class="lens-report"><strong>Reporting standard:</strong> Reference specific learning objectives and whether the content delivers on each. For cognitive load issues, identify exactly where the overload hits.</div>
+      </div>
+
+      <!-- L6 -->
+      <div class="lens-section">
+        <div class="lens-accent" style="background: var(--l2-blue);"></div>
+        <div class="lens-header">
+          <span class="lens-number" style="background: var(--l2-blue);">L6</span>
+          <h3 style="margin:0">Progressive Flow</h3>
+          <span class="lens-owner">Team 2 &mdash; &ldquo;Does it teach?&rdquo;</span>
+        </div>
+        <div class="lens-question" style="border-color: var(--l2-blue);">&ldquo;Does the 6-level arc feel like a genuine practitioner journey &mdash; from AI newcomer to AI-native Scrum Master? Or are the levels arbitrary groupings?&rdquo;</div>
+        <table>
+          <thead><tr><th>Check</th><th>What to look for</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Level-to-level arc</strong></td><td>Does Foundation &rarr; Advanced &rarr; Visuals &rarr; Data-Driven &rarr; Scaling &rarr; AI-Native feel like a natural progression? Where does it feel forced?</td></tr>
+            <tr><td><strong>Within-level sequencing</strong></td><td>Within each level, do modules build on each other? Does 2.1 (Ceremonies) flow into 2.2 (Impediments) flow into 2.3 (Team Health)?</td></tr>
+            <tr><td><strong>Prerequisite handling</strong></td><td>When a module requires knowledge from an earlier one, is this stated or linked? Does 4.1 (Sprint Analytics) assume skills from 1.3 (First Tasks)?</td></tr>
+            <tr><td><strong>Level 3 placement</strong></td><td>Team Visuals (DALL-E) sits between Advanced SM Workflows and Data-Driven. Does this feel like the right position, or does it break the analytical flow?</td></tr>
+            <tr><td><strong>Repetition vs reinforcement</strong></td><td>Is repeated content (e.g., how to upload files to Copilot) intentional reinforcement or accidental redundancy?</td></tr>
+            <tr><td><strong>Completion arc</strong></td><td>Does Module 6.3 (Building Your AI-Augmented SM Practice) feel like a satisfying culmination? Does the learner know what to do next?</td></tr>
+          </tbody>
+        </table>
+        <div class="sm-note"><p>This lens is <strong>critical</strong> for the SM course. With 6 levels (vs PM&rsquo;s 3), the progression design is harder to get right. Key question: does a Level 1 completer have enough to be immediately useful? Or does the real value only appear at Level 4+? The course should deliver value at every level break.</p></div>
+        <div class="lens-report"><strong>Reporting standard:</strong> Map dependency/flow issues across modules. This lens is inherently cross-module. Diagram the actual learning dependency graph vs the stated sequence.</div>
+      </div>
+
+      <!-- L7 -->
+      <div class="lens-section">
+        <div class="lens-accent" style="background: var(--l3-copper);"></div>
+        <div class="lens-header">
+          <span class="lens-number" style="background: var(--l3-copper);">L7</span>
+          <h3 style="margin:0">Scrum Fidelity &amp; Coaching Depth</h3>
+          <span class="lens-owner">Team 3 &mdash; &ldquo;Does it develop practitioners?&rdquo;</span>
+        </div>
+        <div class="lens-question" style="border-color: var(--l3-copper);">&ldquo;Does this course represent Scrum correctly, and does it develop actual coaching and facilitation skills &mdash; or does it just teach people to paste prompts into Copilot?&rdquo;</div>
+        <table>
+          <thead><tr><th>Check</th><th>What to look for</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Scrum Guide alignment</strong></td><td>Are Scrum events, artifacts, and accountabilities represented accurately? Does the course inadvertently promote anti-patterns (e.g., SM as project manager)?</td></tr>
+            <tr><td><strong>Coaching vs tool usage</strong></td><td>Does the course develop the SM&rsquo;s <em>judgment</em> about when and how to use AI, or does it reduce the role to &ldquo;run this prompt&rdquo;? The SM role is fundamentally about human interaction.</td></tr>
+            <tr><td><strong>Facilitation realism</strong></td><td>Do ceremony facilitation modules (2.1) acknowledge that real facilitation involves reading the room, adapting on the fly, and managing energy &mdash; not just generating agendas?</td></tr>
+            <tr><td><strong>Coaching scenario depth</strong></td><td>Are conflict resolution scenarios (2.6) and coaching conversations (2.3) psychologically realistic? Do they capture the nuance of real team dynamics?</td></tr>
+            <tr><td><strong>AI augmentation framing</strong></td><td>Is AI positioned as augmenting SM skills (preparation, analysis, reflection) rather than replacing them (automated decision-making, skip-the-conversation shortcuts)?</td></tr>
+            <tr><td><strong>Velocity Squad authenticity</strong></td><td>Does the Velocity Squad (7-person team, Sprint 47, AKX project) feel like a real Scrum team? Are their challenges, dynamics, and maturity level believable?</td></tr>
+          </tbody>
+        </table>
+        <div class="sm-note"><p>This is the lens that didn&rsquo;t exist in the PM course. The PM course tested &ldquo;Enterprise Realism&rdquo; &mdash; is the Accenture scenario believable? The SM course needs something deeper: does the course develop <em>practitioner capability</em> or just <em>tool proficiency</em>? An SM who completes this course should be a better SM, not just faster at generating documents.</p></div>
+        <div class="lens-report"><strong>Reporting standard:</strong> Draw on your own SM/coaching experience. Flag where the course promotes AI over judgment, or where facilitation is oversimplified. Rate: &ldquo;This builds real SM skill&rdquo; vs &ldquo;This just teaches a Copilot trick.&rdquo;</div>
+      </div>
+
+      <!-- L8 -->
+      <div class="lens-section">
+        <div class="lens-accent" style="background: var(--l3-copper);"></div>
+        <div class="lens-header">
+          <span class="lens-number" style="background: var(--l3-copper);">L8</span>
+          <h3 style="margin:0">Practitioner Applicability</h3>
+          <span class="lens-owner">Team 3 &mdash; &ldquo;Does it develop practitioners?&rdquo;</span>
+        </div>
+        <div class="lens-question" style="border-color: var(--l3-copper);">&ldquo;Could a Scrum Master take what they learned here and apply it with their team next Monday &mdash; regardless of their team&rsquo;s maturity, industry, or scale?&rdquo;</div>
+        <table>
+          <thead><tr><th>Check</th><th>What to look for</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Transferable techniques</strong></td><td>Are prompts and frameworks taught in a way that generalizes beyond the Velocity Squad? Can they adapt to a 3-person startup team or a 12-person enterprise team?</td></tr>
+            <tr><td><strong>Immediate usefulness</strong></td><td>After completing a module, could you use that technique in your current engagement this sprint? Or does it require setup, approval, or context that takes weeks?</td></tr>
+            <tr><td><strong>Team maturity sensitivity</strong></td><td>Do techniques work for both new-to-Scrum teams and mature teams? Does the course acknowledge that a team in Sprint 3 needs different AI support than a team in Sprint 47?</td></tr>
+            <tr><td><strong>Template extractability</strong></td><td>Can prompts, cheat sheets, and frameworks be copied and adapted for real projects? Are the prompt library and cheat sheets genuinely useful as standalone references?</td></tr>
+            <tr><td><strong>Environment dependency</strong></td><td>Does the skill work only with specific M365 configurations, or across typical enterprise setups? Are Copilot license assumptions stated?</td></tr>
+            <tr><td><strong>Scaling validity</strong></td><td>Do Level 5 multi-team scenarios (Horizon Program, 3 teams) represent realistic scaling challenges? Would an RTE find them useful?</td></tr>
+          </tbody>
+        </table>
+        <div class="lens-report"><strong>Reporting standard:</strong> For each module, rate &ldquo;I could use this next sprint&rdquo; on a 1-5 scale with explanation. Note which techniques are immediately portable vs require significant adaptation.</div>
+      </div>
+
+      <!-- L9 -->
+      <div class="lens-section">
+        <div class="lens-accent" style="background: var(--l5-purple);"></div>
+        <div class="lens-header">
+          <span class="lens-number" style="background: var(--l5-purple);">L9</span>
+          <h3 style="margin:0">Platform &amp; Interactive Features</h3>
+          <span class="lens-owner">Team 4 &mdash; &ldquo;Does it deliver?&rdquo;</span>
+        </div>
+        <div class="lens-question" style="border-color: var(--l5-purple);">&ldquo;Does the course platform enhance learning, or does it get in the way? Do all 14 interactive features work correctly?&rdquo;</div>
+        <table>
+          <thead><tr><th>Check</th><th>What to look for</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Copy-to-clipboard</strong></td><td>Do copy buttons appear on all code/prompt blocks? Does clicking &ldquo;Copy&rdquo; put the correct text in the clipboard? Does &ldquo;Copied!&rdquo; feedback appear? Test on different browsers.</td></tr>
+            <tr><td><strong>Table of Contents</strong></td><td>Does the TOC sidebar appear on module pages? Does scroll-spy highlight the current section? Does clicking a TOC item scroll to the right place?</td></tr>
+            <tr><td><strong>Reading progress bar</strong></td><td>Does the thin bar at the top track scroll position accurately? Does it reach 100% at the bottom?</td></tr>
+            <tr><td><strong>Progress tracking</strong></td><td>Does &ldquo;Mark as Complete&rdquo; work? Does completion persist across browser sessions? Does the index page show the correct completion percentage?</td></tr>
+            <tr><td><strong>Dark mode</strong></td><td>Does the toggle work? Are all elements readable in dark mode (tables, callouts, code blocks, exercise cards)? Does preference persist?</td></tr>
+            <tr><td><strong>Keyboard navigation</strong></td><td>Do left/right arrow keys navigate between modules? Does Escape go to the index? Do these shortcuts not interfere with text selection or scrolling?</td></tr>
+            <tr><td><strong>Mobile experience</strong></td><td>Does the hamburger menu work? Is the mobile TOC collapsible? Are prompts readable and copy-able on phone screens? Test on actual mobile devices.</td></tr>
+            <tr><td><strong>Level colors</strong></td><td>Do all 6 levels have distinct accent colors? Are they applied consistently to badges, headers, nav buttons, and exercise cards?</td></tr>
+            <tr><td><strong>Print output</strong></td><td>Does Ctrl+P produce a clean, single-column layout without nav chrome, copy buttons, or TOC? Is it usable as a reference printout?</td></tr>
+            <tr><td><strong>CSV rendering</strong></td><td>Do the metrics CSV files (velocity history, burndown, health surveys) render as readable HTML tables? Are headers correct?</td></tr>
+            <tr><td><strong>Exercise cards &amp; callouts</strong></td><td>Are exercises visually distinct with card styling? Do callout boxes (tip, warning, reference) render with correct icons and colors?</td></tr>
+            <tr><td><strong>Cross-browser</strong></td><td>Test Chrome, Edge, Firefox, Safari. Test <code>file://</code> protocol (open HTML directly from filesystem).</td></tr>
+          </tbody>
+        </table>
+        <div class="sm-note"><p>The SM course static site has 14 interactive features that the PM course didn&rsquo;t have. This means L9 has significantly more surface area to test. Allocate extra time for this lens. Enterprise SMs often work on locked-down machines &mdash; test that nothing requires admin privileges or external CDN access beyond Google Fonts.</p></div>
+        <div class="lens-report"><strong>Reporting standard:</strong> Include browser + version, device, protocol (http vs file://), screenshot of the issue, and steps to reproduce. For dark mode issues, include both light and dark screenshots.</div>
+      </div>
+
+      <!-- L10 -->
+      <div class="lens-section">
+        <div class="lens-accent" style="background: var(--l5-purple);"></div>
+        <div class="lens-header">
+          <span class="lens-number" style="background: var(--l5-purple);">L10</span>
+          <h3 style="margin:0">Gaps &amp; Completeness</h3>
+          <span class="lens-owner">Team 4 &mdash; &ldquo;Does it deliver?&rdquo;</span>
+        </div>
+        <div class="lens-question" style="border-color: var(--l5-purple);">&ldquo;What question would a Scrum Master have that this course doesn&rsquo;t answer? What SM skill is missing from the 6-level journey?&rdquo;</div>
+        <table>
+          <thead><tr><th>Check</th><th>What to look for</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Missing SM workflows</strong></td><td>Are there critical SM tasks with Copilot that should be covered but aren&rsquo;t? (e.g., backlog refinement facilitation, Definition of Done workshops, release planning)</td></tr>
+            <tr><td><strong>Unanswered questions</strong></td><td>At any point, did you think &ldquo;but what about...?&rdquo; and the course never addressed it? Track these moment by moment.</td></tr>
+            <tr><td><strong>Audience blind spots</strong></td><td>Does the course assume a specific SM profile (e.g., single-team SM at an enterprise)? Does it miss new SMs, RTEs, freelance coaches, or SMs in non-tech industries?</td></tr>
+            <tr><td><strong>Copilot limitations honesty</strong></td><td>Does the course acknowledge where Copilot falls short for SM tasks? Or does it only show the happy path? Are data privacy concerns for team health data addressed?</td></tr>
+            <tr><td><strong>Level 4-6 sufficiency</strong></td><td>Are the advanced levels (Data-Driven, Scaling, AI-Native) deep enough to be useful to experienced practitioners? Or do they skim the surface of complex topics?</td></tr>
+            <tr><td><strong>Resource completeness</strong></td><td>Are all 78 resource files referenced from relevant modules? Are there orphan resources nobody points to? Are there module references to files that don&rsquo;t exist?</td></tr>
+            <tr><td><strong>Post-course path</strong></td><td>After completing all 27 modules, does the learner know what to do next? Is there a clear &ldquo;you&rsquo;re ready to...&rdquo; statement?</td></tr>
+          </tbody>
+        </table>
+        <div class="lens-report"><strong>Reporting standard:</strong> Frame each gap as &ldquo;A Scrum Master would expect to find [X] but the course doesn&rsquo;t cover it because [Y is missing].&rdquo; Distinguish &ldquo;nice to have&rdquo; from &ldquo;this gap undermines the course promise.&rdquo;</div>
+      </div>
+
+      <hr class="divider">
+
+      <!-- ═══════════════════════════════════════════════════════════════════ -->
+      <h2>How &ldquo;Focus More, Not Only&rdquo; Works</h2>
+      <!-- ═══════════════════════════════════════════════════════════════════ -->
+
+      <p>Every tester applies all 10 lenses while going through each module. The difference:</p>
+      <table>
+        <thead><tr><th>Lens Type</th><th>What You Do</th><th>Feedback Expectation</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Common lenses</strong> (L1, L2)</td><td>Full attention, equal across all teams</td><td>Flag every issue you find</td></tr>
+          <tr><td><strong>Your team&rsquo;s owned lenses</strong></td><td>Deep, deliberate focus &mdash; this is your primary job</td><td>Detailed findings with evidence; you are the authority</td></tr>
+          <tr><td><strong>Other teams&rsquo; owned lenses</strong></td><td>Notice in passing while going through the module</td><td>Flag only obvious/glaring issues; don&rsquo;t go hunting</td></tr>
+        </tbody>
+      </table>
+
+      <p>This means each module gets:</p>
+
+      <div class="focus-grid">
+        <div class="focus-card common">
+          <h4>4x coverage</h4>
+          <p>Common lenses<br>(all teams)</p>
+        </div>
+        <div class="focus-card owned">
+          <h4>1x deep</h4>
+          <p>Each owned lens pair<br>(assigned team)</p>
+        </div>
+        <div class="focus-card light">
+          <h4>3x light</h4>
+          <p>Each owned lens pair<br>(other teams, obvious only)</p>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <div class="container">
+    <div class="nav-footer">
+      <a href="testing-strategy.html" class="btn-outline">&larr; Strategy Overview</a>
+      <a href="testing-feedback.html" class="btn-primary">Feedback &amp; Quality &rarr;</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <a href="testing-strategy.html">Strategy</a> |
+    <a href="testing-lenses.html">Lenses</a> |
+    <a href="testing-feedback.html">Feedback</a>
+    <div style="margin-top:12px; font-size:12px;">Copilot for AI-Enabled Scrum Masters &middot; Alpha Testing &middot; v1.0</div>
+  </footer>
+</body>
+</html>

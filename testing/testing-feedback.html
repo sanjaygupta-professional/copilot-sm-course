@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback & Quality Gates - Copilot SM Course</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --white: #ffffff;
+  --cream: #F7F6F5;
+  --cream-dark: #F3F1EF;
+  --cream-darker: #EEEDEA;
+  --warm-gray: #D9D9D9;
+  --warm-gray-dark: #898584;
+  --border: #D9D9D9;
+  --text-primary: #292C33;
+  --text-secondary: #6B7280;
+  --text-muted: #6A6A6A;
+  --text-light: #F8F7F6;
+  --teal: #487265;
+  --teal-light: #DDEFEF;
+  --teal-border: #568788;
+  --teal-dark: #407967;
+  --sage: #A0C3C4;
+  --copper: #BC976A;
+  --gold: #D4C68B;
+  --max-w: 780px;
+  --header-h: 55px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-primary);
+  background: var(--white);
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 1.15;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin: 0 0 0.75rem;
+}
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin: 1.25rem 0 0.5rem;
+}
+
+a { color: var(--teal); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+header.site-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  height: var(--header-h); background: var(--white);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+}
+.header-inner {
+  width: 100%; max-width: var(--max-w); padding: 0 18px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.header-brand .logo {
+  font-family: 'Playfair Display', serif; font-size: 1.15rem;
+  font-weight: 600; color: var(--text-primary); text-decoration: none;
+  letter-spacing: -0.02em;
+}
+.header-brand .logo:hover { text-decoration: none; }
+.header-nav { display: flex; align-items: center; gap: 6px; }
+.header-nav a {
+  font-size: 14px; color: var(--text-primary); text-decoration: none;
+  padding: 6px 12px; border-radius: 9999px; transition: background .2s;
+}
+.header-nav a:hover { background: var(--cream); text-decoration: none; }
+.header-nav a.active { background: var(--teal-light); color: var(--teal-dark); font-weight: 500; }
+
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 18px; }
+
+.content {
+  padding: calc(var(--header-h) + 32px) 0 48px;
+}
+.content p { margin: 0.75rem 0; color: var(--text-secondary); }
+.content strong { color: var(--text-primary); }
+.content ul, .content ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+.content li { margin: 0.3rem 0; color: var(--text-secondary); }
+
+.content blockquote {
+  background: var(--teal-light); border: 1px solid var(--teal-border);
+  border-left: 4px solid var(--teal); border-radius: 0 10px 10px 0;
+  padding: 16px 18px; margin: 20px 0; font-size: 14px; line-height: 1.6;
+}
+.content blockquote p { color: var(--teal-dark); margin: 0.25rem 0; font-weight: 500; }
+
+.content table {
+  width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px;
+}
+.content th {
+  text-align: left; padding: 10px 14px; font-weight: 600;
+  color: var(--text-primary); font-size: 13px;
+  border-bottom: 2px solid var(--border); background: var(--cream);
+  text-transform: uppercase; letter-spacing: 0.03em;
+}
+.content td {
+  padding: 12px 14px; border-bottom: 1px solid var(--cream-darker);
+  vertical-align: top; color: var(--text-secondary);
+}
+.content tr:last-child td { border-bottom: none; }
+
+.content pre {
+  background: var(--text-primary); color: var(--cream);
+  padding: 20px 22px; border-radius: 10px;
+  font-family: 'SF Mono', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 13px; line-height: 1.65; overflow-x: auto;
+  margin: 16px 0; white-space: pre-wrap; word-break: break-word;
+}
+.content pre code {
+  background: none; color: inherit; padding: 0; font-size: inherit;
+}
+.content code {
+  background: var(--cream); color: var(--teal-dark);
+  padding: 0.15rem 0.4rem; border-radius: 4px;
+  font-size: 0.88em; font-family: 'SF Mono', 'Cascadia Code', 'Consolas', monospace;
+}
+
+.divider {
+  border: none; border-top: 1px solid var(--cream-darker);
+  margin: 2.5rem 0;
+}
+
+/* ─── Flow Diagram ─── */
+.flow-diagram {
+  display: flex; align-items: center; gap: 0; margin: 28px 0;
+  flex-wrap: wrap; justify-content: center;
+}
+.flow-step {
+  text-align: center; padding: 14px 20px; border-radius: 10px;
+  border: 1px solid var(--border); background: var(--white);
+  min-width: 130px;
+}
+.flow-step.active { background: var(--teal-light); border-color: var(--teal-border); }
+.flow-step.final { background: var(--text-primary); color: var(--text-light); border-color: var(--text-primary); }
+.flow-step .step-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); }
+.flow-step.active .step-label { color: var(--teal-dark); }
+.flow-step.final .step-label { color: rgba(248,247,246,0.6); }
+.flow-step .step-name { font-weight: 600; font-size: 0.9rem; margin-top: 2px; }
+.flow-step.final .step-name { color: var(--text-light); }
+.flow-arrow {
+  font-size: 1.2rem; color: var(--warm-gray); margin: 0 6px; flex-shrink: 0;
+}
+
+/* ─── Severity Cards ─── */
+.severity-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0;
+}
+.severity-card {
+  padding: 16px; border-radius: 10px; border-left: 4px solid;
+}
+.severity-card h4 {
+  font-size: 0.85rem; margin: 0 0 6px; font-weight: 700;
+}
+.severity-card p { font-size: 0.85rem; margin: 0; }
+.severity-card.critical { background: #FEF2F2; border-color: #EF4444; }
+.severity-card.critical h4 { color: #B91C1C; }
+.severity-card.critical p { color: #991B1B; }
+.severity-card.major { background: #FFF7ED; border-color: #F97316; }
+.severity-card.major h4 { color: #C2410C; }
+.severity-card.major p { color: #9A3412; }
+.severity-card.moderate { background: #FEF9C3; border-color: #EAB308; }
+.severity-card.moderate h4 { color: #A16207; }
+.severity-card.moderate p { color: #854D0E; }
+.severity-card.minor { background: #F0FDF4; border-color: #22C55E; }
+.severity-card.minor h4 { color: #15803D; }
+.severity-card.minor p { color: #166534; }
+
+/* ─── Nav ─── */
+.nav-footer {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 32px 0; gap: 1rem;
+}
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--text-primary); color: var(--text-light);
+  border: none; border-radius: 50px; padding: 14px 28px;
+  font-size: 16px; font-weight: 500; font-family: 'Inter', sans-serif;
+  cursor: pointer; text-decoration: none; transition: all .2s;
+}
+.btn-primary:hover { background: #3a3d44; color: var(--text-light); text-decoration: none; }
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--white); color: var(--text-primary);
+  border: 1px solid var(--border); border-radius: 50px; padding: 12px 24px;
+  font-size: 14px; font-family: 'Inter', sans-serif;
+  cursor: pointer; text-decoration: none; transition: border-color .2s;
+}
+.btn-outline:hover { border-color: var(--teal-border); text-decoration: none; }
+
+footer.site-footer {
+  padding: 32px 0 24px; text-align: center;
+  font-size: 14px; color: var(--text-muted);
+  border-top: 1px solid var(--cream-darker);
+}
+footer.site-footer a { color: var(--text-muted); text-decoration: none; margin: 0 8px; }
+footer.site-footer a:hover { text-decoration: underline; }
+
+@media (max-width: 640px) {
+  h1 { font-size: 1.8rem; }
+  .flow-diagram { flex-direction: column; gap: 8px; }
+  .flow-arrow { transform: rotate(90deg); margin: 4px 0; }
+  .severity-grid { grid-template-columns: 1fr; }
+  .content table { font-size: 13px; }
+  .content th, .content td { padding: 8px 10px; }
+}
+
+@media print {
+  header.site-header, .nav-footer, footer.site-footer { display: none; }
+  .content { padding-top: 0; }
+}
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <a href="testing-strategy.html" class="logo">SM Course Testing</a>
+      </div>
+      <nav class="header-nav">
+        <a href="testing-strategy.html">Strategy</a>
+        <a href="testing-lenses.html">10 Lenses</a>
+        <a href="testing-feedback.html" class="active">Feedback</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="content">
+      <h1>Feedback &amp; Quality Gates</h1>
+      <p>Every piece of feedback passes through two validation checkpoints before reaching the course author. This process was proven in the PM course alpha test (170 findings &rarr; 130 actionable &rarr; 57 implementation items after deduplication).</p>
+
+      <hr class="divider">
+
+      <h2>Feedback Flow</h2>
+      <p>A finding travels through four stages before becoming an implementation item:</p>
+
+      <div class="flow-diagram">
+        <div class="flow-step">
+          <div class="step-label">Tester</div>
+          <div class="step-name">Submit</div>
+        </div>
+        <span class="flow-arrow">&rarr;</span>
+        <div class="flow-step active">
+          <div class="step-label">Checkpoint 1</div>
+          <div class="step-name">Team Lead</div>
+        </div>
+        <span class="flow-arrow">&rarr;</span>
+        <div class="flow-step active">
+          <div class="step-label">Checkpoint 2</div>
+          <div class="step-name">Cross-Team Lead</div>
+        </div>
+        <span class="flow-arrow">&rarr;</span>
+        <div class="flow-step final">
+          <div class="step-label">Final</div>
+          <div class="step-name">Course Author</div>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <h2>Checkpoint 1: Team Lead Review</h2>
+      <p>The team lead evaluates each feedback item against these criteria:</p>
+      <table>
+        <thead><tr><th>Criteria</th><th>Pass</th><th>Fail (return to tester)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Specific</strong></td><td>References exact module, section, exercise, or prompt</td><td>&ldquo;The course is confusing&rdquo; or &ldquo;Level 4 needs work&rdquo;</td></tr>
+          <tr><td><strong>Observation + Expectation</strong></td><td>Both fields filled with concrete detail</td><td>Vague or missing either field</td></tr>
+          <tr><td><strong>Non-duplicate</strong></td><td>Not already submitted by another team member</td><td>Repeat of existing finding (merge with original)</td></tr>
+          <tr><td><strong>Right lenses</strong></td><td>Tagged lenses actually match the finding</td><td>Prompt issue tagged as UX only; coaching concern tagged as content accuracy</td></tr>
+          <tr><td><strong>Actionable</strong></td><td>The course author could fix this with a specific change</td><td>&ldquo;Copilot doesn&rsquo;t always give good answers&rdquo; (platform limitation, not course issue)</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Lead actions:</strong></p>
+      <ul>
+        <li><strong>Approve</strong> &mdash; Forward to cross-team validation</li>
+        <li><strong>Return</strong> &mdash; Send back with a note on what to clarify (tester revises and resubmits)</li>
+        <li><strong>Merge</strong> &mdash; Combine with an existing finding that covers the same issue</li>
+      </ul>
+
+      <hr class="divider">
+
+      <h2>Checkpoint 2: Cross-Team Lead Validation</h2>
+      <p>A lead from a <strong>different team</strong> reviews approved feedback:</p>
+      <table>
+        <thead><tr><th>They check for</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Accuracy</strong></td><td>Does the finding hold up? Is the &ldquo;bug&rdquo; actually a bug, or a design choice?</td></tr>
+          <tr><td><strong>Relevance</strong></td><td>Is this about the course, or about Copilot&rsquo;s general limitations?</td></tr>
+          <tr><td><strong>Proportionality</strong></td><td>Does the severity match the impact? A typo isn&rsquo;t Critical.</td></tr>
+          <tr><td><strong>Cross-team context</strong></td><td>Did another team already find the same thing? Does a different lens add nuance?</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Validation Rotation</h3>
+      <table>
+        <thead><tr><th>Feedback from</th><th>Checkpoint 1 (own lead)</th><th>Checkpoint 2 (cross-team lead)</th></tr></thead>
+        <tbody>
+          <tr><td>Team 1 &mdash; &ldquo;Does it work?&rdquo;</td><td>Lead 1</td><td>Lead 2</td></tr>
+          <tr><td>Team 2 &mdash; &ldquo;Does it teach?&rdquo;</td><td>Lead 2</td><td>Lead 3</td></tr>
+          <tr><td>Team 3 &mdash; &ldquo;Does it develop?&rdquo;</td><td>Lead 3</td><td>Lead 4</td></tr>
+          <tr><td>Team 4 &mdash; &ldquo;Does it deliver?&rdquo;</td><td>Lead 4</td><td>Lead 1</td></tr>
+        </tbody>
+      </table>
+
+      <hr class="divider">
+
+      <h2>Feedback Template</h2>
+      <p>One item per finding. Keep it simple &mdash; say what you saw, what you expected, and which lenses it touches.</p>
+      <pre><code>## [Module ID] &mdash; [Short title]
+
+**Observation:** [What you saw or experienced &mdash; be specific.
+  Quote the text, name the exercise, describe the step.]
+
+**Expectation:** [What should have happened instead]
+
+**Lenses:** [L1, L7] &larr; tag 1&ndash;3 lenses this relates to</code></pre>
+
+      <blockquote><p><strong>That&rsquo;s it.</strong> No severity ratings from testers, no type checkboxes, no lengthy evidence sections. The course author triages priority. Your job is to notice and describe &mdash; clearly and specifically.</p></blockquote>
+
+      <h3>Good Example</h3>
+      <pre><code>## 2.1 &mdash; Ceremony facilitation prompt produces generic agenda
+
+**Observation:** Exercise 2 asks us to generate a Sprint Review agenda
+  using the prompt on page 3. The output is a generic meeting agenda
+  (Welcome, Review, Demo, Feedback, Close) with no Velocity Squad
+  context, despite uploading sprint-review-raw.md as instructed.
+
+**Expectation:** Output should reference actual Sprint 47 items,
+  team members, and demo-ready features from the uploaded file.
+
+**Lenses:** [L3, L4]</code></pre>
+
+      <h3>Bad Example (would be returned)</h3>
+      <pre><code>## Level 2 &mdash; Needs improvement
+
+**Observation:** The prompts in Level 2 don't always work well.
+
+**Expectation:** They should work better.
+
+**Lenses:** [L3]</code></pre>
+      <p style="color: #B91C1C; font-size: 0.88rem; font-weight: 500;">This would be returned by the team lead: no specific module, no specific prompt, no description of what &ldquo;doesn&rsquo;t work well&rdquo; means, and no expected vs actual comparison.</p>
+
+      <hr class="divider">
+
+      <h2>Severity Guidelines</h2>
+      <p>Testers don&rsquo;t assign severity &mdash; the course author does during triage. But understanding the scale helps calibrate what&rsquo;s worth reporting:</p>
+
+      <div class="severity-grid">
+        <div class="severity-card critical">
+          <h4>Critical</h4>
+          <p>Blocks learning. Prompt crashes, exercise can&rsquo;t be completed, factually wrong Scrum guidance, broken navigation preventing access to modules.</p>
+        </div>
+        <div class="severity-card major">
+          <h4>Major</h4>
+          <p>Significantly impairs learning. Prompt produces misleading output, exercise success criteria unclear, inconsistent data across modules, key concept unexplained.</p>
+        </div>
+        <div class="severity-card moderate">
+          <h4>Moderate</h4>
+          <p>Noticeable quality issue. Cognitive overload in a section, unclear transition between topics, callout box mislabeled, dark mode renders text unreadable in one area.</p>
+        </div>
+        <div class="severity-card minor">
+          <h4>Minor</h4>
+          <p>Polish. Typos, inconsistent formatting, copy button has wrong hover state, TOC highlights wrong section briefly during fast scroll.</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <h2>Consolidated Report Format</h2>
+      <p>The Meta-Team (4 leads + course author) delivers one final report.</p>
+
+      <h3>1. Executive Summary</h3>
+      <ul>
+        <li>Total findings: submitted &rarr; approved &rarr; endorsed (funnel)</li>
+        <li>Breakdown by lens (which lenses surfaced the most issues?)</li>
+        <li>Breakdown by level (which levels need the most work?)</li>
+        <li>Top 3 cross-cutting themes</li>
+      </ul>
+
+      <h3>2. Findings by Module</h3>
+      <p>All endorsed findings grouped by module (1.1 through 6.3), with lens tags. This is the primary view for implementation.</p>
+
+      <h3>3. Findings by Lens</h3>
+      <p>Same findings regrouped by lens &mdash; reveals systemic patterns. Example: if L7 (Scrum Fidelity) flags issues in 8 of 27 modules, there&rsquo;s a systemic terminology problem.</p>
+
+      <h3>4. Cross-Team Agreement</h3>
+      <p>Findings where multiple teams independently flagged the same issue &mdash; high-confidence problems. These get highest implementation priority.</p>
+
+      <h3>5. Positive Findings</h3>
+      <p>What works well, organized by lens. Protect these during revisions. In the PM course, Team 2 specifically praised the progressive scaffolding in modules 1.3 and 2.1 &mdash; this kind of signal prevents regression.</p>
+
+      <hr class="divider">
+
+      <h2>Lessons from the PM Course Alpha Test</h2>
+      <p>Key metrics and learnings that inform this strategy:</p>
+      <table>
+        <thead><tr><th>Metric</th><th>PM Result</th><th>SM Implication</th></tr></thead>
+        <tbody>
+          <tr><td>Total findings</td><td>170</td><td>Expect 250-350 (nearly 2x modules + more interactive features)</td></tr>
+          <tr><td>Actionable after review</td><td>130 (76%)</td><td>Target 80%+ by improving the template and examples</td></tr>
+          <tr><td>After deduplication</td><td>57 items</td><td>Cross-team dedup will be more critical with 27 modules</td></tr>
+          <tr><td>Biggest dedup pattern</td><td>Keyboard shortcuts (14 findings &rarr; 2 items)</td><td>Expect similar clustering around Scrum terminology, prompt patterns, and interactive feature bugs</td></tr>
+          <tr><td>Tester agreement</td><td>98% (only 2/170 needed clarification)</td><td>The template works &mdash; keep it simple</td></tr>
+          <tr><td>Severity distribution</td><td>4 Critical, 10 Major, 30 Moderate, 13 Minor</td><td>~7% critical rate is a useful baseline</td></tr>
+        </tbody>
+      </table>
+
+    </section>
+  </div>
+
+  <div class="container">
+    <div class="nav-footer">
+      <a href="testing-lenses.html" class="btn-outline">&larr; The 10 Lenses</a>
+      <a href="testing-strategy.html" class="btn-primary">Strategy Overview &rarr;</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <a href="testing-strategy.html">Strategy</a> |
+    <a href="testing-lenses.html">Lenses</a> |
+    <a href="testing-feedback.html">Feedback</a>
+    <div style="margin-top:12px; font-size:12px;">Copilot for AI-Enabled Scrum Masters &middot; Alpha Testing &middot; v1.0</div>
+  </footer>
+</body>
+</html>
