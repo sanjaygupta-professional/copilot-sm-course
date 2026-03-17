@@ -1541,11 +1541,24 @@ function build() {
     }
   }
 
-  const totalFiles = 1 + moduleCount + resourceCount;
+  // Copy testing strategy pages
+  let testingCount = 0;
+  const testingDir = path.join(PROJECT_ROOT, 'testing');
+  if (fs.existsSync(testingDir)) {
+    const testingFiles = fs.readdirSync(testingDir).filter(f => f.endsWith('.html'));
+    for (const file of testingFiles) {
+      fs.copyFileSync(path.join(testingDir, file), path.join(OUTPUT_DIR, file));
+      console.log(`  ${file} (testing)`);
+      testingCount++;
+    }
+  }
+
+  const totalFiles = 1 + moduleCount + resourceCount + testingCount;
   console.log(`\nDone! Generated ${totalFiles} HTML files in final-version-static-site/`);
   console.log(`  - 1 index page`);
   console.log(`  - ${moduleCount} module pages`);
   console.log(`  - ${resourceCount} resource pages`);
+  console.log(`  - ${testingCount} testing strategy pages`);
   console.log(`\nOpen final-version-static-site/index.html in your browser to view the course.`);
 }
 
