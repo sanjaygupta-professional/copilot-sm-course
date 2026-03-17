@@ -1,0 +1,5 @@
+node_modules/
+final-version-static-site/
+viewer/dist/
+viewer/public/content/
+.playwright-mcp/

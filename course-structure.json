@@ -1,17 +1,18 @@
 {
   "course": {
-    "title": "Microsoft Copilot for Scrum Masters",
-    "version": "1.0.0",
-    "description": "A comprehensive course teaching Scrum Masters to leverage Microsoft Copilot for team facilitation and agile workflows",
-    "targetAudience": "Scrum Masters",
+    "title": "Microsoft Copilot for AI-Enabled Scrum Masters",
+    "version": "2.0.0",
+    "description": "A world-class course transforming Scrum Masters into AI-native practitioners who leverage Microsoft Copilot for predictive intelligence, organizational impact, and continuous improvement",
+    "targetAudience": "Experienced Scrum Masters and Agile Coaches",
     "prerequisites": [
       "Microsoft 365 Copilot Enterprise license",
       "OneDrive access",
       "Basic familiarity with M365 apps",
-      "Scrum fundamentals knowledge"
+      "Scrum fundamentals knowledge",
+      "2+ years Scrum Master experience recommended"
     ],
-    "estimatedDuration": "5.5 hours",
-    "lastUpdated": "2026-01-19"
+    "estimatedDuration": "~13 hours",
+    "lastUpdated": "2026-03-17"
   },
   "levels": [
     {
@@ -46,6 +47,7 @@
           "title": "Your First Scrum Master Tasks",
           "duration": "30 min",
           "path": "lesson-modules/1-fundamentals/1.3-first-tasks/MODULE.md",
+          "quizPath": "lesson-modules/1-fundamentals/1.3-first-tasks/quiz.json",
           "objectives": [
             "Process standup notes into actionable summaries",
             "Synthesize retrospective feedback",
@@ -68,6 +70,7 @@
           "title": "Persona Prompting",
           "duration": "20 min",
           "path": "lesson-modules/1-fundamentals/1.5-persona-prompting/MODULE.md",
+          "quizPath": "lesson-modules/1-fundamentals/1.5-persona-prompting/quiz.json",
           "objectives": [
             "Create persona prompts (developer, PO, stakeholder)",
             "Get multi-perspective feedback on process changes",
@@ -134,39 +137,78 @@
     {
       "id": "2",
       "title": "Advanced SM Workflows",
-      "description": "Complex Scrum Master tasks with Copilot",
+      "description": "Complex Scrum Master tasks with Copilot — facilitation, impediments, coaching, responsible AI, prompt engineering, and conflict resolution",
       "modules": [
         {
           "id": "2.1",
           "title": "Facilitating Ceremonies with Copilot",
-          "duration": "35 min",
+          "duration": "40 min",
           "path": "lesson-modules/2-advanced-sm-work/2.1-facilitating-ceremonies/MODULE.md",
           "objectives": [
             "Use Copilot as thinking partner for ceremony facilitation",
             "Generate agendas and facilitation guides",
-            "Process ceremony outcomes into actionable items"
+            "Process ceremony outcomes into actionable items",
+            "Adapt ceremonies for distributed teams"
           ]
         },
         {
           "id": "2.2",
           "title": "Impediment Management & Resolution",
-          "duration": "30 min",
+          "duration": "35 min",
           "path": "lesson-modules/2-advanced-sm-work/2.2-impediment-management/MODULE.md",
           "objectives": [
             "Track and categorize impediments systematically",
             "Analyze impediment patterns over time",
-            "Draft escalation communications"
+            "Draft escalation communications",
+            "Detect impediments predictively from team signals"
           ]
         },
         {
           "id": "2.3",
           "title": "Team Health & Continuous Improvement",
-          "duration": "30 min",
+          "duration": "35 min",
           "path": "lesson-modules/2-advanced-sm-work/2.3-team-health/MODULE.md",
           "objectives": [
             "Analyze team health survey results",
             "Prepare for coaching conversations",
-            "Track improvement over time"
+            "Track improvement over time",
+            "Predict burnout from leading indicators"
+          ]
+        },
+        {
+          "id": "2.4",
+          "title": "Responsible AI & Data Governance",
+          "duration": "30 min",
+          "path": "lesson-modules/2-advanced-sm-work/2.4-responsible-ai/MODULE.md",
+          "objectives": [
+            "Classify team data as safe/caution/never-share for Copilot",
+            "Recognize AI bias in team assessments",
+            "Apply responsible AI framework to SM workflows",
+            "Lead responsible AI conversations with your team"
+          ]
+        },
+        {
+          "id": "2.5",
+          "title": "Advanced Prompt Engineering for SMs",
+          "duration": "30 min",
+          "path": "lesson-modules/2-advanced-sm-work/2.5-advanced-prompts/MODULE.md",
+          "objectives": [
+            "Apply chain-of-thought prompting to complex SM analysis",
+            "Build reusable prompt chains across ceremonies",
+            "Craft meta-prompts that generate other prompts",
+            "Debug prompts when Copilot gives generic responses"
+          ]
+        },
+        {
+          "id": "2.6",
+          "title": "Conflict Resolution & Difficult Conversations",
+          "duration": "35 min",
+          "path": "lesson-modules/2-advanced-sm-work/2.6-conflict-resolution/MODULE.md",
+          "objectives": [
+            "Prepare for difficult conversations with psychological depth",
+            "Practice conflict scenarios using persona roleplay",
+            "Identify root psychological dynamics in team conflicts",
+            "Document resolution outcomes and track recovery"
           ]
         }
       ]
@@ -196,6 +238,135 @@
             "Create sprint review visuals",
             "Generate retrospective facilitation aids",
             "Build team celebration graphics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Data-Driven Scrum Mastery",
+      "description": "Sprint analytics, predictive intelligence, and measuring SM impact with data",
+      "modules": [
+        {
+          "id": "4.1",
+          "title": "Sprint Analytics & KPI Dashboards",
+          "duration": "35 min",
+          "path": "lesson-modules/4-data-driven/4.1-sprint-analytics/MODULE.md",
+          "objectives": [
+            "Define and track the 10 metrics that matter for SMs",
+            "Build live dashboards in Copilot + Excel",
+            "Distinguish vanity metrics from actionable metrics",
+            "Apply statistical process control to sprint metrics"
+          ]
+        },
+        {
+          "id": "4.2",
+          "title": "Predictive Intelligence & Early Warning Systems",
+          "duration": "35 min",
+          "path": "lesson-modules/4-data-driven/4.2-predictive-intelligence/MODULE.md",
+          "objectives": [
+            "Build early warning systems from existing team data",
+            "Identify leading indicators that predict sprint failure",
+            "Create automated signal detection prompts",
+            "Distinguish correlation from causation in team data"
+          ]
+        },
+        {
+          "id": "4.3",
+          "title": "Measuring & Communicating SM Impact",
+          "duration": "30 min",
+          "path": "lesson-modules/4-data-driven/4.3-measuring-impact/MODULE.md",
+          "objectives": [
+            "Quantify SM contribution to team and org outcomes",
+            "Build a personal impact portfolio with evidence",
+            "Communicate SM value to non-agile executives",
+            "Design quarterly SM effectiveness reviews"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Scaling & Organizational Impact",
+      "description": "Multi-team coordination, role fluency at scale, and organizational change",
+      "modules": [
+        {
+          "id": "5.1",
+          "title": "The Many Hats — Role Fluency at Scale",
+          "duration": "35 min",
+          "path": "lesson-modules/5-scaling/5.1-many-hats/MODULE.md",
+          "objectives": [
+            "Map 7 SM role modes with different Copilot strategies",
+            "Diagnose which hat a situation requires",
+            "Navigate team maturity phases with appropriate emphasis",
+            "Plan the SM-to-RTE transition pathway"
+          ]
+        },
+        {
+          "id": "5.2",
+          "title": "Multi-Team Coordination & Program Support",
+          "duration": "40 min",
+          "path": "lesson-modules/5-scaling/5.2-multi-team/MODULE.md",
+          "objectives": [
+            "Facilitate SoS and cross-team synchronization",
+            "Manage cross-team dependencies with Copilot",
+            "Handle inter-team resource conflicts",
+            "Create program-level transparency without overhead"
+          ]
+        },
+        {
+          "id": "5.3",
+          "title": "Organizational Change & Executive Influence",
+          "duration": "35 min",
+          "path": "lesson-modules/5-scaling/5.3-organizational-change/MODULE.md",
+          "objectives": [
+            "Translate team insights into organizational proposals",
+            "Build executive-ready business cases",
+            "Navigate organizational politics without authority",
+            "Measure and communicate organizational agility"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "AI-Native SM Mastery",
+      "description": "AI agents, coaching simulation, and building your AI-augmented practice",
+      "modules": [
+        {
+          "id": "6.1",
+          "title": "AI Agents & Workflow Automation",
+          "duration": "35 min",
+          "path": "lesson-modules/6-ai-native/6.1-agents-automation/MODULE.md",
+          "objectives": [
+            "Design Copilot agent workflows for repetitive SM tasks",
+            "Build multi-step agent chains for ceremonies",
+            "Automate the weekly SM rhythm",
+            "Know when automation helps vs. harms"
+          ]
+        },
+        {
+          "id": "6.2",
+          "title": "AI as Coaching Partner & Practice Simulator",
+          "duration": "35 min",
+          "path": "lesson-modules/6-ai-native/6.2-coaching-simulator/MODULE.md",
+          "objectives": [
+            "Use Copilot as deliberate practice partner for SM skills",
+            "Run difficulty-escalating simulation scenarios",
+            "Get AI feedback on facilitation and coaching approaches",
+            "Develop reflective practice using AI-assisted journaling"
+          ]
+        },
+        {
+          "id": "6.3",
+          "title": "Building Your AI-Augmented SM Practice",
+          "duration": "30 min",
+          "path": "lesson-modules/6-ai-native/6.3-building-practice/MODULE.md",
+          "objectives": [
+            "Design your personal AI-augmented SM operating system",
+            "Create a 90-day adoption plan for AI integration",
+            "Build accountability structures for continuous improvement",
+            "Contribute to the SM community's AI knowledge base"
           ]
         }
       ]

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { ChevronDown, ChevronRight, Check, Clock, BookOpen, Folder, FileText } from 'lucide-react'
+import { ChevronDown, ChevronRight, Check, Clock, BookOpen, Folder, FileText, ClipboardList, ExternalLink } from 'lucide-react'
 import { courseStructure, resourceStructure } from '../../data/courseStructure'
 
 interface SidebarProps {
@@ -14,6 +14,9 @@ export function Sidebar({ isComplete, getLevelProgress, onNavigate }: SidebarPro
     '1': true,
     '2': true,
     '3': true,
+    '4': true,
+    '5': true,
+    '6': true,
   })
 
   const [expandedResources, setExpandedResources] = useState<Record<string, boolean>>({
@@ -200,6 +203,22 @@ export function Sidebar({ isComplete, getLevelProgress, onNavigate }: SidebarPro
             </div>
           )
         })}
+      </div>
+
+      {/* Survey CTA */}
+      <div className="mt-6 px-3 pb-4">
+        <a
+          href="survey.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-4 py-3 rounded-lg text-sm font-medium
+                     bg-primary-50 text-primary-700 border border-primary-300
+                     hover:bg-primary-100 hover:border-primary-400 transition-colors"
+        >
+          <ClipboardList className="w-4 h-4" />
+          Practitioner Survey
+          <ExternalLink className="w-3 h-3 ml-auto opacity-50" />
+        </a>
       </div>
     </nav>
   )

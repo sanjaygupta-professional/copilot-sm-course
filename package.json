@@ -1,0 +1,12 @@
+{
+  "name": "copilot-sm-course",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Microsoft Copilot for AI-Enabled Scrum Masters — static site generator",
+  "scripts": {
+    "build-static": "node build-static.js"
+  },
+  "devDependencies": {
+    "marked": "^15.0.0"
+  }
+}

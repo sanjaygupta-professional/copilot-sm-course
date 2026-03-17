@@ -1,0 +1,9 @@
+Sprint,Velocity_Completed,Velocity_Planned,Sprint_Goal_Met,Carryover_Points,Cycle_Time_Avg_Days,Impediments_Raised,Impediments_Resolved,Design_Blockers,Standup_Avg_Minutes,Retro_Actions_Created,Retro_Actions_Completed,Health_Collaboration,Health_Morale,Health_Clarity,Health_Pace,Health_Trust,Defects_Found,Defects_Escaped,Team_Size
+Sprint 40,48,52,Yes,4,4.2,3,2,0,22,4,2,3.5,3.8,3.2,3.0,4.0,5,1,7
+Sprint 41,52,50,Yes,0,3.8,2,2,1,20,3,2,3.7,3.9,3.5,3.2,4.1,4,0,7
+Sprint 42,45,55,No,10,5.1,5,3,2,24,5,2,3.3,3.5,3.0,2.8,3.8,7,2,7
+Sprint 43,38,50,No,12,5.5,6,4,2,25,6,3,3.0,3.2,2.8,2.5,3.5,8,3,7
+Sprint 44,35,48,No,13,5.8,7,5,3,26,5,2,2.8,2.9,2.7,2.3,3.3,6,2,7
+Sprint 45,42,48,Partial,6,4.5,4,3,1,21,4,3,3.2,3.3,3.0,2.8,3.6,5,1,7
+Sprint 46,55,52,Yes,0,3.5,2,2,0,18,4,4,3.8,3.7,3.5,3.3,4.0,3,0,7
+Sprint 47,48,52,Partial,4,4.0,4,3,2,20,5,3,3.5,3.4,3.2,3.0,3.8,5,1,7
