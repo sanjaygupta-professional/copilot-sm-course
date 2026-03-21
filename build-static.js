@@ -277,157 +277,157 @@ allResourceFiles.forEach(f => {
 // ─── Level Color System ─────────────────────────────────────────────────────
 
 const levelColors = {
-  '1': { accent: '#487265', light: '#DDEFEF', dark: '#3a5f54', name: 'Teal' },
-  '2': { accent: '#3B5998', light: '#D6E4F7', dark: '#2d4573', name: 'Deep Blue' },
-  '3': { accent: '#BC976A', light: '#F5E8D6', dark: '#9a7a53', name: 'Warm Copper' },
-  '4': { accent: '#2D6A4F', light: '#D4EDDA', dark: '#1e4d38', name: 'Forest Green' },
-  '5': { accent: '#6B4C9A', light: '#E4D9F2', dark: '#553c7a', name: 'Royal Purple' },
-  '6': { accent: '#0891B2', light: '#CCFBF1', dark: '#066d8a', name: 'Electric Teal' },
+  '1': { accent: '#2D6B5E', light: '#D0E8E0', dark: '#1A4A3F', name: 'Industrial Teal' },
+  '2': { accent: '#1E3A6E', light: '#C8D6EC', dark: '#0F2346', name: 'Navy' },
+  '3': { accent: '#B8860B', light: '#F0DEB0', dark: '#8B6508', name: 'Industrial Amber' },
+  '4': { accent: '#2E4A1E', light: '#C4D4B8', dark: '#1A3010', name: 'Military Green' },
+  '5': { accent: '#4B0082', light: '#D0B8E8', dark: '#2E0050', name: 'Deep Violet' },
+  '6': { accent: '#007C8A', light: '#B0E8F0', dark: '#005060', name: 'Cyan' },
 };
 
 // ─── CSS ────────────────────────────────────────────────────────────────────
 
 const CSS = `
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@400;600;700;900&display=swap');
 
 :root {
   --white: #ffffff;
-  --cream: #F7F6F5;
-  --cream-dark: #F3F1EF;
-  --cream-darker: #EEEDEA;
-  --warm-gray: #D9D9D9;
-  --warm-gray-dark: #898584;
-  --border: #D9D9D9;
-  --text-primary: #292C33;
-  --text-secondary: #6B7280;
-  --text-muted: #6A6A6A;
-  --teal: #487265;
-  --teal-light: #DDEFEF;
-  --teal-border: #568788;
-  --teal-dark: #407967;
-  --sage: #A0C3C4;
-  --olive: #AAB788;
-  --gold: #D4C68B;
-  --copper: #BC976A;
-  --bronze: #CAAB84;
-  --header-h: 55px;
-  --level-accent: #487265;
-  --level-accent-light: #DDEFEF;
-  --level-accent-dark: #3a5f54;
+  --cream: #F0F0F0;
+  --cream-dark: #E5E5E5;
+  --cream-darker: #D0D0D0;
+  --warm-gray: #999999;
+  --warm-gray-dark: #666666;
+  --border: #000000;
+  --text-primary: #000000;
+  --text-secondary: #333333;
+  --text-muted: #555555;
+  --accent-lime: #CCFF00;
+  --primary-olive: #4A554A;
+  --header-h: 60px;
+  --level-accent: #4A554A;
+  --level-accent-light: #E0E5E0;
+  --level-accent-dark: #2A352A;
   --bg-primary: #ffffff;
-  --bg-secondary: #F7F6F5;
-  --bg-code: #1a1a2e;
-  --text-code: #4ade80;
-  --border-color: #D9D9D9;
+  --bg-secondary: #F0F0F0;
+  --bg-code: #0A0A0A;
+  --text-code: #CCFF00;
+  --border-color: #000000;
+  --grid-color: rgba(0,0,0,0.06);
 }
 
 [data-theme="dark"] {
-  --white: #1a1a2e;
-  --cream: #232340;
-  --cream-dark: #2a2a4a;
-  --cream-darker: #1e1e36;
-  --warm-gray: #3a3a5a;
-  --warm-gray-dark: #9090a8;
-  --border: #3a3a5a;
-  --text-primary: #e8e8f0;
-  --text-secondary: #b0b0c8;
-  --text-muted: #8888a0;
-  --teal-light: #1a3030;
-  --bg-primary: #1a1a2e;
-  --bg-secondary: #232340;
-  --bg-code: #0f0f1e;
-  --text-code: #4ade80;
-  --border-color: #3a3a5a;
+  --white: #0A0A0A;
+  --cream: #141414;
+  --cream-dark: #1E1E1E;
+  --cream-darker: #0F0F0F;
+  --warm-gray: #3A3A3A;
+  --warm-gray-dark: #888888;
+  --border: #CCFF00;
+  --text-primary: #F0F0F0;
+  --text-secondary: #CCCCCC;
+  --text-muted: #888888;
+  --bg-primary: #0A0A0A;
+  --bg-secondary: #141414;
+  --bg-code: #000000;
+  --text-code: #CCFF00;
+  --border-color: #CCFF00;
+  --grid-color: rgba(204,255,0,0.04);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.65;
   color: var(--text-primary);
   background: var(--white);
+  background-image:
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
-h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 500; letter-spacing: -0.02em; }
+h1, h2, h3 { font-family: 'Bebas Neue', 'Impact', sans-serif; font-weight: 400; letter-spacing: 0.04em; text-transform: uppercase; }
 
 /* ─── Reading Progress Bar ─── */
 .reading-progress {
-  position: fixed; top: 0; left: 0; height: 3px; z-index: 200;
-  background: var(--level-accent);
-  transition: width 0.1s linear;
+  position: fixed; top: 0; left: 0; height: 6px; z-index: 200;
+  background: var(--accent-lime);
   width: 0%;
 }
 
 /* ─── Header ─── */
 .site-header {
-  position: sticky; top: 3px; z-index: 100;
+  position: sticky; top: 6px; z-index: 100;
   height: var(--header-h); background: var(--white);
   display: flex; align-items: center; justify-content: center;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 4px solid var(--border);
 }
 .header-inner {
-  width: 100%; max-width: 860px; padding: 0 24px;
+  width: 100%; max-width: 1100px; padding: 0 24px;
   display: flex; align-items: center; justify-content: space-between;
 }
 .header-brand {
-  font-family: 'Playfair Display', serif; font-size: 1.1rem;
-  font-weight: 600; color: var(--text-primary); text-decoration: none;
-  letter-spacing: -0.02em;
+  font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem;
+  font-weight: 400; color: var(--text-primary); text-decoration: none;
+  letter-spacing: 0.08em; text-transform: uppercase;
 }
 .header-right { display: flex; align-items: center; gap: 8px; }
 .header-home {
-  font-size: 0.85rem; color: var(--level-accent-dark, var(--teal-dark)); text-decoration: none;
-  padding: 6px 14px; border-radius: 20px; border: 1px solid var(--border);
-  transition: background 0.2s;
+  font-size: 0.8rem; color: var(--text-primary); text-decoration: none;
+  padding: 6px 14px; border: 2px solid var(--border);
+  text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700;
 }
-.header-home:hover { background: var(--cream); }
+.header-home:hover { background: var(--text-primary); color: var(--white); }
 
 /* Dark Mode Toggle */
 .dark-toggle {
-  background: none; border: 1px solid var(--border); border-radius: 20px;
+  background: none; border: 2px solid var(--border);
   padding: 5px 10px; cursor: pointer; font-size: 1rem;
-  color: var(--text-primary); transition: background 0.2s;
+  color: var(--text-primary);
 }
-.dark-toggle:hover { background: var(--cream); }
+.dark-toggle:hover { background: var(--text-primary); color: var(--white); }
 
 /* Mobile Menu Toggle */
 .mobile-menu-btn {
-  display: none; background: none; border: 1px solid var(--border);
-  border-radius: 8px; padding: 6px 10px; cursor: pointer;
+  display: none; background: none; border: 2px solid var(--border);
+  padding: 6px 10px; cursor: pointer;
   font-size: 1.2rem; color: var(--text-primary);
 }
 
 /* ─── Mobile Nav Drawer ─── */
 .mobile-drawer-overlay {
   display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.5); z-index: 300;
+  background: rgba(0,0,0,0.7); z-index: 300;
 }
 .mobile-drawer-overlay.open { display: block; }
 .mobile-drawer {
   position: fixed; top: 0; right: 0; bottom: 0; width: 300px;
   background: var(--white); z-index: 301; overflow-y: auto;
-  transform: translateX(100%); transition: transform 0.3s ease;
-  padding: 20px; box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+  transform: translateX(100%); transition: transform 0.2s ease;
+  padding: 20px; border-left: 4px solid var(--border);
 }
 .mobile-drawer.open { transform: translateX(0); }
 .mobile-drawer-close {
-  background: none; border: none; font-size: 1.5rem; cursor: pointer;
-  color: var(--text-primary); float: right;
+  background: none; border: 2px solid var(--border); font-size: 0.85rem; cursor: pointer;
+  color: var(--text-primary); float: right; padding: 4px 10px;
+  font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.06em;
 }
+.mobile-drawer-close:hover { background: var(--text-primary); color: var(--white); }
 .mobile-drawer h4 {
-  font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.06em; margin: 16px 0 6px;
+  font-family: 'Bebas Neue', sans-serif; font-size: 0.9rem; font-weight: 400;
+  text-transform: uppercase; letter-spacing: 0.1em; margin: 16px 0 6px;
   color: var(--text-muted);
 }
 .mobile-drawer a {
-  display: block; padding: 6px 0; text-decoration: none;
-  color: var(--text-primary); font-size: 0.9rem;
+  display: block; padding: 6px 8px; text-decoration: none;
+  color: var(--text-primary); font-size: 0.9rem; font-weight: 600;
 }
-.mobile-drawer a:hover { color: var(--level-accent); }
+.mobile-drawer a:hover { background: var(--text-primary); color: var(--white); }
 .mobile-drawer .level-color-dot {
-  display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+  display: inline-block; width: 8px; height: 8px;
   margin-right: 6px; vertical-align: middle;
 }
 
@@ -447,52 +447,57 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 500; letter-sp
   align-self: flex-start; margin-top: calc(var(--header-h) + 35px);
 }
 .toc-sidebar h4 {
-  font-family: 'Inter', sans-serif; font-size: 0.7rem; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted);
+  font-family: 'Bebas Neue', sans-serif; font-size: 0.85rem; font-weight: 400;
+  text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);
   margin-bottom: 8px;
 }
 .toc-sidebar a {
   display: block; padding: 3px 0 3px 10px; text-decoration: none;
   font-size: 0.8rem; color: var(--text-muted);
-  border-left: 2px solid transparent; transition: all 0.2s;
-  line-height: 1.4;
+  border-left: 3px solid transparent;
+  line-height: 1.4; font-weight: 600;
 }
-.toc-sidebar a:hover { color: var(--level-accent); }
+.toc-sidebar a:hover { color: var(--text-primary); background: var(--accent-lime); }
 .toc-sidebar a.active {
-  color: var(--level-accent); border-left-color: var(--level-accent);
-  font-weight: 500;
+  color: var(--text-primary); border-left-color: var(--accent-lime);
+  font-weight: 700; background: var(--cream);
 }
 .toc-sidebar a.toc-h3 { padding-left: 20px; font-size: 0.75rem; }
 
 /* Mobile TOC */
 .toc-mobile {
   display: none; margin-bottom: 20px; background: var(--cream);
-  border-radius: 8px; padding: 12px 16px;
+  border: 2px solid var(--border); padding: 12px 16px;
 }
 .toc-mobile summary {
-  font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 600;
-  cursor: pointer; color: var(--text-primary);
+  font-family: 'Source Sans 3', sans-serif; font-size: 0.85rem; font-weight: 700;
+  cursor: pointer; color: var(--text-primary); text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 .toc-mobile a {
   display: block; padding: 4px 0; text-decoration: none;
-  font-size: 0.82rem; color: var(--text-muted);
+  font-size: 0.82rem; color: var(--text-muted); font-weight: 600;
 }
-.toc-mobile a:hover { color: var(--level-accent); }
+.toc-mobile a:hover { color: var(--text-primary); }
 
 /* ─── Index Page ─── */
 .hero {
-  text-align: center; padding-bottom: 40px;
-  border-bottom: 1px solid var(--border); margin-bottom: 40px;
+  text-align: left; padding-bottom: 40px;
+  border-bottom: 4px solid var(--border); margin-bottom: 40px;
 }
 .hero h1 {
-  font-size: 2.6rem; letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 14px;
+  font-size: 4rem; letter-spacing: 0.02em; line-height: 0.95; margin-bottom: 16px;
 }
 .hero .subtitle {
-  font-size: 1.05rem; color: var(--text-secondary);
-  max-width: 580px; margin: 0 auto 20px;
+  font-size: 1.1rem; color: var(--text-secondary);
+  max-width: none; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-left: 4px solid var(--primary-olive); padding-left: 16px;
 }
 .hero .meta {
   font-size: 0.85rem; color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700;
+  margin-top: 16px;
 }
 .hero .meta span { margin: 0 6px; }
 
@@ -501,58 +506,63 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 500; letter-sp
   gap: 12px; margin-bottom: 40px;
 }
 .stat-card {
-  background: var(--cream); border-radius: 8px;
+  background: var(--white); border: 4px solid var(--border);
   padding: 18px 14px; text-align: center;
 }
 .stat-card .number {
-  font-size: 1.8rem; font-weight: 700;
-  color: var(--level-accent-dark, var(--teal-dark)); line-height: 1.2;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.4rem; font-weight: 400;
+  color: var(--text-primary); line-height: 1;
 }
 .stat-card .label {
-  font-size: 0.72rem; color: var(--text-muted);
-  text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px;
+  font-size: 0.7rem; color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 0.1em; margin-top: 4px;
+  font-weight: 700;
 }
-.stat-card.progress-card .number { font-size: 1.4rem; }
+.stat-card.progress-card .number { font-size: 1.8rem; }
 
 .level-section { margin-bottom: 32px; }
 .level-header {
   display: flex; align-items: center; gap: 10px;
   margin-bottom: 12px; padding-bottom: 8px;
-  border-bottom: 1px solid var(--cream-darker);
+  border-bottom: 3px solid var(--border);
 }
 .level-badge {
-  color: var(--white); font-size: 0.65rem; font-weight: 700;
-  padding: 3px 8px; border-radius: 4px;
-  text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--white); font-size: 0.7rem; font-weight: 900;
+  padding: 4px 10px;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  font-family: 'Source Sans 3', sans-serif;
 }
 .level-header h3 {
-  font-size: 1.2rem; color: var(--text-primary); margin-bottom: 0;
+  font-size: 1.4rem; color: var(--text-primary); margin-bottom: 0;
+  letter-spacing: 0.04em;
 }
 .level-header .level-desc {
-  color: var(--text-muted); font-size: 0.88rem;
+  color: var(--text-muted); font-size: 0.88rem; font-weight: 600;
 }
 
 .module-list { list-style: none; display: grid; gap: 6px; }
 .module-card {
   display: flex; align-items: center;
-  background: var(--white); border: 1px solid var(--border);
-  border-radius: 8px; padding: 12px 18px;
+  background: var(--white); border: 2px solid var(--border);
+  padding: 12px 18px;
   text-decoration: none; color: inherit;
-  transition: border-color 0.2s, box-shadow 0.15s, transform 0.1s;
 }
 .module-card:hover {
-  border-color: var(--level-accent, var(--teal-border));
-  box-shadow: 0 2px 8px rgba(72,114,101,0.08);
-  transform: translateY(-1px);
+  background: var(--text-primary); color: var(--white);
 }
+.module-card:hover .module-id { color: var(--accent-lime); }
+.module-card:hover .module-info .duration { color: var(--accent-lime); }
+.module-card:active { transform: translateY(1px); }
 .module-id {
-  font-weight: 700; color: var(--level-accent, var(--teal-dark));
+  font-weight: 700; color: var(--level-accent);
   min-width: 2.8rem; font-size: 0.95rem;
 }
 .module-info { flex: 1; }
-.module-info .title { font-weight: 500; font-size: 0.95rem; }
+.module-info .title { font-weight: 700; font-size: 0.95rem; }
 .module-info .duration { font-size: 0.78rem; color: var(--text-muted); }
 .module-arrow { color: var(--warm-gray); font-size: 1.2rem; margin-left: 8px; }
+.module-card:hover .module-arrow { color: var(--accent-lime); }
 .module-complete-badge {
   color: #16a34a; font-size: 1.1rem; margin-left: 8px;
 }
@@ -560,22 +570,23 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 500; letter-sp
 /* ─── Resource Section on Index ─── */
 .resources-section {
   margin-top: 40px; padding-top: 32px;
-  border-top: 1px solid var(--border);
+  border-top: 4px solid var(--border);
 }
 .resources-section > h3 {
-  font-size: 1.3rem; color: var(--text-primary); margin-bottom: 16px;
+  font-size: 1.6rem; color: var(--text-primary); margin-bottom: 16px;
 }
 .resource-section-group { margin-bottom: 28px; }
 .resource-section-group > h4 {
-  font-family: 'Playfair Display', serif; font-size: 1.1rem;
-  font-weight: 500; color: var(--text-primary); margin-bottom: 12px;
+  font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem;
+  font-weight: 400; color: var(--text-primary); margin-bottom: 12px;
+  text-transform: uppercase; letter-spacing: 0.04em;
 }
 .resource-category { margin-bottom: 16px; }
 .resource-category h5 {
-  font-family: 'Inter', sans-serif; font-size: 0.8rem;
-  font-weight: 600; color: var(--text-muted);
+  font-family: 'Source Sans 3', sans-serif; font-size: 0.8rem;
+  font-weight: 700; color: var(--text-muted);
   margin-bottom: 6px; padding-left: 2px;
-  text-transform: uppercase; letter-spacing: 0.04em;
+  text-transform: uppercase; letter-spacing: 0.06em;
 }
 .resource-grid {
   display: grid;
@@ -584,82 +595,87 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 500; letter-sp
 }
 .resource-link {
   display: block; background: var(--white);
-  border: 1px solid var(--border); border-radius: 6px;
+  border: 2px solid var(--border);
   padding: 8px 14px; text-decoration: none;
-  color: var(--text-primary); font-size: 0.88rem;
-  transition: border-color 0.2s, box-shadow 0.15s;
+  color: var(--text-primary); font-size: 0.88rem; font-weight: 600;
 }
 .resource-link:hover {
-  border-color: var(--level-accent, var(--teal-border)); color: var(--level-accent, var(--teal-dark));
-  box-shadow: 0 1px 4px rgba(72,114,101,0.08);
+  background: var(--text-primary); color: var(--white);
 }
 
 /* ─── Module Pages ─── */
 .module-header {
   margin-bottom: 28px; padding-bottom: 20px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 4px solid var(--border);
 }
 .module-header .breadcrumb {
-  font-size: 0.82rem; color: var(--text-muted); margin-bottom: 6px;
+  font-size: 0.78rem; color: var(--text-muted); margin-bottom: 6px;
+  text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700;
 }
 .module-header .breadcrumb a {
-  color: var(--level-accent, var(--teal-dark)); text-decoration: none;
+  color: var(--text-primary); text-decoration: none;
+  border-bottom: 2px solid var(--accent-lime);
 }
-.module-header .breadcrumb a:hover { text-decoration: underline; }
+.module-header .breadcrumb a:hover { background: var(--accent-lime); }
 
 .module-meta {
   display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;
 }
 .meta-tag {
   font-size: 0.75rem; padding: 3px 10px;
-  border-radius: 20px; font-weight: 500;
+  font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+  font-family: 'Source Sans 3', sans-serif;
 }
-.meta-tag.duration { background: var(--level-accent-light, var(--teal-light)); color: var(--level-accent-dark, var(--teal-dark)); }
-.meta-tag.level { background: var(--cream); color: var(--text-muted); }
+.meta-tag.duration { background: var(--level-accent-light); color: var(--level-accent-dark); border: 2px solid var(--level-accent); }
+.meta-tag.level { background: var(--cream); color: var(--text-muted); border: 2px solid var(--border); }
 
 .objectives-list {
   margin-top: 12px; padding: 12px 16px;
-  background: var(--cream); border-radius: 8px;
+  background: var(--cream); border: 2px solid var(--border);
+  border-left: 5px solid var(--level-accent);
 }
 .objectives-list h4 {
-  font-family: 'Inter', sans-serif; font-size: 0.8rem; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted);
+  font-family: 'Bebas Neue', sans-serif; font-size: 0.9rem; font-weight: 400;
+  text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted);
   margin-bottom: 6px;
 }
 .objectives-list ul { padding-left: 1.2rem; margin: 0; }
 .objectives-list li {
   font-size: 0.88rem; color: var(--text-secondary);
-  margin: 2px 0;
+  margin: 2px 0; font-weight: 600;
 }
 
 /* ─── Markdown Content ─── */
 .content { background: var(--white); padding: 0; }
 
 .content h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.9rem; font-weight: 500;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem; font-weight: 400;
   color: var(--text-primary); margin: 2rem 0 1rem;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.04em; text-transform: uppercase;
 }
 .content h1:first-child { margin-top: 0; }
 
 .content h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.4rem; font-weight: 500;
-  color: var(--level-accent-dark, var(--teal-dark)); margin: 2.5rem 0 0.75rem;
-  padding-bottom: 6px; border-bottom: 1px solid var(--cream-darker);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem; font-weight: 400;
+  color: var(--text-primary); margin: 2.5rem 0 0.75rem;
+  padding-bottom: 6px; border-bottom: 3px solid var(--border);
+  text-transform: uppercase; letter-spacing: 0.04em;
 }
 
 .content h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.12rem; font-weight: 500;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem; font-weight: 400;
   color: var(--text-primary); margin: 1.5rem 0 0.5rem;
+  text-transform: uppercase; letter-spacing: 0.04em;
 }
 
 .content h4 {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.95rem; font-weight: 600;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.95rem; font-weight: 700;
   color: var(--text-primary); margin: 1.2rem 0 0.4rem;
+  text-transform: uppercase; letter-spacing: 0.04em;
 }
 
 .content p { margin: 0.75rem 0; color: var(--text-secondary); }
@@ -671,21 +687,21 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 500; letter-sp
 .content strong { color: var(--text-primary); }
 
 .content a {
-  color: var(--level-accent-dark, var(--teal-dark)); text-decoration: none;
-  border-bottom: 1px solid var(--sage);
+  color: var(--text-primary); text-decoration: none;
+  border-bottom: 2px solid var(--accent-lime);
 }
-.content a:hover { color: var(--level-accent, var(--teal)); border-bottom-color: var(--level-accent, var(--teal)); }
+.content a:hover { background: var(--accent-lime); }
 
 /* Blockquote / Callout base */
 .content blockquote {
-  border-left: 3px solid var(--level-accent, var(--teal));
+  border-left: 5px solid var(--level-accent);
   background: var(--cream); padding: 12px 18px;
-  margin: 1rem 0; border-radius: 0 6px 6px 0;
+  margin: 1rem 0;
 }
 .content blockquote p { color: var(--text-secondary); margin: 0.25rem 0; }
 
 /* Callout variants */
-.callout { padding: 14px 18px; margin: 1rem 0; border-radius: 0 8px 8px 0; border-left: 4px solid; }
+.callout { padding: 14px 18px; margin: 1rem 0; border-left: 5px solid; }
 .callout p { margin: 0.25rem 0; }
 .callout-icon { font-size: 1.1rem; margin-right: 6px; }
 
@@ -707,8 +723,8 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 500; letter-sp
 
 /* Code blocks with copy button */
 .content code {
-  background: var(--cream-dark); color: var(--level-accent-dark, var(--teal-dark));
-  padding: 2px 6px; border-radius: 3px;
+  background: var(--cream-dark); color: var(--text-primary);
+  padding: 2px 6px; border: 1px solid var(--border);
   font-size: 0.87em; font-family: 'SF Mono', 'Cascadia Code', 'Consolas', monospace;
 }
 
@@ -717,24 +733,24 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 500; letter-sp
 }
 .copy-btn {
   position: absolute; top: 8px; right: 8px;
-  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
-  color: #94a3b8; border-radius: 4px; padding: 4px 10px;
+  background: rgba(255,255,255,0.1); border: 2px solid rgba(255,255,255,0.3);
+  color: #94a3b8; padding: 4px 10px;
   font-size: 0.75rem; cursor: pointer; opacity: 0;
-  transition: opacity 0.2s, background 0.2s;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.04em;
 }
 .code-block-wrapper:hover .copy-btn { opacity: 1; }
-.copy-btn:hover { background: rgba(255,255,255,0.2); color: #e2e8f0; }
-.copy-btn.copied { color: #4ade80; border-color: #4ade80; }
+.copy-btn:hover { background: var(--accent-lime); color: #000; border-color: var(--accent-lime); }
+.copy-btn.copied { color: var(--accent-lime); border-color: var(--accent-lime); }
 
 .content pre {
   background: var(--bg-code); color: var(--text-code);
-  padding: 18px 20px; border-radius: 8px;
+  padding: 18px 20px; border: 2px solid var(--border);
   overflow-x: auto; margin: 0;
   font-size: 0.87rem; line-height: 1.55;
 }
 .content pre code {
-  background: none; color: inherit; padding: 0; font-size: inherit;
+  background: none; color: inherit; padding: 0; font-size: inherit; border: none;
 }
 
 /* Tables */
@@ -744,101 +760,291 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 500; letter-sp
 }
 .content th {
   background: var(--cream); color: var(--text-primary);
-  font-weight: 600; text-align: left;
-  padding: 8px 12px; border-bottom: 2px solid var(--border);
-  font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.03em;
+  font-family: 'Bebas Neue', sans-serif; font-weight: 400;
+  text-align: left;
+  padding: 8px 12px; border-bottom: 3px solid var(--border);
+  font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.06em;
 }
 .content td {
-  padding: 8px 12px; border-bottom: 1px solid var(--cream-darker);
+  padding: 8px 12px; border-bottom: 2px solid var(--cream-darker);
   color: var(--text-secondary);
 }
-.content tr:hover td { background: var(--cream); }
+.content tr:hover td { background: var(--accent-lime); color: var(--text-primary); }
 
-.content hr { border: none; border-top: 1px solid var(--cream-darker); margin: 2rem 0; }
-.content img { max-width: 100%; border-radius: 8px; margin: 1rem 0; }
+.content hr { border: none; border-top: 3px solid var(--border); margin: 2rem 0; }
+.content img { max-width: 100%; border: 2px solid var(--border); margin: 1rem 0; }
 
 /* Exercise Cards */
 .exercise-card {
-  background: var(--cream); border-left: 4px solid var(--level-accent, var(--teal));
-  border-radius: 0 8px 8px 0; padding: 20px 24px; margin: 1.5rem 0;
+  background: var(--cream); border: 4px solid var(--border);
+  border-left: 5px solid var(--level-accent);
+  padding: 20px 24px; margin: 1.5rem 0;
 }
 .exercise-card .exercise-badge {
-  display: inline-block; background: var(--level-accent, var(--teal)); color: white;
-  font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 4px;
-  text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px;
+  display: inline-block; background: var(--text-primary); color: var(--accent-lime);
+  font-size: 0.7rem; font-weight: 900; padding: 3px 10px;
+  text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 /* Collapsible sections */
 .content details {
-  margin: 0.75rem 0; border: 1px solid var(--border); border-radius: 8px;
-  overflow: hidden;
+  margin: 0.75rem 0; border: 2px solid var(--border);
 }
 .content details summary {
-  padding: 10px 16px; cursor: pointer; font-weight: 500;
+  padding: 10px 16px; cursor: pointer; font-weight: 700;
   background: var(--cream); color: var(--text-primary);
-  font-size: 0.92rem;
+  font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.02em;
 }
-.content details summary:hover { background: var(--cream-dark); }
-.content details[open] summary { border-bottom: 1px solid var(--border); }
+.content details summary:hover { background: var(--text-primary); color: var(--white); }
+.content details[open] summary { border-bottom: 2px solid var(--border); }
 .content details > :not(summary) { padding: 0 16px; }
 .content details > p { padding: 8px 16px; }
 
 /* ─── Mark Complete Button ─── */
 .mark-complete-section {
   text-align: center; margin: 32px 0 16px;
-  padding: 20px; background: var(--cream); border-radius: 8px;
+  padding: 20px; background: var(--cream); border: 2px solid var(--border);
 }
 .mark-complete-btn {
-  background: var(--level-accent, var(--teal)); color: white;
-  border: none; padding: 10px 24px; border-radius: 20px;
-  font-size: 0.9rem; font-weight: 600; cursor: pointer;
-  transition: background 0.2s, transform 0.1s;
-  font-family: 'Inter', sans-serif;
+  background: var(--text-primary); color: var(--white);
+  border: 2px solid var(--text-primary); padding: 12px 28px;
+  font-size: 0.85rem; font-weight: 900; cursor: pointer;
+  font-family: 'Source Sans 3', sans-serif;
+  text-transform: uppercase; letter-spacing: 0.08em;
 }
-.mark-complete-btn:hover { filter: brightness(0.9); transform: translateY(-1px); }
+.mark-complete-btn:hover { background: var(--accent-lime); color: var(--text-primary); border-color: var(--text-primary); }
+.mark-complete-btn:active { transform: translateY(1px); }
 .mark-complete-btn.completed {
-  background: #16a34a; cursor: default;
+  background: #16a34a; border-color: #16a34a; color: white; cursor: default;
 }
 
 /* ─── Navigation Footer ─── */
 .nav-footer {
   display: flex; justify-content: space-between;
   align-items: center; margin-top: 32px;
-  padding-top: 20px; border-top: 1px solid var(--border);
+  padding-top: 20px; border-top: 4px solid var(--border);
   gap: 12px;
 }
 .nav-btn {
   display: inline-flex; align-items: center; gap: 6px;
-  padding: 8px 18px; border-radius: 20px;
-  text-decoration: none; font-size: 0.85rem; font-weight: 500;
-  transition: background 0.2s, box-shadow 0.15s;
+  padding: 10px 20px;
+  text-decoration: none; font-size: 0.82rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.04em;
+  font-family: 'Source Sans 3', sans-serif;
 }
 .nav-btn.prev {
-  color: var(--text-secondary); background: var(--cream);
-  border: 1px solid var(--border);
+  color: var(--text-primary); background: var(--white);
+  border: 2px solid var(--border);
 }
-.nav-btn.prev:hover { background: var(--cream-dark); }
+.nav-btn.prev:hover { background: var(--text-primary); color: var(--white); }
 .nav-btn.next {
-  color: var(--white); background: var(--level-accent, var(--teal));
-  border: 1px solid var(--level-accent, var(--teal)); margin-left: auto;
+  color: var(--text-primary); background: var(--accent-lime);
+  border: 2px solid var(--text-primary); margin-left: auto;
 }
-.nav-btn.next:hover { filter: brightness(0.9); }
+.nav-btn.next:hover { background: var(--text-primary); color: var(--accent-lime); }
 .nav-btn.home {
-  color: var(--level-accent-dark, var(--teal-dark)); background: var(--white);
-  border: 1px solid var(--border);
+  color: var(--text-primary); background: var(--white);
+  border: 2px solid var(--border);
 }
-.nav-btn.home:hover { background: var(--cream); }
+.nav-btn.home:hover { background: var(--text-primary); color: var(--white); }
+.nav-btn:active { transform: translateY(1px); }
 
 .keyboard-hint {
   text-align: center; margin-top: 12px;
   font-size: 0.75rem; color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 0.04em; font-weight: 700;
 }
 
 /* ─── Footer ─── */
 .site-footer {
   text-align: center; padding: 28px 24px;
-  color: var(--text-muted); font-size: 0.78rem;
-  border-top: 1px solid var(--border); margin-top: 48px;
+  color: var(--warm-gray); font-size: 0.78rem;
+  border-top: 4px solid var(--level-accent); margin-top: 48px;
+  background: var(--text-primary);
+  text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+/* ─── Landing Page ─── */
+.landing-hero {
+  padding: 60px 0 40px;
+  border-bottom: 4px solid var(--border);
+  margin-bottom: 0;
+}
+.landing-hero .system-tag {
+  display: inline-block; background: var(--accent-lime); color: #000;
+  padding: 4px 14px; font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.75rem; font-weight: 900; letter-spacing: 0.2em;
+  text-transform: uppercase; margin-bottom: 20px;
+}
+.landing-hero h1 {
+  font-size: 5rem; line-height: 0.9; margin-bottom: 24px;
+  letter-spacing: 0.02em;
+}
+.landing-hero .tagline {
+  font-size: 1.15rem; color: var(--text-secondary);
+  font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+  border-left: 4px solid var(--primary-olive); padding-left: 16px;
+  max-width: 600px; line-height: 1.5;
+}
+
+.landing-status-bar {
+  background: var(--text-primary); color: var(--white);
+  padding: 24px; margin-bottom: 0;
+  display: flex; flex-wrap: wrap; align-items: center;
+  justify-content: space-between; gap: 20px;
+  border-bottom: 4px solid var(--primary-olive);
+}
+.landing-status-bar .status-group {
+  display: flex; align-items: center; gap: 24px;
+}
+.landing-status-bar .status-item {
+  display: flex; flex-direction: column;
+}
+.landing-status-bar .status-label {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.65rem; letter-spacing: 0.2em;
+  color: var(--accent-lime); font-weight: 900;
+  text-transform: uppercase;
+}
+.landing-status-bar .status-value {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem; letter-spacing: 0.04em;
+}
+.landing-status-bar .divider {
+  width: 1px; height: 40px; background: #333;
+}
+.landing-cta-btn {
+  display: inline-block; padding: 14px 32px;
+  background: var(--accent-lime); color: #000;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.85rem; font-weight: 900;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  text-decoration: none; border: 2px solid var(--accent-lime);
+}
+.landing-cta-btn:hover {
+  background: #fff; color: #000; border-color: #fff;
+}
+.landing-cta-btn:active { transform: translateY(1px); }
+
+.landing-section {
+  padding: 48px 0; border-bottom: 4px solid var(--border);
+}
+.landing-section-header {
+  display: flex; align-items: baseline; justify-content: space-between;
+  border-bottom: 3px solid var(--border); padding-bottom: 12px;
+  margin-bottom: 32px;
+}
+.landing-section-header h2 {
+  font-size: 2.4rem; border: none; padding: 0; margin: 0;
+}
+.landing-section-header .version-tag {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.75rem; font-weight: 700; color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+
+.landing-outcomes {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.landing-outcome {
+  background: var(--white); border: 2px solid var(--border);
+  padding: 24px;
+}
+.landing-outcome .outcome-number {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem; color: var(--cream-darker);
+  line-height: 1; margin-bottom: 8px;
+  opacity: 0.4;
+}
+.landing-outcome h3 {
+  font-size: 1.1rem; margin-bottom: 8px;
+  border: none; letter-spacing: 0.04em;
+}
+.landing-outcome p {
+  font-size: 0.88rem; color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.landing-levels {
+  display: grid; gap: 12px;
+}
+.landing-level {
+  display: flex; align-items: stretch;
+  border: 2px solid var(--border); background: var(--white);
+  overflow: hidden;
+}
+.landing-level .level-num {
+  display: flex; align-items: center; justify-content: center;
+  min-width: 80px; padding: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem; color: #fff; letter-spacing: 0.04em;
+}
+.landing-level .level-body {
+  flex: 1; padding: 20px 24px;
+  border-left: 4px solid var(--border);
+}
+.landing-level .level-body h3 {
+  font-size: 1.1rem; margin: 0 0 4px; border: none;
+}
+.landing-level .level-body p {
+  font-size: 0.85rem; color: var(--text-secondary);
+  margin: 0 0 6px;
+}
+.landing-level .level-body .module-count {
+  font-size: 0.72rem; color: var(--text-muted);
+  font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.landing-audience {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+}
+.landing-audience-card {
+  border: 2px solid var(--border); padding: 24px;
+  background: var(--white);
+}
+.landing-audience-card h3 {
+  font-size: 1rem; margin-bottom: 12px; border: none;
+}
+.landing-audience-card ul {
+  list-style: none; padding: 0;
+}
+.landing-audience-card li {
+  padding: 4px 0; font-size: 0.88rem;
+  color: var(--text-secondary); font-weight: 600;
+  border-bottom: 1px solid var(--cream-darker);
+}
+.landing-audience-card li:last-child { border-bottom: none; }
+.landing-audience-card li::before {
+  content: '//'; margin-right: 8px;
+  color: var(--accent-lime); font-weight: 900;
+}
+
+.landing-bottom-cta {
+  padding: 48px 0; text-align: center;
+  border-bottom: 4px solid var(--border);
+}
+.landing-bottom-cta h2 {
+  font-size: 3rem; margin-bottom: 16px;
+  border: none; padding: 0;
+}
+.landing-bottom-cta p {
+  color: var(--text-secondary); font-size: 1rem;
+  font-weight: 600; margin-bottom: 28px;
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+
+@media (max-width: 768px) {
+  .landing-hero h1 { font-size: 2.8rem; }
+  .landing-status-bar { flex-direction: column; align-items: flex-start; }
+  .landing-status-bar .divider { width: 100%; height: 1px; }
+  .landing-audience { grid-template-columns: 1fr; }
+  .landing-section-header h2 { font-size: 1.8rem; }
+  .landing-outcomes { grid-template-columns: 1fr; }
+  .landing-level .level-num { min-width: 60px; font-size: 1.5rem; }
 }
 
 /* ─── Print ─── */
@@ -849,7 +1055,7 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 500; letter-sp
   .content { padding: 0; }
   .page-container { max-width: 100%; padding: 0; }
   .page-wrapper { display: block; }
-  body { font-size: 12pt; }
+  body { font-size: 12pt; background-image: none; }
 }
 
 /* ─── Responsive ─── */
@@ -860,7 +1066,7 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 500; letter-sp
 
 @media (max-width: 768px) {
   .page-container { padding: calc(var(--header-h) + 20px) 16px 60px; }
-  .hero h1 { font-size: 1.8rem; }
+  .hero h1 { font-size: 2.4rem; }
   .stats-row { grid-template-columns: repeat(2, 1fr); gap: 8px; }
   .resource-grid { grid-template-columns: 1fr; }
   .header-inner { padding: 0 16px; }
@@ -1235,7 +1441,7 @@ function parseCsvLine(line) {
 // ─── Mobile drawer content ──────────────────────────────────────────────────
 
 function buildMobileDrawerHtml() {
-  let html = '<button class="mobile-drawer-close">&times;</button>\n';
+  let html = '<button class="mobile-drawer-close">[CLOSE]</button>\n';
   html += '<h4 style="margin-top:0">Course Modules</h4>';
   for (const level of levels) {
     const color = levelColors[level.id];
@@ -1245,7 +1451,7 @@ function buildMobileDrawerHtml() {
     }
   }
   html += '<h4>Resources</h4>';
-  html += '<a href="index.html#resources">View All Resources</a>';
+  html += '<a href="course.html#resources">View All Resources</a>';
   return html;
 }
 
@@ -1268,9 +1474,9 @@ function htmlPage({ title, bodyContent, isIndex = false, levelId = null, hasProg
   ${hasProgress ? '<div class="reading-progress"></div>' : ''}
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="header-brand">Copilot for Scrum Masters</a>
+      <a href="index.html" class="header-brand">COPILOT_SM_COURSE</a>
       <div class="header-right">
-        ${isIndex ? '' : '<a href="index.html" class="header-home">&larr; Course Home</a>'}
+        ${isIndex ? '' : '<a href="course.html" class="header-home">COURSE_HOME</a>'}
         <button class="dark-toggle" aria-label="Toggle dark mode">&#9790;</button>
         <button class="mobile-menu-btn" aria-label="Open menu">&#9776;</button>
       </div>
@@ -1285,7 +1491,7 @@ function htmlPage({ title, bodyContent, isIndex = false, levelId = null, hasProg
     </div>
   </div>
   <footer class="site-footer">
-    Copilot for AI-Enabled Scrum Masters &middot; v2.0 &middot; Internal Training Material
+    COPILOT_FOR_AI-ENABLED_SCRUM_MASTERS &middot; V2.0 &middot; INTERNAL_TRAINING_MATERIAL
   </footer>
   <script>${JS}</script>
 </body>
@@ -1317,6 +1523,187 @@ function generateTocHtml(contentHtml) {
   mobile += '</details>';
 
   return { sidebar, mobile };
+}
+
+// ─── Build Landing Page ─────────────────────────────────────────────────────
+
+function buildLandingPage() {
+  const totalModules = allModules.length;
+
+  // Build levels overview
+  let levelsHtml = '';
+  for (const level of levels) {
+    const color = levelColors[level.id];
+    const moduleCount = level.modules.length;
+    const totalDuration = level.modules.reduce((sum, m) => {
+      const mins = parseInt(m.duration) || 0;
+      return sum + mins;
+    }, 0);
+    const hours = Math.floor(totalDuration / 60);
+    const mins = totalDuration % 60;
+    const durationStr = hours > 0 ? `${hours}H ${mins}MIN` : `${mins} MIN`;
+
+    levelsHtml += `
+    <div class="landing-level">
+      <div class="level-num" style="background:${color.accent}">L${level.id}</div>
+      <div class="level-body">
+        <h3>${escapeHtml(level.title)}</h3>
+        <p>${escapeHtml(level.description)}</p>
+        <span class="module-count">${moduleCount} MODULES &middot; ${durationStr}</span>
+      </div>
+    </div>`;
+  }
+
+  const body = `
+    <div class="landing-hero">
+      <div class="system-tag">TRAINING_PROGRAM // V2.0</div>
+      <h1>MICROSOFT COPILOT FOR<br>SCRUM MASTERS</h1>
+      <p class="tagline">
+        Transform from a traditional Scrum Master into an AI-native leader.
+        27 modules across 6 levels &mdash; from first prompt to fully automated practice.
+      </p>
+    </div>
+
+    <div class="landing-status-bar">
+      <div class="status-group">
+        <div class="status-item">
+          <span class="status-label">FORMAT</span>
+          <span class="status-value">SELF_PACED</span>
+        </div>
+        <div class="divider"></div>
+        <div class="status-item">
+          <span class="status-label">MODULES</span>
+          <span class="status-value">${totalModules}</span>
+        </div>
+        <div class="divider"></div>
+        <div class="status-item">
+          <span class="status-label">DURATION</span>
+          <span class="status-value">~13 HOURS</span>
+        </div>
+        <div class="divider"></div>
+        <div class="status-item">
+          <span class="status-label">LEVELS</span>
+          <span class="status-value">6</span>
+        </div>
+      </div>
+      <a href="course.html" class="landing-cta-btn">ENTER_COURSE</a>
+    </div>
+
+    <div class="landing-section">
+      <div class="landing-section-header">
+        <h2>WHAT_YOU_WILL_LEARN</h2>
+        <span class="version-tag">CORE_OUTCOMES</span>
+      </div>
+      <div class="landing-outcomes">
+        <div class="landing-outcome">
+          <div class="outcome-number">01</div>
+          <h3>AI-POWERED CEREMONIES</h3>
+          <p>Prepare, facilitate, and process sprint ceremonies with Copilot as your thinking partner. Generate agendas, handle difficult situations, and extract insights automatically.</p>
+        </div>
+        <div class="landing-outcome">
+          <div class="outcome-number">02</div>
+          <h3>PREDICTIVE INTELLIGENCE</h3>
+          <p>Build early warning systems from team data. Detect sprint risks before they materialize. Move from reactive firefighting to proactive intervention.</p>
+        </div>
+        <div class="landing-outcome">
+          <div class="outcome-number">03</div>
+          <h3>MULTI-PERSONA PROMPTING</h3>
+          <p>Create developer, PO, and stakeholder personas to get multi-perspective feedback. Build a reusable prompt library for coaching conversations and conflict resolution.</p>
+        </div>
+        <div class="landing-outcome">
+          <div class="outcome-number">04</div>
+          <h3>DATA-DRIVEN DECISIONS</h3>
+          <p>Track the 10 metrics that actually matter. Build live KPI dashboards. Quantify and communicate your impact to executives in their language.</p>
+        </div>
+        <div class="landing-outcome">
+          <div class="outcome-number">05</div>
+          <h3>SCALING & INFLUENCE</h3>
+          <p>Coordinate across multiple teams. Navigate organizational politics. Build executive-ready business cases for agile transformation without authority.</p>
+        </div>
+        <div class="landing-outcome">
+          <div class="outcome-number">06</div>
+          <h3>AI AGENTS & AUTOMATION</h3>
+          <p>Design agent workflows for repetitive tasks. Automate the weekly SM rhythm. Build your personal AI-augmented operating system for sustainable practice.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="landing-section">
+      <div class="landing-section-header">
+        <h2>COURSE_ARCHITECTURE</h2>
+        <span class="version-tag">6_LEVELS</span>
+      </div>
+      <div class="landing-levels">
+        ${levelsHtml}
+      </div>
+    </div>
+
+    <div class="landing-section">
+      <div class="landing-section-header">
+        <h2>WHO_THIS_IS_FOR</h2>
+        <span class="version-tag">TARGET_AUDIENCE</span>
+      </div>
+      <div class="landing-audience">
+        <div class="landing-audience-card">
+          <h3>IDEAL_PARTICIPANT</h3>
+          <ul>
+            <li>Scrum Masters seeking AI augmentation</li>
+            <li>Agile Coaches exploring Copilot</li>
+            <li>RTEs managing multiple teams</li>
+            <li>Team leads in Scrum environments</li>
+            <li>SM aspirants building modern skills</li>
+          </ul>
+        </div>
+        <div class="landing-audience-card">
+          <h3>PREREQUISITES</h3>
+          <ul>
+            <li>Basic Scrum framework understanding</li>
+            <li>Microsoft 365 with Copilot license</li>
+            <li>No prior AI/ML knowledge needed</li>
+            <li>Access to Microsoft Teams & Outlook</li>
+            <li>Willingness to experiment with AI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="landing-section">
+      <div class="landing-section-header">
+        <h2>HANDS-ON_PRACTICE</h2>
+        <span class="version-tag">METHODOLOGY</span>
+      </div>
+      <div class="landing-audience">
+        <div class="landing-audience-card">
+          <h3>FICTIONAL_TEAM_CONTEXT</h3>
+          <ul>
+            <li>Velocity Squad &mdash; 7-person team at Accenture</li>
+            <li>Sprint 47 of the AKX project</li>
+            <li>Real sprint data, metrics, and artifacts</li>
+            <li>Authentic team dynamics and challenges</li>
+            <li>Horizon Program for multi-team exercises</li>
+          </ul>
+        </div>
+        <div class="landing-audience-card">
+          <h3>WHAT_YOU_GET</h3>
+          <ul>
+            <li>78+ ready-to-use prompt templates</li>
+            <li>Copy-paste exercises for every module</li>
+            <li>Team personas for roleplay scenarios</li>
+            <li>Sample files: metrics, ceremonies, health data</li>
+            <li>Cheat sheets for daily SM workflows</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="landing-bottom-cta">
+      <h2>READY_TO_BEGIN?</h2>
+      <p>27 modules &middot; 6 levels &middot; ~13 hours &middot; self-paced</p>
+      <a href="course.html" class="landing-cta-btn">ENTER_COURSE</a>
+    </div>
+  `;
+
+  return htmlPage({ title: 'AI-Enabled Scrum Masters', bodyContent: body, isIndex: true });
 }
 
 // ─── Build Index Page ───────────────────────────────────────────────────────
@@ -1374,7 +1761,7 @@ function buildIndexPage() {
   const body = `
     <div class="hero">
       <h1>Microsoft Copilot for AI-Enabled Scrum Masters</h1>
-      <p class="subtitle">Transform into an AI-native Scrum Master &mdash; from predictive intelligence to organizational impact</p>
+      <p class="subtitle">FROM_PREDICTIVE_INTELLIGENCE // TO_ORGANIZATIONAL_IMPACT</p>
       <p class="meta">
         <span>Self-Paced</span> &middot;
         <span>${totalModules} Modules</span> &middot;
@@ -1441,7 +1828,7 @@ function buildModulePage(mod, index) {
   } else {
     navFooter += '<span></span>';
   }
-  navFooter += `<a href="index.html" class="nav-btn home">Home</a>`;
+  navFooter += `<a href="course.html" class="nav-btn home">Home</a>`;
   if (next) {
     navFooter += `<a href="${moduleFilename(next)}" class="nav-btn next">${next.id} ${escapeHtml(next.title)} &rarr;</a>`;
   }
@@ -1451,7 +1838,7 @@ function buildModulePage(mod, index) {
   const body = `
     <div class="module-header">
       <div class="breadcrumb">
-        <a href="index.html">Course Home</a> &rsaquo; Level ${level.id}: ${escapeHtml(level.title)} &rsaquo; Module ${mod.id}
+        <a href="course.html">COURSE_HOME</a> // LEVEL_${level.id}: ${escapeHtml(level.title)} // MODULE_${mod.id}
       </div>
       <div class="module-meta">
         <span class="meta-tag duration">${mod.duration}</span>
@@ -1487,18 +1874,644 @@ function buildResourcePage(file, sectionTitle, categoryTitle) {
   const body = `
     <div class="module-header">
       <div class="breadcrumb">
-        <a href="index.html">Course Home</a> &rsaquo; ${escapeHtml(sectionTitle)} &rsaquo; ${escapeHtml(categoryTitle)} &rsaquo; ${escapeHtml(file.title)}
+        <a href="course.html">COURSE_HOME</a> // ${escapeHtml(sectionTitle)} // ${escapeHtml(categoryTitle)} // ${escapeHtml(file.title)}
       </div>
     </div>
     <div class="content">
       ${contentHtml}
     </div>
     <div class="nav-footer">
-      <a href="index.html" class="nav-btn home">&larr; Back to Course Home</a>
+      <a href="course.html" class="nav-btn home">BACK_TO_COURSE</a>
     </div>
   `;
 
   return htmlPage({ title: file.title, bodyContent: body });
+}
+
+// ─── Experimental SPA Viewer ────────────────────────────────────────────────
+
+function buildExperimentalViewer() {
+  // Build modules data with embedded HTML content
+  const modulesData = {};
+  for (const level of levels) {
+    for (const mod of level.modules) {
+      const contentHtml = readMarkdown(mod.path);
+      modulesData[mod.id] = {
+        title: mod.title,
+        duration: mod.duration,
+        objectives: mod.objectives || [],
+        levelId: level.id,
+        levelTitle: level.title,
+        content: contentHtml
+      };
+    }
+  }
+
+  // Build levels data (without content, just structure)
+  const levelsData = levels.map(l => ({
+    id: l.id,
+    title: l.title,
+    description: l.description,
+    modules: l.modules.map(m => ({ id: m.id, title: m.title, duration: m.duration }))
+  }));
+
+  // Level colors for the UI
+  const levelColorsData = {
+    '1': { accent: '#0d9488', name: 'Teal' },
+    '2': { accent: '#006495', name: 'Blue' },
+    '3': { accent: '#d97706', name: 'Amber' },
+    '4': { accent: '#16a34a', name: 'Green' },
+    '5': { accent: '#732ee4', name: 'Purple' },
+    '6': { accent: '#0891b2', name: 'Cyan' },
+  };
+
+  // Embed as JSON in the HTML
+  const dataScript = `
+    const COURSE_DATA = {
+      modules: ${JSON.stringify(modulesData)},
+      levels: ${JSON.stringify(levelsData)},
+      levelColors: ${JSON.stringify(levelColorsData)},
+      totalModules: ${allModules.length}
+    };
+  `;
+
+  const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Microsoft Copilot for Scrum Masters — Course Viewer</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#006495",
+            "primary-container": "#49a3e1",
+            "primary-fixed": "#cbe6ff",
+            "on-primary": "#ffffff",
+            "secondary": "#944a00",
+            "secondary-container": "#fd8a26",
+            "secondary-fixed": "#ffdcc6",
+            "tertiary": "#732ee4",
+            "tertiary-container": "#ad85ff",
+            "surface": "#f7f9ff",
+            "surface-container": "#eaeef5",
+            "surface-container-low": "#f0f4fb",
+            "surface-container-highest": "#dee3e9",
+            "on-surface": "#171c21",
+            "on-surface-variant": "#3f4850",
+            "outline": "#707881",
+            "outline-variant": "#bfc7d1",
+            "background": "#f7f9ff",
+          },
+          fontFamily: {
+            "headline": ["Plus Jakarta Sans", "sans-serif"],
+            "body": ["Inter", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #f7f9ff; }
+
+    /* Content typography */
+    .module-content h1 { font-family: 'Plus Jakarta Sans'; font-size: 1.75rem; font-weight: 800; color: #171c21; margin: 2rem 0 1rem; }
+    .module-content h2 { font-family: 'Plus Jakarta Sans'; font-size: 1.4rem; font-weight: 700; color: #006495; margin: 2rem 0 0.75rem; padding-bottom: 8px; border-bottom: 2px solid #dee3e9; }
+    .module-content h3 { font-family: 'Plus Jakarta Sans'; font-size: 1.15rem; font-weight: 700; color: #171c21; margin: 1.5rem 0 0.5rem; }
+    .module-content h4 { font-size: 0.95rem; font-weight: 600; color: #171c21; margin: 1.2rem 0 0.4rem; }
+    .module-content p { margin: 0.75rem 0; color: #3f4850; line-height: 1.7; }
+    .module-content a { color: #006495; text-decoration: underline; text-decoration-color: #cbe6ff; text-underline-offset: 2px; }
+    .module-content a:hover { text-decoration-color: #006495; }
+    .module-content strong { color: #171c21; }
+    .module-content ul, .module-content ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+    .module-content li { margin: 0.3rem 0; color: #3f4850; }
+    .module-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    .module-content th { background: #f0f4fb; color: #171c21; font-weight: 600; text-align: left; padding: 10px 14px; border-bottom: 2px solid #dee3e9; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.03em; }
+    .module-content td { padding: 10px 14px; border-bottom: 1px solid #eaeef5; color: #3f4850; }
+    .module-content tr:hover td { background: #f7f9ff; }
+    .module-content hr { border: none; border-top: 2px solid #eaeef5; margin: 2rem 0; }
+    .module-content img { max-width: 100%; border-radius: 12px; margin: 1rem 0; }
+    .module-content code { background: #f0f4fb; color: #006495; padding: 2px 6px; border-radius: 4px; font-size: 0.87em; }
+    .module-content pre { background: #171c21; color: #90cdff; padding: 18px 20px; border-radius: 12px; overflow-x: auto; font-size: 0.87rem; line-height: 1.55; }
+    .module-content pre code { background: none; color: inherit; padding: 0; }
+    .module-content blockquote { border-left: 3px solid #006495; background: #f0f4fb; padding: 12px 18px; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+
+    /* Callouts */
+    .module-content .callout { padding: 14px 18px; margin: 1rem 0; border-radius: 12px; border-left: 4px solid; }
+    .module-content .callout-tip { background: #f0fdf4; border-left-color: #16a34a; }
+    .module-content .callout-tip p { color: #15803d; }
+    .module-content .callout-warning { background: #fefce8; border-left-color: #ca8a04; }
+    .module-content .callout-warning p { color: #854d0e; }
+    .module-content .callout-reference { background: #eff6ff; border-left-color: #2563eb; }
+    .module-content .callout-reference p { color: #1e40af; }
+    .module-content .callout-try { background: #faf5ff; border-left-color: #9333ea; }
+    .module-content .callout-try p { color: #6b21a8; }
+
+    /* Exercise cards */
+    .module-content .exercise-card { background: #f0f4fb; border: 1px solid #dee3e9; border-left: 4px solid #006495; border-radius: 12px; padding: 20px 24px; margin: 1.5rem 0; }
+    .module-content .exercise-badge { display: inline-block; background: #006495; color: white; font-size: 0.7rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px; }
+
+    /* Code block wrapper */
+    .module-content .code-block-wrapper { position: relative; margin: 1rem 0; }
+    .module-content .copy-btn { position: absolute; top: 8px; right: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #90cdff; border-radius: 8px; padding: 4px 12px; font-size: 0.75rem; cursor: pointer; opacity: 0; transition: opacity 0.2s; font-family: 'Inter', sans-serif; }
+    .module-content .code-block-wrapper:hover .copy-btn { opacity: 1; }
+    .module-content .copy-btn:hover { background: rgba(255,255,255,0.2); }
+    .module-content .copy-btn.copied { color: #4ade80; border-color: #4ade80; }
+
+    /* Smooth transitions */
+    .level-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .level-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    .module-list-item { transition: background 0.15s ease; }
+    .module-list-item:hover { background: #f0f4fb; }
+
+    /* Progress ring animation */
+    .progress-ring-circle { transition: stroke-dashoffset 0.6s ease; }
+
+    /* Material symbols sizing */
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400; vertical-align: middle; }
+  </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen">
+
+  <!-- Navigation bar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-lg flex justify-between items-center px-4 sm:px-8 h-16 shadow-sm">
+    <div class="flex items-center gap-4 sm:gap-8">
+      <span class="text-lg sm:text-xl font-bold bg-gradient-to-r from-sky-700 to-sky-500 bg-clip-text text-transparent font-headline tracking-tight cursor-pointer" onclick="showDashboard()">
+        Copilot SM Course
+      </span>
+      <a href="course.html" class="hidden sm:inline text-sm text-on-surface-variant hover:text-primary transition-colors font-body">
+        Static Version
+      </a>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="text-xs font-bold text-primary px-3 py-1 bg-primary/10 rounded-full" id="nav-progress">0/27</span>
+    </div>
+  </nav>
+
+  <!-- Dashboard View -->
+  <main id="dashboard-view" class="pt-20 pb-12 px-4 sm:px-8 max-w-7xl mx-auto">
+    <header class="mb-10">
+      <h1 class="text-3xl sm:text-4xl font-extrabold font-headline text-on-surface tracking-tight mb-2">
+        Microsoft Copilot for Scrum Masters
+      </h1>
+      <p class="text-on-surface-variant text-lg">27 modules across 6 levels &mdash; your AI-enabled SM journey</p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+      <!-- Continue Learning Hero Card -->
+      <div id="hero-card" class="md:col-span-8 bg-white rounded-2xl shadow-sm border border-outline-variant/30 p-6 sm:p-8"></div>
+
+      <!-- Stats Card -->
+      <div id="stats-card" class="md:col-span-4 bg-white rounded-2xl shadow-sm border border-outline-variant/30 p-6 flex flex-col items-center justify-center"></div>
+
+      <!-- Level Cards Section -->
+      <div id="level-cards" class="md:col-span-12"></div>
+
+      <!-- Recent Completions -->
+      <div id="recent-completions" class="md:col-span-12"></div>
+    </div>
+  </main>
+
+  <!-- Module View -->
+  <main id="module-view" class="hidden pt-20 pb-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8">
+      <div id="module-breadcrumb" class="mb-4"></div>
+      <div id="module-header" class="mb-8"></div>
+      <div id="module-content" class="module-content"></div>
+      <div id="module-complete-btn" class="my-8"></div>
+      <div id="module-nav" class="flex justify-between items-center py-6 border-t border-outline-variant/30"></div>
+    </div>
+  </main>
+
+  <script>
+    ${dataScript}
+  </script>
+  <script>
+    // ─── State ──────────────────────────────────────────────────────────────
+    let currentView = 'dashboard';
+    let currentModuleId = null;
+    let expandedLevels = new Set();
+
+    // ─── Progress (localStorage) ────────────────────────────────────────────
+    const STORAGE_KEY = 'copilot-sm-progress';
+
+    function getProgress() {
+      try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); }
+      catch { return {}; }
+    }
+
+    function setProgress(moduleId, completed) {
+      const prog = getProgress();
+      if (completed) {
+        prog[moduleId] = { completed: true, timestamp: Date.now() };
+      } else {
+        delete prog[moduleId];
+      }
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(prog));
+    }
+
+    function isCompleted(moduleId) {
+      const prog = getProgress();
+      return !!(prog[moduleId] && prog[moduleId].completed);
+    }
+
+    function getCompletedCount() {
+      return Object.values(getProgress()).filter(v => v && v.completed).length;
+    }
+
+    function getCompletionTimestamp(moduleId) {
+      const prog = getProgress();
+      return prog[moduleId] ? prog[moduleId].timestamp : null;
+    }
+
+    // ─── Ordered module list ────────────────────────────────────────────────
+    const orderedModuleIds = COURSE_DATA.levels.flatMap(l => l.modules.map(m => m.id));
+
+    function getModuleIndex(moduleId) {
+      return orderedModuleIds.indexOf(moduleId);
+    }
+
+    function getNextModule() {
+      for (const id of orderedModuleIds) {
+        if (!isCompleted(id)) return id;
+      }
+      return null;
+    }
+
+    function getPrevModuleId(moduleId) {
+      const idx = getModuleIndex(moduleId);
+      return idx > 0 ? orderedModuleIds[idx - 1] : null;
+    }
+
+    function getNextModuleId(moduleId) {
+      const idx = getModuleIndex(moduleId);
+      return idx < orderedModuleIds.length - 1 ? orderedModuleIds[idx + 1] : null;
+    }
+
+    // ─── View Switching ─────────────────────────────────────────────────────
+    function showDashboard() {
+      currentView = 'dashboard';
+      currentModuleId = null;
+      document.getElementById('dashboard-view').classList.remove('hidden');
+      document.getElementById('module-view').classList.add('hidden');
+      renderDashboard();
+      window.scrollTo(0, 0);
+      history.pushState({ view: 'dashboard' }, '', '#');
+    }
+
+    function showModule(moduleId) {
+      if (!COURSE_DATA.modules[moduleId]) return;
+      currentView = 'module';
+      currentModuleId = moduleId;
+      document.getElementById('dashboard-view').classList.add('hidden');
+      document.getElementById('module-view').classList.remove('hidden');
+      renderModule(moduleId);
+      window.scrollTo(0, 0);
+      history.pushState({ view: 'module', moduleId }, '', '#module-' + moduleId);
+    }
+
+    // ─── Dashboard Rendering ────────────────────────────────────────────────
+    function renderDashboard() {
+      updateNavProgress();
+      renderHeroCard();
+      renderStatsCard();
+      renderLevelCards();
+      renderRecentCompletions();
+    }
+
+    function updateNavProgress() {
+      document.getElementById('nav-progress').textContent = getCompletedCount() + '/' + COURSE_DATA.totalModules;
+    }
+
+    function renderHeroCard() {
+      const el = document.getElementById('hero-card');
+      const nextId = getNextModule();
+      const completed = getCompletedCount();
+
+      if (!nextId || completed === COURSE_DATA.totalModules) {
+        el.innerHTML = '<div class="flex items-center gap-4">' +
+          '<span class="material-symbols-outlined text-4xl text-green-600">emoji_events</span>' +
+          '<div>' +
+            '<h2 class="text-2xl font-bold font-headline text-on-surface">Course Complete!</h2>' +
+            '<p class="text-on-surface-variant mt-1">Congratulations! You have completed all 27 modules.</p>' +
+          '</div>' +
+        '</div>';
+        return;
+      }
+
+      const mod = COURSE_DATA.modules[nextId];
+      const levelColor = COURSE_DATA.levelColors[mod.levelId].accent;
+      const pct = Math.round((completed / COURSE_DATA.totalModules) * 100);
+
+      el.innerHTML =
+        '<p class="text-sm font-semibold text-on-surface-variant uppercase tracking-wider mb-3">Continue Learning</p>' +
+        '<h2 class="text-xl sm:text-2xl font-bold font-headline text-on-surface mb-2">' +
+          'Module ' + nextId + ': ' + mod.title +
+        '</h2>' +
+        '<div class="flex flex-wrap items-center gap-2 mb-4">' +
+          '<span class="text-xs font-bold px-3 py-1 rounded-full text-white" style="background:' + levelColor + '">Level ' + mod.levelId + ': ' + mod.levelTitle + '</span>' +
+          '<span class="text-xs text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span>' + mod.duration + '</span>' +
+        '</div>' +
+        '<div class="w-full bg-surface-container rounded-full h-2 mb-4">' +
+          '<div class="h-2 rounded-full bg-gradient-to-r from-primary to-primary-container" style="width:' + pct + '%"></div>' +
+        '</div>' +
+        '<div class="flex items-center justify-between">' +
+          '<span class="text-sm text-on-surface-variant">' + pct + '% complete (' + completed + '/' + COURSE_DATA.totalModules + ' modules)</span>' +
+          '<button onclick="showModule(\\'' + nextId + '\\')" class="px-5 py-2.5 bg-primary text-white rounded-xl font-semibold text-sm hover:bg-primary/90 transition-colors flex items-center gap-2">' +
+            '<span class="material-symbols-outlined text-lg">play_arrow</span>Resume' +
+          '</button>' +
+        '</div>';
+    }
+
+    function renderStatsCard() {
+      const el = document.getElementById('stats-card');
+      const completed = getCompletedCount();
+      const total = COURSE_DATA.totalModules;
+      const pct = total > 0 ? completed / total : 0;
+      const circumference = 2 * Math.PI * 40;
+      const offset = circumference * (1 - pct);
+
+      // Estimate remaining time
+      let remainingMinutes = 0;
+      for (const id of orderedModuleIds) {
+        if (!isCompleted(id)) {
+          const dur = COURSE_DATA.modules[id].duration;
+          const m = dur.match(/(\\d+)/);
+          if (m) remainingMinutes += parseInt(m[1]);
+        }
+      }
+      const hours = Math.floor(remainingMinutes / 60);
+      const mins = remainingMinutes % 60;
+      const timeStr = hours > 0 ? hours + 'h ' + mins + 'm' : mins + 'm';
+
+      el.innerHTML =
+        '<svg width="96" height="96" class="mb-3">' +
+          '<circle cx="48" cy="48" r="40" fill="none" stroke="#eaeef5" stroke-width="8"/>' +
+          '<circle class="progress-ring-circle" cx="48" cy="48" r="40" fill="none" stroke="#006495" stroke-width="8" stroke-linecap="round" ' +
+            'stroke-dasharray="' + circumference + '" stroke-dashoffset="' + offset + '" transform="rotate(-90 48 48)"/>' +
+          '<text x="48" y="44" text-anchor="middle" font-size="18" font-weight="700" fill="#171c21" font-family="Plus Jakarta Sans">' + Math.round(pct * 100) + '%</text>' +
+          '<text x="48" y="58" text-anchor="middle" font-size="10" fill="#707881" font-family="Inter">done</text>' +
+        '</svg>' +
+        '<p class="text-sm font-semibold text-on-surface">' + completed + ' of ' + total + ' modules</p>' +
+        '<p class="text-xs text-on-surface-variant mt-1">' + (remainingMinutes > 0 ? timeStr + ' remaining' : 'All done!') + '</p>';
+    }
+
+    function renderLevelCards() {
+      const el = document.getElementById('level-cards');
+      let html = '<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">';
+
+      for (const level of COURSE_DATA.levels) {
+        const color = COURSE_DATA.levelColors[level.id].accent;
+        const levelCompleted = level.modules.filter(m => isCompleted(m.id)).length;
+        const levelTotal = level.modules.length;
+        const levelPct = levelTotal > 0 ? Math.round((levelCompleted / levelTotal) * 100) : 0;
+        const isExpanded = expandedLevels.has(level.id);
+
+        // Compute total duration for level
+        let totalMins = 0;
+        for (const m of level.modules) {
+          const dur = COURSE_DATA.modules[m.id].duration;
+          const match = dur.match(/(\\d+)/);
+          if (match) totalMins += parseInt(match[1]);
+        }
+
+        html += '<div class="level-card bg-white rounded-2xl shadow-sm border border-outline-variant/30 overflow-hidden cursor-pointer" onclick="toggleLevel(\\'' + level.id + '\\')">' +
+          '<div class="p-5">' +
+            '<div class="flex items-center gap-3 mb-2">' +
+              '<span class="text-xs font-bold px-2.5 py-1 rounded-full text-white" style="background:' + color + '">Level ' + level.id + '</span>' +
+              '<span class="material-symbols-outlined text-on-surface-variant text-lg" style="transition:transform 0.2s;transform:rotate(' + (isExpanded ? '180' : '0') + 'deg)">expand_more</span>' +
+            '</div>' +
+            '<h3 class="text-lg font-bold font-headline text-on-surface mb-1">' + level.title + '</h3>' +
+            '<p class="text-sm text-on-surface-variant mb-3">' + level.description + '</p>' +
+            '<div class="flex items-center gap-3 text-xs text-on-surface-variant mb-3">' +
+              '<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">menu_book</span>' + levelTotal + ' modules</span>' +
+              '<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span>' + totalMins + ' min</span>' +
+            '</div>' +
+            '<div class="w-full bg-surface-container rounded-full h-1.5">' +
+              '<div class="h-1.5 rounded-full" style="width:' + levelPct + '%;background:' + color + '"></div>' +
+            '</div>' +
+            '<p class="text-xs text-on-surface-variant mt-1.5">' + levelCompleted + '/' + levelTotal + ' complete</p>' +
+          '</div>';
+
+        if (isExpanded) {
+          html += '<div class="border-t border-outline-variant/30 bg-surface-container-low/50">';
+          for (const mod of level.modules) {
+            const done = isCompleted(mod.id);
+            html += '<div class="module-list-item flex items-center gap-3 px-5 py-3 cursor-pointer border-b border-outline-variant/20 last:border-b-0" onclick="event.stopPropagation();showModule(\\'' + mod.id + '\\')">' +
+              '<span class="material-symbols-outlined text-lg" style="color:' + (done ? color : '#bfc7d1') + ';font-variation-settings:\\'' + (done ? 'FILL\\' 1' : 'FILL\\' 0') + '">' + (done ? 'check_circle' : 'radio_button_unchecked') + '</span>' +
+              '<div class="flex-1 min-w-0">' +
+                '<p class="text-sm font-medium text-on-surface truncate">' + mod.id + ': ' + mod.title + '</p>' +
+              '</div>' +
+              '<span class="text-xs text-on-surface-variant whitespace-nowrap">' + mod.duration + '</span>' +
+            '</div>';
+          }
+          html += '</div>';
+        }
+
+        html += '</div>';
+      }
+
+      html += '</div>';
+      el.innerHTML = html;
+    }
+
+    function toggleLevel(levelId) {
+      if (expandedLevels.has(levelId)) {
+        expandedLevels.delete(levelId);
+      } else {
+        expandedLevels.add(levelId);
+      }
+      renderLevelCards();
+    }
+
+    function renderRecentCompletions() {
+      const el = document.getElementById('recent-completions');
+      const prog = getProgress();
+      const completed = Object.entries(prog)
+        .filter(([, v]) => v && v.completed && v.timestamp)
+        .sort((a, b) => b[1].timestamp - a[1].timestamp)
+        .slice(0, 3);
+
+      if (completed.length === 0) {
+        el.innerHTML = '';
+        return;
+      }
+
+      let html = '<div class="bg-white rounded-2xl shadow-sm border border-outline-variant/30 p-6">' +
+        '<h3 class="text-sm font-semibold text-on-surface-variant uppercase tracking-wider mb-4">Recent Completions</h3>' +
+        '<div class="space-y-3">';
+
+      for (const [id, data] of completed) {
+        const mod = COURSE_DATA.modules[id];
+        if (!mod) continue;
+        const color = COURSE_DATA.levelColors[mod.levelId].accent;
+        const date = new Date(data.timestamp);
+        const timeAgo = formatTimeAgo(date);
+
+        html += '<div class="flex items-center gap-3 cursor-pointer module-list-item rounded-lg px-3 py-2 -mx-3" onclick="showModule(\\'' + id + '\\')">' +
+          '<span class="material-symbols-outlined text-lg" style="color:' + color + ';font-variation-settings:\\'FILL\\' 1">check_circle</span>' +
+          '<div class="flex-1 min-w-0">' +
+            '<p class="text-sm font-medium text-on-surface truncate">' + id + ': ' + mod.title + '</p>' +
+          '</div>' +
+          '<span class="text-xs text-on-surface-variant whitespace-nowrap">' + timeAgo + '</span>' +
+        '</div>';
+      }
+
+      html += '</div></div>';
+      el.innerHTML = html;
+    }
+
+    function formatTimeAgo(date) {
+      const now = Date.now();
+      const diff = now - date.getTime();
+      const mins = Math.floor(diff / 60000);
+      if (mins < 1) return 'just now';
+      if (mins < 60) return mins + 'm ago';
+      const hours = Math.floor(mins / 60);
+      if (hours < 24) return hours + 'h ago';
+      const days = Math.floor(hours / 24);
+      if (days < 7) return days + 'd ago';
+      return date.toLocaleDateString();
+    }
+
+    // ─── Module Viewer ──────────────────────────────────────────────────────
+    function renderModule(moduleId) {
+      const mod = COURSE_DATA.modules[moduleId];
+      if (!mod) return;
+      const color = COURSE_DATA.levelColors[mod.levelId].accent;
+      updateNavProgress();
+
+      // Breadcrumb
+      document.getElementById('module-breadcrumb').innerHTML =
+        '<nav class="flex items-center gap-2 text-sm text-on-surface-variant font-body">' +
+          '<span class="cursor-pointer hover:text-primary transition-colors" onclick="showDashboard()">Dashboard</span>' +
+          '<span class="material-symbols-outlined text-xs">chevron_right</span>' +
+          '<span>Level ' + mod.levelId + ': ' + mod.levelTitle + '</span>' +
+          '<span class="material-symbols-outlined text-xs">chevron_right</span>' +
+          '<span class="text-on-surface font-medium">Module ' + moduleId + '</span>' +
+        '</nav>';
+
+      // Header
+      let objHtml = '';
+      if (mod.objectives && mod.objectives.length > 0) {
+        objHtml = '<div class="mt-4 bg-surface-container-low rounded-xl p-4">' +
+          '<p class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider mb-2">Learning Objectives</p>' +
+          '<ul class="space-y-1">';
+        for (const obj of mod.objectives) {
+          objHtml += '<li class="flex items-start gap-2 text-sm text-on-surface-variant">' +
+            '<span class="material-symbols-outlined text-sm text-primary mt-0.5">check</span>' + obj + '</li>';
+        }
+        objHtml += '</ul></div>';
+      }
+
+      document.getElementById('module-header').innerHTML =
+        '<h1 class="text-2xl sm:text-3xl font-extrabold font-headline text-on-surface tracking-tight mb-3">' + mod.title + '</h1>' +
+        '<div class="flex flex-wrap items-center gap-2 mb-2">' +
+          '<span class="text-xs font-bold px-3 py-1 rounded-full text-white" style="background:' + color + '">Level ' + mod.levelId + '</span>' +
+          '<span class="text-xs text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span>' + mod.duration + '</span>' +
+        '</div>' +
+        objHtml;
+
+      // Content
+      document.getElementById('module-content').innerHTML = mod.content;
+
+      // Mark Complete button
+      const done = isCompleted(moduleId);
+      document.getElementById('module-complete-btn').innerHTML =
+        '<button onclick="markComplete(\\'' + moduleId + '\\')" class="w-full sm:w-auto px-6 py-3 rounded-xl font-semibold text-sm transition-all flex items-center justify-center gap-2 ' +
+        (done
+          ? 'bg-green-50 text-green-700 border-2 border-green-200 hover:bg-white'
+          : 'bg-primary text-white hover:bg-primary/90') + '">' +
+        '<span class="material-symbols-outlined text-lg">' + (done ? 'check_circle' : 'radio_button_unchecked') + '</span>' +
+        (done ? 'Completed — Click to Undo' : 'Mark as Complete') +
+        '</button>';
+
+      // Prev/Next navigation
+      const prevId = getPrevModuleId(moduleId);
+      const nextId = getNextModuleId(moduleId);
+      let navHtml = '';
+      if (prevId) {
+        navHtml += '<button onclick="showModule(\\'' + prevId + '\\')" class="flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors">' +
+          '<span class="material-symbols-outlined text-lg">arrow_back</span>' +
+          '<span class="hidden sm:inline">' + prevId + ': ' + COURSE_DATA.modules[prevId].title + '</span>' +
+          '<span class="sm:hidden">Previous</span>' +
+        '</button>';
+      } else {
+        navHtml += '<div></div>';
+      }
+      if (nextId) {
+        navHtml += '<button onclick="showModule(\\'' + nextId + '\\')" class="flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors">' +
+          '<span class="hidden sm:inline">' + nextId + ': ' + COURSE_DATA.modules[nextId].title + '</span>' +
+          '<span class="sm:hidden">Next</span>' +
+          '<span class="material-symbols-outlined text-lg">arrow_forward</span>' +
+        '</button>';
+      } else {
+        navHtml += '<div></div>';
+      }
+      document.getElementById('module-nav').innerHTML = navHtml;
+
+      // Init copy buttons after content is rendered
+      initCopyButtons();
+    }
+
+    function markComplete(moduleId) {
+      const done = isCompleted(moduleId);
+      setProgress(moduleId, !done);
+      renderModule(moduleId);
+      updateNavProgress();
+    }
+
+    function initCopyButtons() {
+      document.querySelectorAll('#module-content .copy-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const wrapper = this.closest('.code-block-wrapper');
+          const code = wrapper ? wrapper.querySelector('code') : null;
+          if (code) {
+            navigator.clipboard.writeText(code.textContent).then(() => {
+              this.textContent = 'Copied!';
+              this.classList.add('copied');
+              setTimeout(() => {
+                this.textContent = 'Copy';
+                this.classList.remove('copied');
+              }, 2000);
+            });
+          }
+        });
+      });
+    }
+
+    // ─── History / Routing ──────────────────────────────────────────────────
+    window.addEventListener('popstate', function(e) {
+      if (e.state && e.state.view === 'module' && e.state.moduleId) {
+        showModule(e.state.moduleId);
+      } else {
+        showDashboard();
+      }
+    });
+
+    // ─── Init ───────────────────────────────────────────────────────────────
+    (function init() {
+      // Check hash for deep linking
+      const hash = location.hash;
+      if (hash && hash.startsWith('#module-')) {
+        const moduleId = hash.replace('#module-', '');
+        if (COURSE_DATA.modules[moduleId]) {
+          showModule(moduleId);
+          return;
+        }
+      }
+      showDashboard();
+    })();
+  </script>
+</body>
+</html>`;
+
+  return html;
 }
 
 // ─── Main Build ─────────────────────────────────────────────────────────────
@@ -1512,10 +2525,15 @@ function build() {
   }
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
-  // Build index
-  const indexHtml = buildIndexPage();
-  fs.writeFileSync(path.join(OUTPUT_DIR, 'index.html'), indexHtml);
-  console.log('  index.html');
+  // Build landing page
+  const landingHtml = buildLandingPage();
+  fs.writeFileSync(path.join(OUTPUT_DIR, 'index.html'), landingHtml);
+  console.log('  index.html (landing)');
+
+  // Build course listing
+  const courseHtml = buildIndexPage();
+  fs.writeFileSync(path.join(OUTPUT_DIR, 'course.html'), courseHtml);
+  console.log('  course.html');
 
   // Build module pages
   let moduleCount = 0;
@@ -1553,9 +2571,16 @@ function build() {
     }
   }
 
-  const totalFiles = 1 + moduleCount + resourceCount + testingCount;
+  // Build experimental viewer
+  const experimentalHtml = buildExperimentalViewer();
+  fs.writeFileSync(path.join(OUTPUT_DIR, 'experimental.html'), experimentalHtml);
+  console.log('  experimental.html (dynamic SPA)');
+
+  const totalFiles = 3 + moduleCount + resourceCount + testingCount;
   console.log(`\nDone! Generated ${totalFiles} HTML files in final-version-static-site/`);
-  console.log(`  - 1 index page`);
+  console.log(`  - 1 landing page`);
+  console.log(`  - 1 course listing page`);
+  console.log(`  - 1 experimental SPA viewer`);
   console.log(`  - ${moduleCount} module pages`);
   console.log(`  - ${resourceCount} resource pages`);
   console.log(`  - ${testingCount} testing strategy pages`);
