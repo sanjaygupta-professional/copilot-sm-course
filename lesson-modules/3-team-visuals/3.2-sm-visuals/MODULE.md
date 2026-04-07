@@ -333,7 +333,7 @@ Congratulations! You've completed the Microsoft Copilot for Scrum Masters course
 
 ### Essential Prompts
 
-**Standup Analysis:**
+**Daily Scrum Analysis:**
 ```
 Analyze standup notes. Extract blockers, patterns, actions for SM.
 ```

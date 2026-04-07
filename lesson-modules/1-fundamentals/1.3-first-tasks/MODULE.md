@@ -8,7 +8,7 @@
 ## What You'll Learn
 
 By the end of this module, you will:
-1. Process standup notes into actionable summaries
+1. Process Daily Scrum notes into actionable summaries
 2. Synthesize retrospective feedback into themes
 3. Transform sprint updates for different audiences
 4. Extract impediments from meeting discussions
@@ -22,7 +22,7 @@ Every week, Scrum Masters deal with volumes of meeting notes, status updates, an
 
 | Task | Traditional Time |
 |------|-----------------|
-| Process a week's standup notes | 20-30 minutes |
+| Process a week's Daily Scrum notes | 20-30 minutes |
 | Synthesize retrospective feedback | 45-60 minutes |
 | Write sprint updates for 3 audiences | 45 minutes |
 
@@ -30,13 +30,13 @@ With Copilot, these become **5-minute tasks**. Let's learn how.
 
 ---
 
-## Task 1: Processing Standup Notes
+## Task 1: Processing Daily Scrum Notes
 
-Standups generate valuable information - blockers, progress updates, and patterns. But that information is often scattered and hard to act on.
+Daily Scrums (standups) generate valuable information - blockers, progress updates, and patterns. But that information is often scattered and hard to act on.
 
 ### The Problem
 
-Raw standup notes look like this:
+Raw Daily Scrum notes look like this:
 
 ```
 Lisa: "Yesterday I worked on the rate limiting code, it's more
@@ -52,11 +52,13 @@ Starting caching work. Question: did we decide on TTL values?"
 
 Across a week, this becomes pages of text with important signals buried inside.
 
-### Exercise 1: Process Standup Notes
+### Exercise 1: Process Daily Scrum Notes
+
+> **Tip:** To get the sample files for exercises, click the file link below to open it in the course viewer, then select all the text content and copy it. You can paste this directly into Copilot chat along with your prompt, or save it as a local file and upload it.
 
 **Do this now:**
 
-1. Upload `sample-files/ceremony-notes/daily-standups-week47.md` to Copilot
+1. Upload `sample-files/ceremony-notes/daily-standups-week47.md` to Copilot (see tip above for how to access sample files)
 2. Use this prompt:
 
 ```
@@ -93,13 +95,15 @@ Be specific - cite examples from the notes.
 ### What You Should See
 
 Copilot should identify:
-- The rate limit requirements blocker (4 days open)
+- The rate limit requirements blocker (recurring across the week)
 - Lisa's frustration with scope changes
 - Marcus's silence during debates
 - Priya working weekends
-- Standups averaging 22 minutes (target: 15)
+- Daily Scrums averaging 22 minutes (target: 15)
 
 **Time saved:** ~20 minutes
+
+> **Reference:** Connect these action items to your Scrum artifacts. Blockers should go into your impediment log. Recurring themes (like scope creep or long Daily Scrums) are Sprint Retrospective inputs. Staffing or capacity concerns may need to be raised during Sprint Planning. Ask Copilot: *"Convert the action items above into Product Backlog items or Sprint tasks, categorized by priority and the appropriate Scrum event to address them."*
 
 ---
 
@@ -247,6 +251,8 @@ Three distinct communications:
 
 **Time saved:** ~30 minutes
 
+> **Tip:** Want Copilot to match a specific writing style? Upload a sample document and use this prompt: *"Read the attached document and analyze its tone, structure, and formatting. Then rewrite the following content to match that style: [your content]."* This works well when your organization has established communication templates.
+
 ---
 
 ## Task 4: Impediment Extraction
@@ -301,7 +307,7 @@ You've now learned four core Copilot tasks:
 
 | Task | Prompt Type | Time Saved |
 |------|-------------|------------|
-| Standup processing | Analysis + extraction | 20 min |
+| Daily Scrum processing | Analysis + extraction | 20 min |
 | Retro synthesis | Thematic analysis | 40 min |
 | Multi-audience comms | Transformation | 30 min |
 | Impediment extraction | Pattern finding | 15 min |
@@ -331,7 +337,7 @@ The course provides ready-to-use prompts in `prompt-library/templates/`.
 ## Module Complete!
 
 You now know how to:
-- ✅ Process standup notes into actionable summaries
+- ✅ Process Daily Scrum notes into actionable summaries
 - ✅ Synthesize retrospective feedback into themes
 - ✅ Transform updates for different audiences
 - ✅ Extract impediments from meeting discussions
@@ -352,7 +358,7 @@ In Module 1.4, you'll learn:
 
 ## Quick Reference: First Tasks Prompts
 
-### Standup Processing
+### Daily Scrum Processing
 ```
 Analyze these standup notes. Extract:
 - Blockers (who, what, how long open)

@@ -22,8 +22,8 @@ There are two ways to use Copilot:
 
 | Surface | Best For | How to Access |
 |---------|----------|---------------|
-| **Copilot Chat** | Open-ended analysis, research, multi-file work | Browser, Alt+Spacebar |
-| **In-App Copilot** | Working within a specific document | Alt+I within the app |
+| **Copilot Chat** | Open-ended analysis, research, multi-file work | Browser (m365.cloud.microsoft), Windows key + C |
+| **In-App Copilot** | Working within a specific document | Home tab > Copilot button |
 
 For Scrum Masters:
 - **Chat** for synthesizing notes, research, planning
@@ -47,7 +47,7 @@ Word Copilot helps you create, edit, and enhance documents.
 **Do this now:**
 
 1. Open a new Word document
-2. Press **Alt + I** to open Copilot
+2. Click the **Copilot** button on the **Home** tab to open the Copilot pane
 3. Use this prompt:
 
 ```
@@ -119,7 +119,7 @@ Excel Copilot helps you analyze data, create formulas, and visualize metrics.
 | 46 | 50 | 45 | 5 |
 | 47 | 52 | 42 | 10 |
 
-3. Press **Alt + I** to open Copilot
+3. Click the **Copilot** button on the **Home** tab to open the Copilot pane
 4. Ask:
 
 ```
@@ -157,7 +157,7 @@ PowerPoint Copilot helps you create presentations from scratch or enhance existi
 **Do this now:**
 
 1. Open PowerPoint
-2. Press **Alt + I** to open Copilot
+2. Click the **Copilot** button on the **Home** tab to open the Copilot pane
 3. Use this prompt:
 
 ```
@@ -218,14 +218,21 @@ A typical SM workflow might span multiple apps:
 
 ---
 
+## Data Access & Permissions
+
+> **Warning:** In-app Copilot can only access data you have permissions to view. If a spreadsheet is on a colleague's OneDrive and not shared with you, Copilot won't see it. Key things to know:
+> - **Copilot Chat** accesses files you upload or that are in your OneDrive/SharePoint
+> - **In-App Copilot** works with the currently open document and files you can access
+> - **ContextIQ** finds files across M365 — but only those shared with or created by you
+> - If Copilot gives incomplete analysis, check whether it has access to all the relevant data
+
 ## Keyboard Shortcuts Summary
 
 | Action | Shortcut |
 |--------|----------|
-| Open Copilot Chat (Windows) | Alt + Spacebar |
-| Open Copilot Chat (Mac) | Option + Spacebar |
-| In-App Copilot | Alt + I / Option + I |
-| Voice input | Hold shortcut 2 seconds |
+| Open Copilot Chat (Windows) | Windows key + C (or Copilot key) |
+| Open Copilot Chat (Mac) | Open Copilot app |
+| In-App Copilot | Home tab > Copilot button (or Alt + H, F, X) |
 
 ---
 
@@ -246,7 +253,7 @@ Continue to **Module 1.8: Copilot in Microsoft Teams**
 
 In Module 1.8, you'll learn:
 - Getting meeting summaries from ceremonies
-- Catching up on missed standups
+- Catching up on missed Daily Scrums
 - Using Copilot in team channels
 
 ---

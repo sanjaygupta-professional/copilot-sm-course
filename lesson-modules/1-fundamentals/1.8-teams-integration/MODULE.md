@@ -9,7 +9,7 @@
 
 By the end of this module, you will:
 1. Get meeting summaries from Scrum ceremonies
-2. Catch up on missed standups
+2. Catch up on missed Daily Scrums
 3. Track action items from retrospectives
 4. Use Copilot in team channels
 5. Leverage meeting intelligence for SM work
@@ -19,7 +19,7 @@ By the end of this module, you will:
 ## Why Teams Copilot Matters for SMs
 
 As a Scrum Master, you spend significant time in Teams:
-- Facilitating ceremonies (planning, standups, reviews, retros)
+- Facilitating ceremonies (planning, Daily Scrums, reviews, retros)
 - Communicating in team channels
 - Following up on action items
 - Catching up on discussions you missed
@@ -53,7 +53,9 @@ For meeting transcription and Copilot summaries:
 3. Select "Record and transcribe"
 4. Copilot will process the transcript
 
-**Note:** Recording must be enabled by your admin and disclosed to participants.
+**Note:** Recording and transcription must be enabled by your admin and disclosed to participants. Copilot features in Teams depend on your organization's settings — if you don't see Copilot options in a meeting, ensure transcription is enabled and check with your IT administrator.
+
+> **Warning:** Copilot in Teams meetings works best when transcription is active. Without it, Copilot can only reference the meeting chat, not spoken content. Always verify that critical action items captured by Copilot match what was actually discussed — Copilot may miss nuance or misattribute statements in multi-speaker conversations.
 
 ---
 
@@ -87,9 +89,9 @@ A structured summary including:
 
 ---
 
-## Exercise 2: Catch Up on Missed Standup
+## Exercise 2: Catch Up on Missed Daily Scrum
 
-When you miss a standup (or any meeting), Copilot can catch you up.
+When you miss a Daily Scrum (standup) or any meeting, Copilot can catch you up.
 
 **Open the meeting recap and ask:**
 
@@ -143,7 +145,7 @@ A structured action list:
 ```
 ☐ Focus Fridays proposal - SM - Submit to Jennifer by Friday
 ☐ Tech debt tracking - James - Create tracking method by next sprint
-☐ Async decision log - Priya - Template by EOW
+☐ Async decision log - Priya - Template by end of sprint
 ☐ Planning timebox - SM - Enforce 2-hour limit next planning
 ```
 
@@ -161,6 +163,8 @@ Beyond meetings, Copilot can help with channel conversations.
 - Understand the context of ongoing discussions
 
 ### Exercise 4: Channel Intelligence
+
+> **Tip:** To use Copilot in a Teams channel, open a channel post and expand it into the full conversation view. Then look for **Open Copilot** in the upper-right corner. Copilot requires at least 1,000 characters of text in the thread to generate a summary. If you don't see the Copilot option, your organization may need to enable this feature — check with your IT administrator.
 
 In your team's channel, try these prompts:
 
@@ -219,9 +223,9 @@ that I should follow up on privately?
 
 ---
 
-## Async Standup Support
+## Async Daily Scrum Support
 
-If your team does async standups (like posting in a channel), Copilot can help:
+If your team does async Daily Scrums (like posting in a channel), Copilot can help:
 
 **Daily synthesis:**
 ```
@@ -241,10 +245,12 @@ Anyone stuck on the same thing multiple days?
 
 You now know how to:
 - ✅ Get meeting summaries from Scrum ceremonies
-- ✅ Catch up on missed standups and meetings
+- ✅ Catch up on missed Daily Scrums and meetings
 - ✅ Extract action items from retrospectives
 - ✅ Use Copilot in team channels
 - ✅ Leverage meeting intelligence for SM work
+
+> **Reference:** The Teams skills you've built here are foundational for advanced ceremony work. In **Module 2.1 (Facilitating Ceremonies)**, you'll use meeting summaries to prepare for and debrief Sprint events. In **Module 2.3 (Team Health)**, you'll analyze Teams chat patterns to identify team dynamics. And in **Module 4.1 (Sprint Analytics)**, you'll combine Teams data with other metrics for data-driven facilitation.
 
 ---
 

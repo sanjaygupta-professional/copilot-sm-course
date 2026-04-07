@@ -585,6 +585,15 @@ A pitch script like:
 - **The organizational impediment log grows but nothing gets resolved:** Escalate the LOG ITSELF as a pattern. "We have 5 critical organizational impediments with an average age of 45 days. At this rate, 3 of them will still be open when we try to release in Sprint 50."
 - **You burn out trying to change the organization:** Remember that organizational change is measured in months and quarters, not sprints. Pick your battles. Win one, then leverage that credibility for the next.
 
+### When NOT to Use Copilot for Organizational Change
+
+Not every organizational challenge benefits from AI assistance. Use your judgment:
+
+- **Sensitive political conversations** — Copilot can help you prepare talking points, but never share confidential organizational politics or personnel decisions with AI
+- **Relationship building** — Stakeholder trust is built through human interaction, not AI-generated emails
+- **Reading the room** — No AI can replace your ability to sense when a meeting is going sideways or when an executive needs reassurance rather than data
+- **Low-stakes decisions** — If the decision is simple and you have the context, just make it. Not everything needs an AI-generated analysis
+
 ---
 
 ## Module Complete!

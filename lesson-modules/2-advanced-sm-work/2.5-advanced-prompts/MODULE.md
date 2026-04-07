@@ -9,7 +9,7 @@
 
 By the end of this module, you will:
 1. Apply chain-of-thought prompting to complex SM analysis tasks
-2. Use structured output formats (tables, decision matrices, RACI) consistently
+2. Use structured output formats (tables, decision matrices, RACI — Responsible, Accountable, Consulted, Informed) consistently
 3. Build reusable prompt chains that connect ceremony outputs to improvement tracking
 4. Craft meta-prompts that generate other prompts
 5. Debug prompts when Copilot gives generic or unhelpful responses
@@ -450,6 +450,18 @@ Sometimes prompts fail despite good structure. Common causes:
 | Same prompt works differently each time | Normal AI variability | Add more constraints to narrow the output range |
 
 **If all else fails:** Start a new conversation. Copilot conversations accumulate context that can confuse later prompts. A fresh thread with a well-structured prompt often outperforms a long thread with corrections.
+
+### Accuracy & Limitations
+
+Even well-engineered prompts can produce incomplete or incorrect output. Copilot responses depend on:
+
+- **Available organizational data** — Copilot can only analyze what it has access to through your M365 tenant
+- **Your permissions** — outputs are scoped to data your account can see
+- **Prompt clarity** — but note that an over-engineered prompt with excessive constraints can still produce partial or generic output
+
+For example, a complex chain-of-thought prompt asking Copilot to "analyze all impediments across the last 6 sprints" may produce impressive-looking analysis — but if the underlying data is incomplete, the conclusions are unreliable. Always validate critical outputs against your actual team data.
+
+> **Reference:** For comprehensive guidance on responsible use of Copilot outputs in your Scrum Master practice, see **Module 2.4: Responsible AI & Data Governance**. That module covers data classification, hallucination detection, and establishing team agreements for AI-assisted decisions.
 
 ---
 

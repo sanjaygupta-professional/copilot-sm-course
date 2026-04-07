@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fix Report - Copilot SM Course</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --white: #ffffff; --cream: #F7F6F5; --cream-dark: #F3F1EF;
+  --warm-gray: #D9D9D9; --border: #D9D9D9;
+  --text-primary: #292C33; --text-secondary: #6B7280; --text-muted: #6A6A6A;
+  --teal: #487265; --teal-light: #DDEFEF; --teal-dark: #407967;
+  --max-w: 960px; --header-h: 55px;
+}
+body { font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.65; color: var(--text-primary); background: var(--white); }
+h1 { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 500; letter-spacing: -0.04em; line-height: 1.15; margin-bottom: 12px; }
+h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 500; letter-spacing: -0.02em; margin: 2rem 0 0.75rem; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+h3 { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; margin: 1.5rem 0 0.5rem; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+a { color: var(--teal); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+header.site-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  height: var(--header-h); background: var(--white);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+}
+.header-inner { width: 100%; max-width: var(--max-w); padding: 0 18px; display: flex; align-items: center; justify-content: space-between; }
+.header-brand .logo { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); text-decoration: none; }
+.header-nav { display: flex; align-items: center; gap: 6px; }
+.header-nav a { font-size: 0.85rem; padding: 5px 12px; border-radius: 6px; color: var(--text-secondary); transition: background 0.15s; }
+.header-nav a:hover { background: var(--cream); text-decoration: none; }
+.header-nav a.active { background: var(--teal-light); color: var(--teal-dark); font-weight: 500; }
+
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 18px; }
+
+.hero-banner {
+  background: linear-gradient(135deg, #487265 0%, #2D6A4F 100%);
+  color: white; padding: calc(var(--header-h) + 40px) 18px 40px; text-align: center;
+}
+.hero-banner h1 { color: white; }
+.hero-banner .subtitle { font-size: 1.05rem; opacity: 0.9; margin-bottom: 24px; }
+
+.stat-strip { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-top: 20px; }
+.stat-item { text-align: center; }
+.stat-num { font-size: 2rem; font-weight: 700; display: block; }
+.stat-label { font-size: 0.8rem; opacity: 0.85; text-transform: uppercase; letter-spacing: 0.06em; }
+
+.filter-bar { display: flex; gap: 8px; margin: 24px 0 16px; flex-wrap: wrap; }
+.filter-btn { padding: 6px 14px; border: 1px solid var(--border); border-radius: 20px; font-size: 0.82rem; cursor: pointer; background: var(--white); color: var(--text-secondary); transition: all 0.15s; }
+.filter-btn:hover, .filter-btn.active { background: var(--teal); color: white; border-color: var(--teal); }
+
+.module-section { margin-bottom: 8px; }
+.module-section table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 6px; }
+.module-section th { background: var(--cream); text-align: left; padding: 8px 10px; font-weight: 600; border-bottom: 2px solid var(--border); white-space: nowrap; }
+.module-section td { padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; }
+.module-section td.issues { font-family: 'SF Mono', 'Cascadia Code', monospace; font-size: 0.78rem; white-space: nowrap; }
+.module-section td.src { text-align: center; }
+.module-section tr:hover td { background: #f8f9fa; }
+.src-local { color: var(--text-muted); font-size: 0.78rem; }
+
+.badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+.badge.done { background: #dcfce7; color: #166534; }
+.badge.deferred { background: #fef3c7; color: #92400e; }
+.badge.na { background: #f3f4f6; color: #6b7280; }
+
+.count-badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.72rem; font-weight: 500; background: var(--cream); color: var(--text-secondary); }
+
+.sources-section { margin-top: 2rem; }
+.sources-section table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.sources-section th { background: var(--cream); padding: 8px 10px; text-align: left; font-weight: 600; }
+.sources-section td { padding: 8px 10px; border-bottom: 1px solid #eee; }
+
+.deferred-section { margin-top: 1.5rem; }
+.deferred-card { background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 12px 16px; margin-bottom: 8px; }
+.deferred-card strong { color: #92400e; }
+.deferred-card .reason { color: var(--text-secondary); font-size: 0.9rem; margin-top: 4px; }
+
+.verification { margin-top: 1.5rem; }
+.verification li { margin: 6px 0; }
+.check { color: #16a34a; }
+
+footer.site-footer { text-align: center; padding: 24px 18px; font-size: 0.85rem; color: var(--text-secondary); border-top: 1px solid var(--border); margin-top: 40px; }
+
+@media (max-width: 700px) {
+  .stat-strip { gap: 16px; }
+  .stat-num { font-size: 1.5rem; }
+  .module-section table { font-size: 0.78rem; }
+  .module-section th, .module-section td { padding: 6px 6px; }
+  h1 { font-size: 1.6rem; }
+}
+@media print {
+  header.site-header, footer.site-footer, .filter-bar { display: none; }
+  .hero-banner { background: none; color: var(--text-primary); padding-top: 20px; }
+  .hero-banner h1, .hero-banner .subtitle { color: var(--text-primary); }
+}
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <a href="testing-strategy.html" class="logo">SM Course Testing</a>
+      </div>
+      <nav class="header-nav">
+        <a href="testing-strategy.html">Strategy</a>
+        <a href="testing-lenses.html">10 Lenses</a>
+        <a href="testing-feedback.html">Feedback</a>
+        <a href="testing-fixes.html" class="active">Fix Report</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero-banner">
+    <div class="container">
+      <h1>Fix Report</h1>
+      <p class="subtitle">P1 + P2 + P3 Low-Hanging Fruit &mdash; All fixes grounded in official Microsoft &amp; Scrum Guide documentation</p>
+      <div class="stat-strip">
+        <div class="stat-item"><span class="stat-num">50</span><span class="stat-label">Done</span></div>
+        <div class="stat-item"><span class="stat-num">7</span><span class="stat-label">Deferred</span></div>
+        <div class="stat-item"><span class="stat-num">17</span><span class="stat-label">Modules Fixed</span></div>
+        <div class="stat-item"><span class="stat-num">0</span><span class="stat-label">Build Errors</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <h2>Pattern Verification</h2>
+    <ul class="verification">
+      <li><span class="check">&#10003;</span> <code>Alt+Spacebar</code> / <code>Alt+I</code> &mdash; 0 remaining occurrences</li>
+      <li><span class="check">&#10003;</span> <code>paperclip</code> / <code>&#x1F4CE;</code> &mdash; 0 remaining occurrences</li>
+      <li><span class="check">&#10003;</span> <code>copilot.microsoft.com</code> &mdash; 0 remaining occurrences</li>
+      <li><span class="check">&#10003;</span> <code>standup</code> in headings &mdash; 0 remaining occurrences</li>
+      <li><span class="check">&#10003;</span> <code>node build-static.js</code> &mdash; 111 files, zero errors</li>
+    </ul>
+
+    <h2>Fixes by Module</h2>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="done">Done Only</button>
+      <button class="filter-btn" data-filter="deferred">Deferred Only</button>
+    </div>
+
+
+    <div class="module-section" id="mod-1-1">
+      <h3>1.1 &mdash; Welcome to Microsoft Copilot <span class="count-badge">7 done</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>A</code></td><td class="issues">ISS-002;ISS-502</td><td>Replaced Alt+Spacebar with Windows key+C / Copilot key; replaced Alt+I with Home tab &gt; Copilot button; updated keyboard shortcuts table</td><td class="src"><a href="https://support.microsoft.com/en-us/topic/getting-started-with-copilot-on-windows-1159c61f" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>C</code></td><td class="issues">ISS-013;ISS-502</td><td>Replaced copilot.microsoft.com with m365.cloud.microsoft in 2 locations (access section + Exercise 1)</td><td class="src"><a href="https://support.microsoft.com/en-us/office/the-microsoft-365-app-transition-22eac811" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>D</code></td><td class="issues">ISS-383</td><td>Changed 'Standup inefficiency' to 'Daily Scrum inefficiency'; 'standups' to 'Daily Scrums'; 'standup notes' to 'Daily Scrum notes' in 3 locations</td><td class="src"><a href="https://scrumguides.org/scrum-guide.html" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4A</code></td><td class="issues">ISS-005</td><td>Enhanced Exercise 1 'What you should see' with detailed UI element descriptions + Tip callout for UI change resilience</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4B</code></td><td class="issues">ISS-010</td><td>Added 'Where Copilot Fits in Your Scrum Events' table mapping 5 Scrum events to Copilot use cases and course modules</td><td class="src"><a href="https://scrumguides.org/scrum-guide.html" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4F</code></td><td class="issues">ISS-213</td><td>Added 'Quick Start for Scrum Masters' section with 3 starter prompts and success criteria before the Access section</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>P3-A</code></td><td class="issues">cascade</td><td>Fixed 'Process standup notes' &rarr; 'Process notes' in Scrum Events table</td><td class="src"><a href="https://scrumguides.org/scrum-guide.html" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-1-2">
+      <h3>1.2 &mdash; Setting Up Your Workspace <span class="count-badge">5 done, 1 deferred</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>A</code></td><td class="issues">ISS-016</td><td>Replaced Alt+Spacebar with Windows key+C; replaced Alt+I with Home tab &gt; Copilot button; updated shortcuts table</td><td class="src"><a href="https://support.microsoft.com/en-us/topic/getting-started-with-copilot-on-windows-1159c61f" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>B</code></td><td class="issues">ISS-007;ISS-026;ISS-014</td><td>Replaced paperclip icon (📎) with + (Add content) button in 2 locations; added Upload images and files / Attach cloud files options</td><td class="src"><a href="https://support.microsoft.com/en-us/topic/add-content-to-microsoft-365-copilot-chat-prompts-438173cf" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>C</code></td><td class="issues">ISS-013</td><td>Replaced copilot.microsoft.com with m365.cloud.microsoft in 3 locations (exercise + section header + tip)</td><td class="src"><a href="https://support.microsoft.com/en-us/office/the-microsoft-365-app-transition-22eac811" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4C</code></td><td class="issues">ISS-023</td><td>Added formatting instructions to Exercise 1 prompt: 'strict bullet-point format only'; 'one sentence per bullet'</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4F</code></td><td class="issues">ISS-222</td><td>Added 'Troubleshooting Common Enterprise Issues' table with 6 common problems; causes and solutions</td><td class="src"><a href="https://support.microsoft.com/en-us/office/how-to-find-and-enable-missing-copilot-button-c8482b93" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4F</code></td><td class="issues">ISS-218</td><td>DEFERRED — enterprise data responsibility section requires alignment with Module 2.4 content; avoid duplication</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge deferred">DEFERRED</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-1-3">
+      <h3>1.3 &mdash; Your First Scrum Master Tasks <span class="count-badge">4 done</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>F</code></td><td class="issues">ISS-504</td><td>Changed 'rate limit requirements blocker (4 days open)' to 'recurring across the week' — source data ambiguous on exact day count</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>F</code></td><td class="issues">ISS-385</td><td>Added Tip callout with instructions on how to access sample files (copy from course viewer or save locally). Raw files not in static site output — build system enhancement deferred.</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4C</code></td><td class="issues">ISS-032;ISS-036</td><td>Added Tip with sample prompt for matching writing style: upload template + ask Copilot to analyze and replicate tone/structure</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4C</code></td><td class="issues">ISS-038</td><td>Added Reference callout connecting action items to Scrum artifacts (impediment log; Retro inputs; Sprint Planning items) with sample follow-up prompt</td><td class="src"><a href="https://scrumguides.org/scrum-guide.html" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-1-4">
+      <h3>1.4 &mdash; Researcher & Analyst Agents <span class="count-badge">3 done, 1 deferred</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>4B</code></td><td class="issues">ISS-046;ISS-053</td><td>Added Reference callout connecting Researcher outputs to Scrum practice (Retrospective facilitation; Backlog Refinement; Sprint Planning)</td><td class="src"><a href="https://scrumguides.org/scrum-guide.html" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4D</code></td><td class="issues">ISS-045</td><td>No fix needed — module header says 25 min and course-structure.json matches. The '20 min' reference may have been in a prior version.</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge na">N/A</span></td></tr>
+        <tr><td><code>4E</code></td><td class="issues">ISS-055</td><td>Added 'From Analysis to Action' section with impediment identification prompt + Warning about validating outputs + cross-reference to Module 2.4</td><td class="src"><a href="https://learn.microsoft.com/en-us/copilot/microsoft-365/copilot-personalization-memory" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4F</code></td><td class="issues">ISS-233;ISS-234</td><td>Added Quality Gate Checklist (5 items) + 'Fix the Output' mini-playbook (5 steps) for validating and improving agent outputs</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4F</code></td><td class="issues">ISS-049</td><td>DEFERRED — requesting step-by-step agent access instructions requires current screenshots/UI verification</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge deferred">DEFERRED</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-1-6">
+      <h3>1.6 &mdash; Building Context with Memory <span class="count-badge">4 done, 2 deferred</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>C</code></td><td class="issues">ISS-068</td><td>Replaced copilot.microsoft.com with m365.cloud.microsoft in Exercise 1</td><td class="src"><a href="https://support.microsoft.com/en-us/office/the-microsoft-365-app-transition-22eac811" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>E</code></td><td class="issues">ISS-398</td><td>Replaced generic note with detailed Warning callout about Memory being preview (Frontier program); added fallback path for learners without Memory enabled</td><td class="src"><a href="https://learn.microsoft.com/en-us/copilot/microsoft-365/copilot-personalization-memory" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>G</code></td><td class="issues">ISS-075</td><td>Added Tip callout before Exercise 3 with instructions on accessing and saving course sample files</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>G</code></td><td class="issues">ISS-072</td><td>DEFERRED — section reorganization requires deeper structural analysis of module flow</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge deferred">DEFERRED</span></td></tr>
+        <tr><td><code>4F</code></td><td class="issues">ISS-246</td><td>Added Warning about stale memory anti-pattern with concrete example (relocated team member) + guidance to review Saved Memories periodically</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4F</code></td><td class="issues">ISS-477</td><td>DEFERRED — specific stakeholder context example requires alignment with team persona files</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge deferred">DEFERRED</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-1-7">
+      <h3>1.7 &mdash; Copilot Across M365 Apps <span class="count-badge">3 done</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>A</code></td><td class="issues">ISS-479;ISS-481;ISS-482</td><td>Replaced Alt+Spacebar and Alt+I across 7 occurrences (table + 3 exercises + summary); updated to Home tab &gt; Copilot button</td><td class="src"><a href="https://support.microsoft.com/en-us/office/how-to-find-and-enable-missing-copilot-button-c8482b93" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4F</code></td><td class="issues">ISS-401</td><td>Added 'Data Access & Permissions' Warning section explaining what Copilot can/cannot access across Chat; In-App; and ContextIQ</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>P3-A</code></td><td class="issues">cascade</td><td>Fixed 'Catching up on missed standups' &rarr; 'missed Daily Scrums' in Next Steps</td><td class="src"><a href="https://scrumguides.org/scrum-guide.html" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-1-8">
+      <h3>1.8 &mdash; Copilot in Microsoft Teams <span class="count-badge">4 done</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>E</code></td><td class="issues">ISS-507</td><td>Changed 'Template by EOW' to 'Template by end of sprint' for evergreen date reference in expected output</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>E</code></td><td class="issues">ISS-508</td><td>Added Tip callout before Exercise 4 with step-by-step guidance for finding Copilot in Teams channels (immersive view required); added 1000-char minimum note and admin contact guidance</td><td class="src"><a href="https://support.microsoft.com/en-us/office/use-copilot-in-microsoft-teams-chat-and-channels-cccccca2" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4B</code></td><td class="issues">ISS-274</td><td>Added Reference callout with forward references to Modules 2.1 (Ceremonies); 2.3 (Team Health); 4.1 (Sprint Analytics)</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4E</code></td><td class="issues">ISS-405</td><td>Added Warning about transcription requirement for meeting Copilot + note about verifying action items + expanded admin note</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-1-9">
+      <h3>1.9 &mdash; Copilot in Outlook <span class="count-badge">1 done</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>E</code></td><td class="issues">ISS-118</td><td>Added Warning callout before Exercise 5 explaining Copilot meeting features require license + privacy settings enabled; added troubleshooting steps</td><td class="src"><a href="https://support.microsoft.com/en-us/office/how-to-find-and-enable-missing-copilot-button-c8482b93" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-1-10">
+      <h3>1.10 &mdash; SharePoint & Collaboration <span class="count-badge">3 done, 1 deferred</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>A</code></td><td class="issues">cascade</td><td>Replaced Alt+Space/Alt+I in Level 1 Quick Reference table</td><td class="src"><a href="https://support.microsoft.com/en-us/topic/getting-started-with-copilot-on-windows-1159c61f" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>D</code></td><td class="issues">ISS-119</td><td>Changed 'Daily Standup' to 'Daily Scrum' in prompt; 'Scrum ceremonies' to 'Scrum events'; 'Copilot will:' to 'Copilot may:'</td><td class="src"><a href="https://scrumguides.org/scrum-guide.html" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4F</code></td><td class="issues">ISS-458</td><td>DEFERRED — ceremony checklists require substantial content creation aligned with Scrum Guide</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge deferred">DEFERRED</span></td></tr>
+        <tr><td><code>P3-C</code></td><td class="issues">cascade</td><td>Added ContextIQ inline explanation (Microsoft's feature that automatically finds relevant files)</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-2-1">
+      <h3>2.1 &mdash; Facilitating Ceremonies <span class="count-badge">0 done, 1 deferred</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>G</code></td><td class="issues">ISS-301</td><td>DEFERRED — adding before/after ceremony states requires substantial content creation and Scrum Guide alignment</td><td class="src"><a href="https://scrumguides.org/scrum-guide.html" target="_blank" rel="noopener">Docs</a></td><td><span class="badge deferred">DEFERRED</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-2-3">
+      <h3>2.3 &mdash; Team Health & Improvement <span class="count-badge">1 done</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>G</code></td><td class="issues">ISS-468</td><td>Added two-method instructions (upload file OR copy-paste data inline) before Exercise 1</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-2-4">
+      <h3>2.4 &mdash; Responsible AI & Data Governance <span class="count-badge">1 done</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>4F</code></td><td class="issues">ISS-469</td><td>Fixed Example 5 classification from 'GREEN if anonymized' to 'YELLOW' — coaching conversation about weekend work implies specific behavior even without names</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-2-5">
+      <h3>2.5 &mdash; Advanced Prompt Engineering <span class="count-badge">2 done, 1 deferred</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>4E</code></td><td class="issues">ISS-140</td><td>Added 'Accuracy & Limitations' section covering data dependencies; permissions scope; over-engineered prompt pitfalls + cross-reference to Module 2.4</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4F</code></td><td class="issues">ISS-424</td><td>DEFERRED — exercise success criteria and prompt customization guidance requires module-by-module review</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge deferred">DEFERRED</span></td></tr>
+        <tr><td><code>P3-C</code></td><td class="issues">cascade</td><td>Added RACI expansion (Responsible Accountable Consulted Informed)</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-3-1">
+      <h3>3.1 &mdash; Image Generation Basics <span class="count-badge">1 done</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>4A</code></td><td class="issues">ISS-430</td><td>Added success criteria checklist for Exercise 1 image output + note about 15-30s generation time + iteration guidance</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-4-1">
+      <h3>4.1 &mdash; Sprint Analytics & KPI Dashboards <span class="count-badge">3 done</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>G</code></td><td class="issues">ISS-170</td><td>Added Tip callout before Exercise 5 (SPC) explaining it's optional/advanced and can be skipped without affecting later modules</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4F</code></td><td class="issues">ISS-432</td><td>Added Warning about long prompt errors with 3 troubleshooting fixes (new chat; upload file instead; break into simpler prompts)</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>P3-C</code></td><td class="issues">ISS-352</td><td>Added 'Work In Progress' expansion after WIP</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-5-2">
+      <h3>5.2 &mdash; Multi-Team Coordination <span class="count-badge">1 done</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>4F</code></td><td class="issues">ISS-496</td><td>Added Tip before Exercise 2 explaining how to access the reference dependency map file and two methods for using it</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-5-3">
+      <h3>5.3 &mdash; Organizational Change <span class="count-badge">1 done</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>4F</code></td><td class="issues">ISS-447</td><td>Added 'When NOT to Use Copilot' section: sensitive politics; relationship building; reading the room; low-stakes decisions</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-6-3">
+      <h3>6.3 &mdash; AI-Augmented SM Practice <span class="count-badge">1 done</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>P3-D</code></td><td class="issues">ISS-345</td><td>Changed 'Slack channel' &rarr; 'Teams channel' for consistency with M365 course context</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-build">
+      <h3>build &mdash; build-static.js (Styling) <span class="count-badge">2 done</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>G</code></td><td class="issues">ISS-017</td><td>Added dark mode CSS overrides for exercise cards: dark background (#1a1a1a) + inverted badge colors (lime bg with black text) for improved readability</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>4F</code></td><td class="issues">ISS-510;ISS-513</td><td>Updated copy button success text to 'Copied! Use Ctrl+V to paste' — right-click paste is a Copilot UI limitation not fixable in course code</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="module-section" id="mod-multiple">
+      <h3>multiple &mdash; Cross-Cutting (Multiple Modules) <span class="count-badge">2 done</span></h3>
+      <table>
+        <thead><tr><th style="width:60px">Batch</th><th style="width:130px">Issue(s)</th><th>What Changed</th><th style="width:70px">Source</th><th style="width:80px">Status</th></tr></thead>
+        <tbody>
+        <tr><td><code>P3-A</code></td><td class="issues">ISS-165;ISS-182;ISS-196</td><td>Scrum terminology sweep: 'standup' &rarr; 'Daily Scrum' in headings and formal text across 21 files. ~36 edits total. Left ~90 occurrences in code blocks/prompts/scenarios/data labels.</td><td class="src"><a href="https://scrumguides.org/scrum-guide.html" target="_blank" rel="noopener">Docs</a></td><td><span class="badge done">DONE</span></td></tr>
+        <tr><td><code>P3-B</code></td><td class="issues">ISS-027;ISS-029</td><td>Added sample file access tips to first exercise in modules 2.2; 4.1; 5.1; 6.1 (extending pattern from P1 ISS-385)</td><td class="src"><span class="src-local">Internal</span></td><td><span class="badge done">DONE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <h2>Deferred Items</h2>
+    <div class="deferred-section">
+      <div class="deferred-card"><strong>ISS-072 (Module 1.6)</strong> &mdash; Section reorganization<div class="reason">Requires deeper structural analysis of module flow</div></div>
+      <div class="deferred-card"><strong>ISS-301 (Module 2.1)</strong> &mdash; Before/after ceremony states<div class="reason">Requires substantial content creation aligned with Scrum Guide</div></div>
+      <div class="deferred-card"><strong>ISS-049 (Module 1.4)</strong> &mdash; Agent access step-by-step<div class="reason">Requires current M365 UI screenshots for verification</div></div>
+      <div class="deferred-card"><strong>ISS-218 (Module 1.2)</strong> &mdash; Enterprise data responsibility<div class="reason">Needs alignment with Module 2.4 to avoid content duplication</div></div>
+      <div class="deferred-card"><strong>ISS-424 (Module 2.5)</strong> &mdash; Exercise success criteria<div class="reason">Requires module-by-module review of all exercises</div></div>
+      <div class="deferred-card"><strong>ISS-458 (Module 1.10)</strong> &mdash; Ceremony checklists<div class="reason">Substantial content creation needed, aligned with Scrum Guide</div></div>
+      <div class="deferred-card"><strong>ISS-477 (Module 1.6)</strong> &mdash; Stakeholder context example<div class="reason">Needs alignment with team persona files</div></div>
+    </div>
+
+    <h2>Research Sources</h2>
+    <div class="sources-section">
+      <table>
+        <thead><tr><th>Topic</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td>Windows Copilot shortcuts</td><td><a href="https://support.microsoft.com/en-us/topic/getting-started-with-copilot-on-windows-1159c61f" target="_blank">Microsoft Support</a></td></tr>
+          <tr><td>Copilot button in M365 apps</td><td><a href="https://support.microsoft.com/en-us/office/how-to-find-and-enable-missing-copilot-button-c8482b93" target="_blank">Microsoft Support</a></td></tr>
+          <tr><td>File attachment UI (+ button)</td><td><a href="https://support.microsoft.com/en-us/topic/add-content-to-microsoft-365-copilot-chat-prompts-438173cf" target="_blank">Microsoft Support</a></td></tr>
+          <tr><td>Enterprise URL transition</td><td><a href="https://support.microsoft.com/en-us/office/the-microsoft-365-app-transition-22eac811" target="_blank">Microsoft Support</a></td></tr>
+          <tr><td>Memory / Personalization</td><td><a href="https://learn.microsoft.com/en-us/copilot/microsoft-365/copilot-personalization-memory" target="_blank">Microsoft Learn</a></td></tr>
+          <tr><td>Teams channels Copilot</td><td><a href="https://support.microsoft.com/en-us/office/use-copilot-in-microsoft-teams-chat-and-channels-cccccca2" target="_blank">Microsoft Support</a></td></tr>
+          <tr><td>M365 Copilot requirements</td><td><a href="https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-requirements" target="_blank">Microsoft Learn</a></td></tr>
+          <tr><td>Scrum Guide 2020</td><td><a href="https://scrumguides.org/scrum-guide.html" target="_blank">scrumguides.org</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <a href="testing-strategy.html">Strategy</a> |
+    <a href="testing-lenses.html">Lenses</a> |
+    <a href="testing-feedback.html">Feedback</a> |
+    <a href="testing-fixes.html">Fix Report</a>
+    <div style="margin-top:12px; font-size:12px;">Copilot for AI-Enabled Scrum Masters &middot; Fix Report &middot; 2026-04-07</div>
+  </footer>
+
+  <script>
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var filter = btn.dataset.filter;
+      document.querySelectorAll('.module-section tr').forEach(function(row) {
+        if (row.parentElement.tagName === 'THEAD') return;
+        var badge = row.querySelector('.badge');
+        if (!badge) return;
+        if (filter === 'all') { row.style.display = ''; }
+        else if (filter === 'done') { row.style.display = badge.classList.contains('done') ? '' : 'none'; }
+        else if (filter === 'deferred') { row.style.display = badge.classList.contains('deferred') ? '' : 'none'; }
+      });
+    });
+  });
+  </script>
+</body>
+</html>

@@ -76,9 +76,11 @@ Format the output as a table I can reference throughout this module.
 
 A structured audit showing:
 - Total weekly hours (likely 12-16 hrs of SM activities)
-- Top automation targets: standup notes, sprint reports, impediment log updates
+- Top automation targets: Daily Scrum (standup) notes, sprint reports, impediment log updates
 - Estimated time savings of 4-6 hours/week from automating the top 3
 - Clear distinction: facilitation and coaching remain human, documentation and reporting become automated
+
+> **Tip:** To use the sample files referenced in exercises, click the file link to open it in the course viewer, then copy the content. You can paste it directly into Copilot chat, or save it as a local file and upload it using the **+ (Add content)** button.
 
 > **Reference:** See `sample-files/automation/time-sink-audit-template.md` for a blank template you can customize for your actual role.
 

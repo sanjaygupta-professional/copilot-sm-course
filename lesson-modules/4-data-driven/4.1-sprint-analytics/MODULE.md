@@ -32,6 +32,8 @@ This module teaches you to build a metrics practice that drives decisions, not j
 
 Before building dashboards, you need to know what you're measuring and why. Let's catalog the metrics available from Velocity Squad data and categorize them.
 
+> **Tip:** To use the sample files referenced in exercises, click the file link to open it in the course viewer, then copy the content. You can paste it directly into Copilot chat, or save it as a local file and upload it using the **+ (Add content)** button.
+
 **Using `sample-files/metrics/velocity-history.csv` and `sample-files/metrics/quarterly-metrics-sprints-40-47.csv`:**
 
 ```
@@ -68,7 +70,7 @@ Present as a table with columns: Metric | Type | Category | Decision It Informs 
 ### What You Should See
 
 Copilot will produce a categorized inventory including:
-- **Leading indicators:** WIP count, blocker age, daily burndown slope, standup duration trend
+- **Leading indicators:** WIP (Work In Progress) count, blocker age, daily burndown slope, standup duration trend
 - **Lagging indicators:** Velocity, sprint goal achievement, carryover rate, defect escape rate
 - **The critical insight:** Leading indicators predict problems; lagging indicators confirm them. Most SMs only track lagging indicators and wonder why they're always reacting.
 
@@ -245,6 +247,8 @@ Three distinctly different presentations:
 
 **Time:** 7 minutes
 
+> **Tip:** This exercise covers Statistical Process Control (SPC), which involves control charts and statistical analysis. If you're new to SPC concepts, you can skip this exercise and return to it later — the remaining modules don't depend on it. For those interested, SPC is a powerful technique for data-driven Scrum Masters to separate genuine trends from normal sprint-to-sprint variation.
+
 SPC separates signal from noise. Without it, you'll react to normal variation as if something is wrong -- or miss real problems because you've normalized them.
 
 **Reference `sample-files/metrics/metric-definitions.md` for metric definitions.**
@@ -376,6 +380,8 @@ Three distinct narratives:
 - **"The team feels surveilled."** Metrics are for learning, not surveillance. Share the dashboard WITH the team first. Let them help design it. If they feel ownership, they won't feel watched.
 - **"I don't know statistics."** You don't need a statistics degree. Mean, standard deviation, and control limits are enough. Copilot does the math -- you interpret the story.
 - **"Executives don't care about sprint metrics."** Correct. That's why Exercise 4 exists. Translate sprint metrics into business outcomes: time-to-market, delivery reliability, risk reduction.
+
+> **Warning:** Some exercises in this module use long prompts with embedded data. If you encounter a "Something went wrong" error, try these fixes: (1) Start a new chat — long conversations accumulate context that can cause failures; (2) Upload data as a file instead of embedding it in the prompt; (3) Break a complex prompt into two simpler ones. Copilot has per-message limits that can be reached with very long prompts combined with file uploads.
 
 ---
 

@@ -95,7 +95,14 @@ Perspective: Eye-level, team in center frame
 
 An illustrated scene of a team celebrating with visual elements that convey success.
 
-**Note:** Results vary. DALL-E interprets prompts creatively.
+**Success criteria — look for:**
+- Multiple people visible (may not be exactly 7)
+- Celebratory body language (raised hands, smiles)
+- Office/professional setting recognizable
+- Blue/purple color palette present in the image
+- Some form of visual metrics or screens in background
+
+**Note:** Results vary significantly. Image generation may take 15-30 seconds. DALL-E interprets prompts creatively — you won't get an exact match to your description. If the image misses key elements, iterate with follow-up prompts (covered in Exercise 2).
 
 ---
 

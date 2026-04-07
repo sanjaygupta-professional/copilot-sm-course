@@ -35,6 +35,8 @@ Copilot helps you do all of these systematically.
 
 Upload your impediment log and analyze patterns.
 
+> **Tip:** To use the sample files referenced in exercises, click the file link to open it in the course viewer, then copy the content. You can paste it directly into Copilot chat, or save it as a local file and upload it using the **+ (Add content)** button.
+
 **Using `sample-files/impediments/impediment-log-sprints-42-47.md`:**
 
 ```

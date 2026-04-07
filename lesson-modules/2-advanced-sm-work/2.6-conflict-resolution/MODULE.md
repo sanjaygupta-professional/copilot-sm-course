@@ -39,7 +39,7 @@ Copilot can help you prepare, practice, and plan — so you walk into these conv
 
 ### Exercise 1: Conflict Pattern Recognition (5 min)
 
-Upload Velocity Squad retro and standup data. Let Copilot surface the tensions you might be sensing but haven't named.
+Upload Velocity Squad retro and Daily Scrum (standup) data. Let Copilot surface the tensions you might be sensing but haven't named.
 
 **Using `sample-files/conflict-scenarios/team-conflict-patterns.md`:**
 

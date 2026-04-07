@@ -47,12 +47,12 @@ When Memory is enabled, Copilot uses this stored context to make responses more 
 
 **Do this now:**
 
-1. Go to copilot.microsoft.com
+1. Go to m365.cloud.microsoft
 2. Click on your profile or settings
 3. Look for "Memory" or "Personalization" settings
 4. Ensure Memory is enabled
 
-**Note:** Memory features may vary based on your organization's M365 configuration.
+> **Warning:** Copilot Memory/Personalization is a preview feature (part of Microsoft's Frontier program). If you don't see "Memory" or "Personalization" in your Settings, your organization may not have enabled this feature. You can continue this module using context documents (uploaded files) instead — the exercises will work either way. Check with your IT administrator if you'd like this feature enabled.
 
 ---
 
@@ -105,6 +105,8 @@ What do you remember about my team?
 
 Copilot should recall the Velocity Squad context.
 
+> **Warning:** Memory can become stale and mislead you. For example, if you told Copilot "Priya is remote in Bangalore" but Priya later relocated, Copilot will still assume she's remote and may give facilitation advice based on outdated context. Periodically review what Copilot remembers (Settings > Personalization > Saved Memories) and delete entries that are no longer accurate. Stale memory is worse than no memory — it creates confident-sounding advice based on wrong assumptions.
+
 ---
 
 ## Creating Context Documents
@@ -155,6 +157,8 @@ A good context document includes:
 ```
 
 ### Exercise 3: Use Context Document
+
+> **Tip:** To use course sample files and team context documents, click the file link to open it in the course viewer, then copy the content and save it as a local file. You can then upload it to Copilot or save it to OneDrive for referencing.
 
 **Do this now:**
 

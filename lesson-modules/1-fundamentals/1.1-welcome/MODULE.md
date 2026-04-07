@@ -45,26 +45,36 @@ Microsoft Copilot is an AI assistant powered by GPT-5 that's built into Microsof
 
 ---
 
+## Quick Start for Scrum Masters
+
+> **Tip:** New to Copilot? Here's your 60-second quick start:
+> 1. **Open Copilot:** Go to m365.cloud.microsoft and sign in with your enterprise account
+> 2. **Try these 3 starter prompts:**
+>    - *"Summarize the key challenges a Scrum Master faces when adopting AI tools"*
+>    - *"What are the top 3 things a SM should focus on in their first sprint with Copilot?"*
+>    - *"Create a checklist for preparing a Sprint Retrospective"*
+> 3. **What success looks like:** You get actionable, specific responses (not generic advice). If the output feels generic, add more context about your team and situation.
+
 ## How to Access Copilot
 
 You have several ways to access Microsoft Copilot:
 
 ### 1. Web Browser
-Go to: **copilot.microsoft.com**
+Go to: **m365.cloud.microsoft**
 - Sign in with your Microsoft 365 enterprise account
 - Full chat interface with file upload
 
 ### 2. Windows Keyboard Shortcut
-Press: **Alt + Spacebar**
+Press: **Windows key + C** (or use the dedicated Copilot key on newer keyboards)
 - Opens Copilot anywhere on Windows
-- Hold for 2 seconds for voice input
+- You can also click the Copilot icon in the taskbar or Start menu
 
-### 3. Mac Keyboard Shortcut
-Press: **Option + Spacebar**
-- Opens the Microsoft 365 Copilot app
+### 3. Mac
+Open the Microsoft 365 Copilot app from the Dock or Applications
 
 ### 4. Inside M365 Apps
-Press: **Alt + I** (in Word, Excel, PowerPoint)
+Click the **Copilot** button on the **Home** tab ribbon (in Word, Excel, PowerPoint)
+- Keyboard: **Alt + H, F, X** opens the Copilot pane
 - Opens Copilot panel within the document
 - Context-aware: understands the file you have open
 
@@ -80,16 +90,19 @@ Let's make sure you can access Copilot.
 
 **Do this now:**
 
-1. Open your browser and go to **copilot.microsoft.com**
+1. Open your browser and go to **m365.cloud.microsoft**
 2. Sign in with your Microsoft 365 enterprise account
 3. You should see the Copilot chat interface
 
 **What you should see:**
-- A chat input area at the bottom
-- A left panel showing recent chats and agents
-- Suggested prompts in the center
+- A chat compose box at the bottom with the **+ (Add content)** button on the left
+- A left panel showing recent chats, agents, and Copilot Chat options
+- Suggested prompts in the center area
+- Your account avatar in the top-right corner (confirming you're signed in with your enterprise account)
 
-If you see this, you're ready to continue!
+> **Tip:** If the interface looks different from what's described above, Microsoft may have updated the layout. The core elements (compose box, chat history, and content upload) will still be present — they may just be in slightly different positions.
+
+If you see the chat interface, you're ready to continue!
 
 ---
 
@@ -124,12 +137,22 @@ After 3 months with the team, you've identified these challenges:
 
 1. **Velocity inconsistency** - Swings of 35-55 points per sprint
 2. **Retrospective fatigue** - Same issues, limited improvement
-3. **Standup inefficiency** - 25 minutes instead of 15
+3. **Daily Scrum inefficiency** - 25 minutes instead of 15
 4. **Design bottleneck** - David's shared status causes delays
 5. **Remote inclusion** - Priya feels left out of decisions
 6. **PO coaching needs** - Raj struggles with stakeholder management
 
 These challenges will be the focus of exercises throughout the course.
+
+### Where Copilot Fits in Your Scrum Events
+
+| Scrum Event | How Copilot Helps | Course Module |
+|-------------|-------------------|---------------|
+| **Sprint Planning** | Analyze capacity, refine backlog items, identify risks | Module 2.1 |
+| **Daily Scrum** | Process notes, spot patterns, track blockers | Module 1.3 |
+| **Sprint Review** | Generate review presentations, synthesize feedback | Module 1.7 |
+| **Sprint Retrospective** | Analyze retro data, identify recurring themes | Module 1.3, 2.3 |
+| **Backlog Refinement** | Research stories, estimate complexity, draft acceptance criteria | Module 1.4 |
 
 ---
 
@@ -148,7 +171,7 @@ knowledge management tools. The team runs 2-week sprints.
 I've been with this team for 3 months and I've noticed some challenges:
 - Velocity swings wildly (35-55 points per sprint)
 - Retrospectives feel stale - same issues come up repeatedly
-- Our standups run 25 minutes instead of 15
+- Our Daily Scrums run 25 minutes instead of 15
 - One team member is remote and feels excluded from decisions
 
 As an experienced agile coach, what are the 3 most impactful things
@@ -210,7 +233,7 @@ By the end of this course, you'll be able to:
 
 | Task | Without Copilot | With Copilot | Savings |
 |------|-----------------|--------------|---------|
-| Process standup notes | 20 min | 2 min | 18 min |
+| Process Daily Scrum notes | 20 min | 2 min | 18 min |
 | Synthesize retrospective | 45 min | 5 min | 40 min |
 | Sprint review prep | 1 hour | 10 min | 50 min |
 | Impediment analysis | 30 min | 5 min | 25 min |
@@ -247,9 +270,8 @@ In Module 1.2, you'll learn:
 
 | Action | Windows | Mac |
 |--------|---------|-----|
-| Open Copilot | Alt + Spacebar | Option + Spacebar |
-| Voice input | Hold Alt + Spacebar (2 sec) | Hold Option + Spacebar (2 sec) |
-| Copilot in apps | Alt + I | Option + I |
+| Open Copilot | Windows key + C (or Copilot key) | Open Copilot app |
+| Copilot in apps | Home tab > Copilot button (or Alt + H, F, X) | Home tab > Copilot button |
 
 ---
 

@@ -39,7 +39,7 @@ Instead of keyword searches, ask Copilot naturally.
 
 ### Exercise 1: Document Discovery
 
-**In Copilot Chat (with ContextIQ), try:**
+**In Copilot Chat (with ContextIQ — Microsoft's feature that automatically finds and suggests relevant files from your M365 data), try:**
 
 ```
 Find documents related to our team's Definition of Done.
@@ -60,7 +60,7 @@ design dependencies.
 
 ### What You Should See
 
-Copilot will:
+Copilot may:
 - Search across SharePoint sites you have access to
 - Return relevant documents with summaries
 - Show where documents are located
@@ -165,10 +165,10 @@ Copilot can help you create documentation for SharePoint.
 **Use Copilot Chat to draft wiki content:**
 
 ```
-Help me create a wiki page for our team's Scrum ceremonies.
+Help me create a wiki page for our team's Scrum events.
 
 Include sections for:
-1. Daily Standup
+1. Daily Scrum
    - Time and format
    - Who attends
    - What to cover
@@ -283,8 +283,8 @@ These modules go deeper into using Copilot as a thinking partner for complex SM 
 ### Key Shortcuts
 | Action | Windows | Mac |
 |--------|---------|-----|
-| Open Copilot | Alt + Space | Opt + Space |
-| In-App Copilot | Alt + I | Opt + I |
+| Open Copilot | Windows key + C (or Copilot key) | Open Copilot app |
+| In-App Copilot | Home tab > Copilot button (or Alt + H, F, X) | Home tab > Copilot button |
 
 ### Core Prompting Patterns
 - **Analysis:** "Analyze this [data] and identify [patterns/themes/issues]"

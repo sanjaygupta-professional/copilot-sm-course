@@ -118,6 +118,8 @@ Dependencies kill programs. Make them visible before they bite.
 
 **Reference: `sample-files/scaling/cross-team-dependency-map.md`**
 
+> **Tip:** The reference file above contains the full dependency data for this exercise. You can either: (1) open it in the course viewer and copy the data into your prompt, or (2) use the dependency data provided below in the prompt. The reference file provides additional context about team structures and timelines that enriches Copilot's analysis.
+
 ```
 Build a cross-team dependency map for the Horizon Program.
 

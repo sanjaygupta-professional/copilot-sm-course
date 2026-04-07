@@ -36,7 +36,10 @@ As a Scrum Master, you're responsible for nurturing team health, not just facili
 
 ### Exercise 1: Health Survey Analysis
 
-Use the sample team health data to identify concerns.
+Use the sample team health data to identify concerns. You have two options:
+
+1. **Upload the file:** Download or copy `sample-files/team-health/health-survey-results.csv` from the course viewer, save it locally, then upload it to Copilot using the **+ (Add content)** button
+2. **Copy-paste the data:** Copy the prompt below (which includes the survey data inline) and paste it directly into Copilot chat
 
 **Using `sample-files/team-health/health-survey-results.csv`:**
 

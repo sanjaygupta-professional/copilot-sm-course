@@ -93,11 +93,11 @@ A complete facilitation guide with:
 
 ---
 
-## Daily Standup Optimization
+## Daily Scrum Optimization
 
-Standups should be brief and blocker-focused. Many teams struggle with standups running long.
+Daily Scrums (standups) should be brief and blocker-focused. Many teams struggle with Daily Scrums running long.
 
-### Exercise 2: Redesign Standup Format
+### Exercise 2: Redesign Daily Scrum Format
 
 ```
 Our daily standups are running 25 minutes instead of 15.
@@ -347,7 +347,7 @@ Sprint [X] planning prep. Context: [capacity, carryover].
 Generate: agenda, capacity calc, questions, watch-fors, interventions.
 ```
 
-### Standup Redesign
+### Daily Scrum Redesign
 ```
 Standups running [X] minutes (target [Y]).
 Issues: [list problems].

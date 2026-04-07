@@ -101,7 +101,7 @@ Then analyze:
 ### What You Should See
 
 A tagged breakdown revealing something like:
-- **Facilitator:** 30-35% (standups, retro, review, planning, refinement)
+- **Facilitator:** 30-35% (Daily Scrums, retro, review, planning, refinement)
 - **Bridge:** 20-25% (SoS, cross-team sync, status reports, presentations)
 - **Servant Leader:** 15% (1:1s with Marcus, Priya)
 - **Impediment Remover:** 10% (Tom Harrison call, escalation email)
@@ -116,6 +116,8 @@ The insight: Bridge work is consuming more time than expected because of the mul
 ## Exercise 2: Situation-to-Hat Matcher (5 min)
 
 Rapid diagnosis: given a scenario, which hat do you reach for?
+
+> **Tip:** To use the sample files referenced in exercises, click the file link to open it in the course viewer, then copy the content. You can paste it directly into Copilot chat, or save it as a local file and upload it using the **+ (Add content)** button.
 
 **Reference: `sample-files/scaling/role-mode-inventory-template.md`**
 
@@ -228,7 +230,7 @@ Distinct strategies per phase:
 
 **Velocity Squad (Norming):** SM emphasis on Coach and Change Agent. The team doesn't need heavy facilitation — they need you to remove organizational barriers and coach individuals. Top actions: address design bottleneck systemically, coach Marcus's confidence, prepare team for performing stage by delegating more facilitation.
 
-**Nexus Team (Forming):** SM emphasis on Trainer and Facilitator. Chris needs to establish foundations — working agreements, ceremony cadence, communication norms. Counterproductive: Change Agent (too early for process experimentation). Top actions: help Chris create async standup format for timezone spread, establish clear DoD, run a team chartering session.
+**Nexus Team (Forming):** SM emphasis on Trainer and Facilitator. Chris needs to establish foundations — working agreements, ceremony cadence, communication norms. Counterproductive: Change Agent (too early for process experimentation). Top actions: help Chris create async Daily Scrum format for timezone spread, establish clear DoD, run a team chartering session.
 
 **Catalyst Crew (Storming):** SM emphasis on Servant Leader and Coach. Ana needs to address Sofia's frustration directly and facilitate the "push through vs. slow down" conflict. Counterproductive: Facilitator-only (running ceremonies won't fix the trust issues). Top actions: 1:1 with Sofia to understand frustration, facilitate a tech debt vs. feature conversation with data, create psychological safety for disagreement.
 
@@ -292,13 +294,13 @@ Help me:
 
 A triage framework:
 - **PM work Kelly should keep:** Backlog prioritization, stakeholder communication, roadmap decisions
-- **SM work Kelly absorbed:** Running standups (poorly), deciding on process, resolving team conflicts
+- **SM work Kelly absorbed:** Running Daily Scrums (poorly), deciding on process, resolving team conflicts
 - **SM work not happening:** Retrospectives, impediment tracking, team health monitoring, coaching
 
 Minimum viable SM plan:
 - **Week 1-2:** Introduce a 15-min weekly retro (not "retrospective" — just "what's working, what isn't")
 - **Week 3-4:** Add lightweight sprint planning (even 30 min of "what are we committing to this sprint?")
-- **Month 2:** Introduce standup cadence, begin impediment tracking
+- **Month 2:** Introduce Daily Scrum cadence, begin impediment tracking
 - **Month 3:** Full ceremony cadence, make the case for dedicated SM with data
 
 ---

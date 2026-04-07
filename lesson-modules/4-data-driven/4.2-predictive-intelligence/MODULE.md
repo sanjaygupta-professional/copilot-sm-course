@@ -73,7 +73,7 @@ Copilot will identify signals like:
 - **Burndown slope change at Day 3-4** (Strong predictor, Easy): If the burndown is flat or rising by mid-sprint, the sprint is at risk. 2-3 day early warning.
 - **WIP exceeding team size** (Strong, Easy): More stories in progress than team members means nothing is finishing. 3-5 day early warning.
 - **Blocker age > 2 days** (Strong, Easy): Unresolved blockers that persist past 48 hours rarely self-resolve.
-- **Standup tone shift** (Moderate, Medium): When updates shift from "I will..." to "I'm still working on..." across multiple people. 2-3 day warning.
+- **Daily Scrum tone shift** (Moderate, Medium): When updates shift from "I will..." to "I'm still working on..." across multiple people. 2-3 day warning.
 - **After-hours activity spike** (Moderate, Medium): Sudden increase in late messages or weekend commits signals someone is struggling.
 
 ---
@@ -254,9 +254,9 @@ Teach me to think critically about data patterns, not just react to them.
 
 Copilot will walk through the fallacy:
 
-- **The confounding variable:** David's standup attendance is likely a proxy for his availability to the team. When he's available, he attends standups AND delivers design work. The cause of higher velocity isn't standup attendance -- it's design capacity.
-- **The danger:** If you pressure David to attend standups while still splitting his time across 3 teams, you've solved nothing. He'll attend standups but still not have time to do design work. Worse, you've added meeting overhead to an already overloaded person.
-- **The right approach:** Ask David directly: "When you're less available, is it because of competing team demands?" Track design work completion separately from standup attendance.
+- **The confounding variable:** David's Daily Scrum (standup) attendance is likely a proxy for his availability to the team. When he's available, he attends Daily Scrums AND delivers design work. The cause of higher velocity isn't Daily Scrum attendance -- it's design capacity.
+- **The danger:** If you pressure David to attend Daily Scrums while still splitting his time across 3 teams, you've solved nothing. He'll attend Daily Scrums but still not have time to do design work. Worse, you've added meeting overhead to an already overloaded person.
+- **The right approach:** Ask David directly: "When you're less available, is it because of competing team demands?" Track design work completion separately from Daily Scrum attendance.
 
 Common SM correlation traps:
 1. "Longer sprint planning = higher velocity" (actually: well-refined backlogs produce both)
@@ -416,13 +416,13 @@ A detailed audit showing:
 > - Alert fatigue (if everything is YELLOW, nothing is YELLOW)
 > - Confusing prediction with prevention (detecting a problem early doesn't fix it -- action does)
 > - Using the system to assign blame ("the data showed you were behind on Day 3")
-> - Forgetting that people are the best sensors (a concerned look in standup beats any metric)
+> - Forgetting that people are the best sensors (a concerned look in the Daily Scrum beats any metric)
 
 ---
 
 ## When This Doesn't Work
 
-- **"I don't have daily data."** Start with what you can observe in standup. Tone, blockers mentioned, and burndown are available to every SM. You don't need a tool -- you need attention.
+- **"I don't have daily data."** Start with what you can observe in the Daily Scrum. Tone, blockers mentioned, and burndown are available to every SM. You don't need a tool -- you need attention.
 - **"The team thinks I'm micromanaging."** Frame it as protection, not surveillance. "I'm watching these signals so I can remove obstacles faster, not so I can track your progress." Share the playbook with the team -- transparency kills suspicion.
 - **"Signals fired but I couldn't get anyone to act."** This is an escalation problem, not a detection problem. Go back to Module 2.2 (Impediment Management) and build your escalation muscle.
 - **"Too many false positives."** Tune your thresholds. Start conservative (only RED triggers action), then tighten as you calibrate. Every team's normal variation is different.

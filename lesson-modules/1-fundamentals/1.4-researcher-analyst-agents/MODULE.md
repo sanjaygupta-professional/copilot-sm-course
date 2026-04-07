@@ -81,6 +81,8 @@ Researcher will provide:
 - Techniques for inclusion and action follow-through
 - Links to reputable agile resources
 
+> **Reference:** Connect Researcher outputs to your Scrum practice. For example, use retrospective technique research to inform your Sprint Retrospective facilitation. Research findings can also feed into Backlog Refinement (identifying risks or dependencies) and Sprint Planning (understanding capacity patterns). The goal is to translate Copilot's research into actionable improvements within your Scrum events.
+
 ---
 
 ## The Analyst Agent
@@ -288,6 +290,34 @@ When using Analyst, explicitly ask:
 ### Verify Important Numbers
 
 For critical calculations (capacity planning, forecasts), double-check the math yourself or ask Copilot to verify.
+
+### Quality Gate Checklist
+
+Before acting on any Researcher or Analyst output, verify:
+- [ ] **Assumptions stated?** — Did Copilot list what it assumed? If not, ask: *"What assumptions did you make in this analysis?"*
+- [ ] **Data complete?** — Is the analysis based on all relevant data, or just what you uploaded?
+- [ ] **Outliers explained?** — Are unusual values addressed, not ignored?
+- [ ] **Context appropriate?** — Does the output make sense for your specific team situation?
+- [ ] **Actionable?** — Can you actually use this in your next Scrum event?
+
+### Fix the Output: When Results Are Poor
+
+If Copilot gives generic, wrong, or incomplete output:
+
+1. **Improve context:** Add specific team data, dates, names, and constraints
+2. **Constrain scope:** Ask for one thing at a time instead of a multi-part analysis
+3. **Request evidence:** Ask *"What data supports this conclusion?"* or *"Show your reasoning step by step"*
+4. **Challenge assumptions:** Ask *"What could be wrong with this analysis?"* or *"What alternative interpretations exist?"*
+5. **Start fresh:** If the conversation has gone off track, open a new chat with a refined prompt
+
+### From Analysis to Action
+
+Agent outputs become valuable when connected to your SM practice. After running Researcher or Analyst:
+
+- **Identify impediments:** Ask Copilot: *"Based on this analysis, what are the top 3 risks or impediments the team should discuss? How should I track their resolution?"*
+- **Feed into Scrum events:** Use analysis outputs as inputs to Sprint Planning (capacity data), Sprint Retrospectives (trend insights), or Backlog Refinement (research findings)
+
+> **Warning:** Copilot analysis depends on the data you provide and your organization's available data. Always validate agent outputs — check assumptions, question missing context, and watch for hallucinated facts. For deeper guidance on responsible AI use with Copilot, see **Module 2.4: Responsible AI & Data Governance**.
 
 ---
 

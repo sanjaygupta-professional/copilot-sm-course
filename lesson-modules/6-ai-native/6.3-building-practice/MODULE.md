@@ -312,7 +312,7 @@ A clean, practical write-up that:
 - Provides copy-paste prompts with clear [PLACEHOLDER] markers
 - Includes honest "gotchas" (e.g., "Step 3 works best if your raw notes include names — anonymous notes produce vague action items")
 - Has a customization guide that acknowledges different contexts
-- Could genuinely be shared in a Slack channel and used by another SM the same day
+- Could genuinely be shared in a Teams channel and used by another SM the same day
 
 ---
 

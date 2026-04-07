@@ -189,6 +189,8 @@ Outlook Copilot can help you prepare for meetings based on calendar context.
 
 ### Exercise 5: 1:1 Prep
 
+> **Warning:** Copilot's meeting prep features require your admin to have assigned a Microsoft 365 Copilot license and enabled connected experiences. If you don't see a Copilot option when clicking on a meeting, check File > Account > Account Privacy and ensure "Experiences that analyze your content" and "All connected experiences" are both turned on. If they are and Copilot still doesn't appear, contact your IT administrator.
+
 **When you have a calendar event:**
 
 Click on the meeting and ask Copilot:

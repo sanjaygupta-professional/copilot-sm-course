@@ -721,6 +721,10 @@ h1, h2, h3 { font-family: 'Bebas Neue', 'Impact', sans-serif; font-weight: 400; 
 .callout-try p { color: #6b21a8; }
 [data-theme="dark"] .callout-try { background: #1a0a28; }
 
+/* Dark mode exercise card readability fix (ISS-017) */
+[data-theme="dark"] .exercise-card { background: #1a1a1a; }
+[data-theme="dark"] .exercise-card .exercise-badge { background: #CCFF00; color: #000; }
+
 /* Code blocks with copy button */
 .content code {
   background: var(--cream-dark); color: var(--text-primary);
@@ -1087,7 +1091,7 @@ const JS = `
     btn.addEventListener('click', function() {
       var text = pre.textContent;
       navigator.clipboard.writeText(text).then(function() {
-        btn.textContent = 'Copied!';
+        btn.textContent = 'Copied! Use Ctrl+V to paste';
         btn.classList.add('copied');
         setTimeout(function() {
           btn.textContent = 'Copy';

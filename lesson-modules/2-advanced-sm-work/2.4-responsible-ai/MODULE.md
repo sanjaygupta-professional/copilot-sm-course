@@ -91,7 +91,7 @@ to get the same analytical value while protecting individual privacy.
 Copilot will classify each example and reveal uncomfortable truths:
 - Example 2 is **RED** — sharing emotional vulnerability with AI violates trust
 - Example 4 is **YELLOW/RED** — names specific interpersonal dynamics that could bias future analysis
-- Example 5 is **GREEN if anonymized** — "a team member" instead of naming someone
+- Example 5 is **YELLOW** — even without naming someone, "coaching conversation about weekend work" implies a specific behavioral concern. Anonymize further: *"Help me prepare a coaching conversation about sustainable pace"* to make it GREEN
 
 Key insight: Many prompts from earlier modules contained YELLOW data. That's normal for learning. Now you know how to handle it in practice.
 

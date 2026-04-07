@@ -19,7 +19,7 @@ By the end of this module, you will:
 ## The SM Workspace
 
 As a Scrum Master, you work with many types of files:
-- Ceremony notes (planning, standups, reviews, retros)
+- Ceremony notes (planning, Daily Scrums, reviews, retros)
 - Impediment logs and tracking documents
 - Team health surveys and metrics
 - Sprint data (velocity, burndowns)
@@ -35,9 +35,9 @@ The simplest way to analyze a file is to upload it directly to Copilot chat.
 
 ### How to Upload
 
-1. Open Copilot at copilot.microsoft.com
-2. Click the **paperclip icon** (📎) in the chat input
-3. Select a file from your computer
+1. Open Copilot at m365.cloud.microsoft
+2. Click the **+ (Add content)** button in the compose box
+3. Select **Upload images and files** to choose a file from your computer (or **Attach cloud files** for OneDrive files)
 4. Add your prompt and send
 
 ### What Copilot Can Read
@@ -60,15 +60,18 @@ Let's practice uploading a sample file.
 
 1. Download the sample retrospective notes from `sample-files/ceremony-notes/sprint-46-retro-raw.md`
 2. Open Copilot chat
-3. Click the paperclip icon
+3. Click the **+ (Add content)** button, then select **Upload images and files**
 4. Upload the file
 5. Add this prompt:
 
 ```
-Summarize this retrospective in 5 bullet points:
-- Top 3 things that went well
-- Top 2 improvements needed
-- Key action items
+Summarize this retrospective using strict bullet-point format only:
+
+- Top 3 things that went well (one bullet per item)
+- Top 2 improvements needed (one bullet per item)
+- Key action items with owners if mentioned
+
+Keep each bullet to one sentence. No paragraphs or narrative text.
 ```
 
 6. Review Copilot's response
@@ -190,7 +193,7 @@ definition of done.
 
 There are two ways to use Copilot, and they serve different purposes.
 
-### Copilot Chat (copilot.microsoft.com)
+### Copilot Chat (m365.cloud.microsoft)
 
 **Best for:**
 - Open-ended analysis and brainstorming
@@ -198,7 +201,7 @@ There are two ways to use Copilot, and they serve different purposes.
 - Research and planning
 - Conversations that span multiple topics
 
-**How to access:** Browser, Alt+Spacebar, Teams Copilot
+**How to access:** Browser (m365.cloud.microsoft), Windows key + C, Teams Copilot
 
 ### In-App Copilot (within Word, Excel, PowerPoint)
 
@@ -208,7 +211,7 @@ There are two ways to use Copilot, and they serve different purposes.
 - Analyzing the current file
 - Creating presentations or spreadsheets
 
-**How to access:** Alt+I within the app
+**How to access:** Home tab > Copilot button (or Alt + H, F, X)
 
 ### When to Use Which
 
@@ -250,7 +253,7 @@ In OneDrive, you can "pin" frequently used files so they appear at the top of yo
 
 ### Step 4: Create a Copilot Bookmark
 
-Bookmark copilot.microsoft.com for quick access.
+Bookmark m365.cloud.microsoft for quick access.
 
 ---
 
@@ -287,7 +290,7 @@ You now know:
 Continue to **Module 1.3: Your First Scrum Master Tasks**
 
 In Module 1.3, you'll learn:
-- Processing standup notes into actionable summaries
+- Processing Daily Scrum (standup) notes into actionable summaries
 - Synthesizing retrospective feedback
 - Transforming sprint updates for different audiences
 
@@ -307,9 +310,22 @@ In Module 1.3, you'll learn:
 
 | Action | Shortcut |
 |--------|----------|
-| Open Copilot (Windows) | Alt + Spacebar |
-| Open Copilot (Mac) | Option + Spacebar |
-| In-app Copilot | Alt + I / Option + I |
+| Open Copilot (Windows) | Windows key + C (or Copilot key) |
+| Open Copilot (Mac) | Open Copilot app |
+| In-app Copilot | Home tab > Copilot button (or Alt + H, F, X) |
+
+### Troubleshooting Common Enterprise Issues
+
+| Problem | Likely Cause | Solution |
+|---------|-------------|----------|
+| Can't access m365.cloud.microsoft | License not assigned | Ask your IT admin to verify your M365 Copilot license |
+| Copilot button missing in Word/Excel | Wrong update channel | You need Current Channel or Monthly Enterprise Channel (not Semi-Annual) |
+| File upload fails | File too large or unsupported format | Keep files under 50MB; use .docx, .xlsx, .pdf, .txt, .md |
+| "Something went wrong" error | Rate limit or long conversation | Start a new chat and try a shorter prompt |
+| Can't see Copilot in Teams | Admin hasn't enabled | Contact your IT admin to enable Copilot for Teams |
+| Connected experiences error | Privacy settings disabled | File > Account > Account Privacy > Enable "All connected experiences" |
+
+> **Tip:** If you encounter a blocker not listed here, take a screenshot and check with your IT administrator. Most enterprise issues are admin-configuration related, not user errors.
 
 ---
 
