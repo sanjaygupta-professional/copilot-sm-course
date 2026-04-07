@@ -1286,34 +1286,33 @@ renderer.code = function({ text, lang }) {
 };
 
 // Blockquotes: detect callout patterns
+// Note: marked v15 passes raw Markdown text, not pre-parsed HTML.
+// We parse the inner text ourselves and match against both raw and parsed forms.
 renderer.blockquote = function({ text }) {
-  // Check the inner text for callout patterns
-  const inner = text;
+  const raw = text;
+  const inner = marked.parse(raw);
   let calloutClass = '';
   let icon = '';
 
-  if (/<strong>Tip:?<\/strong>/i.test(inner) ||
-      /Your prompts are working well when/i.test(inner) ||
-      /<strong>Pro tip/i.test(inner) ||
-      /<strong>Best practice/i.test(inner)) {
+  // Match against raw Markdown (** patterns) and parsed HTML (<strong> patterns)
+  if (/\*\*Tip:?\*\*/i.test(raw) || /<strong>Tip:?<\/strong>/i.test(inner) ||
+      /Your prompts are working well when/i.test(raw) ||
+      /\*\*Pro tip/i.test(raw) || /\*\*Best practice/i.test(raw)) {
     calloutClass = 'callout callout-tip';
     icon = '<span class="callout-icon">\u2728</span>';
-  } else if (/<strong>Reference:?<\/strong>/i.test(inner) ||
-             /Using.*sample-files/i.test(inner) ||
-             /<strong>File:?<\/strong>/i.test(inner) ||
-             /<strong>Resource/i.test(inner)) {
+  } else if (/\*\*Reference:?\*\*/i.test(raw) || /<strong>Reference:?<\/strong>/i.test(inner) ||
+             /Using.*sample-files/i.test(raw) ||
+             /\*\*File:?\*\*/i.test(raw) || /\*\*Resource/i.test(raw)) {
     calloutClass = 'callout callout-reference';
     icon = '<span class="callout-icon">\uD83D\uDCC1</span>';
-  } else if (/<strong>Warning:?<\/strong>/i.test(inner) ||
-             /When this doesn.t work/i.test(inner) ||
-             /<strong>Caution/i.test(inner) ||
-             /<strong>Important/i.test(inner) ||
-             /<strong>Note/i.test(inner)) {
+  } else if (/\*\*Warning:?\*\*/i.test(raw) || /<strong>Warning:?<\/strong>/i.test(inner) ||
+             /When this doesn.t work/i.test(raw) ||
+             /\*\*Caution/i.test(raw) || /\*\*Important/i.test(raw) ||
+             /\*\*Note:?\*\*/i.test(raw)) {
     calloutClass = 'callout callout-warning';
     icon = '<span class="callout-icon">\u26A0\uFE0F</span>';
-  } else if (/<strong>Try this/i.test(inner) ||
-             /<strong>Experiment/i.test(inner) ||
-             /<strong>Challenge/i.test(inner)) {
+  } else if (/\*\*Try this/i.test(raw) || /\*\*Experiment/i.test(raw) ||
+             /\*\*Challenge/i.test(raw)) {
     calloutClass = 'callout callout-try';
     icon = '<span class="callout-icon">\uD83D\uDE80</span>';
   }
