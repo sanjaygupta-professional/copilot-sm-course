@@ -742,6 +742,7 @@ h1, h2, h3 { font-family: 'Bebas Neue', 'Impact', sans-serif; font-weight: 400; 
   font-size: 0.75rem; cursor: pointer; opacity: 0;
   font-family: 'Source Sans 3', sans-serif; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.04em;
+  white-space: nowrap;
 }
 .code-block-wrapper:hover .copy-btn { opacity: 1; }
 .copy-btn:hover { background: var(--accent-lime); color: #000; border-color: var(--accent-lime); }
@@ -1090,14 +1091,14 @@ const JS = `
     if (!btn || !pre) return;
     btn.addEventListener('click', function() {
       var text = pre.textContent;
-      navigator.clipboard.writeText(text).then(function() {
-        btn.textContent = 'Copied! Use Ctrl+V to paste';
+      var pasteKey = /Mac|iPhone|iPad/.test(navigator.platform) ? 'Cmd' : 'Ctrl';
+      var copiedMsg = 'Copied! ' + pasteKey + '+V to paste';
+      function showCopied() {
+        btn.textContent = copiedMsg;
         btn.classList.add('copied');
-        setTimeout(function() {
-          btn.textContent = 'Copy';
-          btn.classList.remove('copied');
-        }, 2000);
-      }).catch(function() {
+        setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+      }
+      navigator.clipboard.writeText(text).then(showCopied).catch(function() {
         // Fallback for file:// protocol
         var ta = document.createElement('textarea');
         ta.value = text;
@@ -1107,12 +1108,7 @@ const JS = `
         ta.select();
         document.execCommand('copy');
         document.body.removeChild(ta);
-        btn.textContent = 'Copied!';
-        btn.classList.add('copied');
-        setTimeout(function() {
-          btn.textContent = 'Copy';
-          btn.classList.remove('copied');
-        }, 2000);
+        showCopied();
       });
     });
   });
@@ -1294,19 +1290,16 @@ renderer.blockquote = function({ text }) {
   let calloutClass = '';
   let icon = '';
 
-  // Match against raw Markdown (** patterns) and parsed HTML (<strong> patterns)
-  if (/\*\*Tip:?\*\*/i.test(raw) || /<strong>Tip:?<\/strong>/i.test(inner) ||
-      /Your prompts are working well when/i.test(raw) ||
+  // Match against raw Markdown text (marked v15 passes raw, not pre-parsed HTML)
+  if (/\*\*Tip:?\*\*/i.test(raw) || /Your prompts are working well when/i.test(raw) ||
       /\*\*Pro tip/i.test(raw) || /\*\*Best practice/i.test(raw)) {
     calloutClass = 'callout callout-tip';
     icon = '<span class="callout-icon">\u2728</span>';
-  } else if (/\*\*Reference:?\*\*/i.test(raw) || /<strong>Reference:?<\/strong>/i.test(inner) ||
-             /Using.*sample-files/i.test(raw) ||
+  } else if (/\*\*Reference:?\*\*/i.test(raw) || /Using.*sample-files/i.test(raw) ||
              /\*\*File:?\*\*/i.test(raw) || /\*\*Resource/i.test(raw)) {
     calloutClass = 'callout callout-reference';
     icon = '<span class="callout-icon">\uD83D\uDCC1</span>';
-  } else if (/\*\*Warning:?\*\*/i.test(raw) || /<strong>Warning:?<\/strong>/i.test(inner) ||
-             /When this doesn.t work/i.test(raw) ||
+  } else if (/\*\*Warning:?\*\*/i.test(raw) || /When this doesn.t work/i.test(raw) ||
              /\*\*Caution/i.test(raw) || /\*\*Important/i.test(raw) ||
              /\*\*Note:?\*\*/i.test(raw)) {
     calloutClass = 'callout callout-warning';
@@ -2470,18 +2463,17 @@ function buildExperimentalViewer() {
     }
 
     function initCopyButtons() {
+      const pasteKey = /Mac|iPhone|iPad/.test(navigator.platform) ? 'Cmd' : 'Ctrl';
       document.querySelectorAll('#module-content .copy-btn').forEach(btn => {
         btn.addEventListener('click', function() {
           const wrapper = this.closest('.code-block-wrapper');
           const code = wrapper ? wrapper.querySelector('code') : null;
           if (code) {
+            const b = this;
             navigator.clipboard.writeText(code.textContent).then(() => {
-              this.textContent = 'Copied!';
-              this.classList.add('copied');
-              setTimeout(() => {
-                this.textContent = 'Copy';
-                this.classList.remove('copied');
-              }, 2000);
+              b.textContent = 'Copied! ' + pasteKey + '+V to paste';
+              b.classList.add('copied');
+              setTimeout(() => { b.textContent = 'Copy'; b.classList.remove('copied'); }, 2000);
             });
           }
         });

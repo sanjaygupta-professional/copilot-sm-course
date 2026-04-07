@@ -14,12 +14,12 @@
   --warm-gray: #D9D9D9; --border: #D9D9D9;
   --text-primary: #292C33; --text-secondary: #6B7280; --text-muted: #6A6A6A;
   --teal: #487265; --teal-light: #DDEFEF; --teal-dark: #407967;
-  --max-w: 960px; --header-h: 55px;
+  --max-w: 780px; --header-h: 55px;
 }
-body { font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.65; color: var(--text-primary); background: var(--white); }
-h1 { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 500; letter-spacing: -0.04em; line-height: 1.15; margin-bottom: 12px; }
-h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 500; letter-spacing: -0.02em; margin: 2rem 0 0.75rem; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
-h3 { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; margin: 1.5rem 0 0.5rem; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.7; color: var(--text-primary); background: var(--white); }
+h1 { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 500; letter-spacing: -0.05em; line-height: 1.15; margin-bottom: 16px; }
+h2 { font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 500; letter-spacing: -0.02em; margin: 2rem 0 0.75rem; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+h3 { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 500; margin: 1.5rem 0 0.5rem; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 a { color: var(--teal); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
@@ -32,7 +32,7 @@ header.site-header {
 .header-inner { width: 100%; max-width: var(--max-w); padding: 0 18px; display: flex; align-items: center; justify-content: space-between; }
 .header-brand .logo { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 600; color: var(--text-primary); text-decoration: none; }
 .header-nav { display: flex; align-items: center; gap: 6px; }
-.header-nav a { font-size: 0.85rem; padding: 5px 12px; border-radius: 6px; color: var(--text-secondary); transition: background 0.15s; }
+.header-nav a { font-size: 14px; padding: 5px 12px; border-radius: 9999px; color: var(--text-primary); transition: background 0.15s; }
 .header-nav a:hover { background: var(--cream); text-decoration: none; }
 .header-nav a.active { background: var(--teal-light); color: var(--teal-dark); font-weight: 500; }
 
@@ -54,8 +54,8 @@ header.site-header {
 .filter-btn { padding: 6px 14px; border: 1px solid var(--border); border-radius: 20px; font-size: 0.82rem; cursor: pointer; background: var(--white); color: var(--text-secondary); transition: all 0.15s; }
 .filter-btn:hover, .filter-btn.active { background: var(--teal); color: white; border-color: var(--teal); }
 
-.module-section { margin-bottom: 8px; }
-.module-section table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 6px; }
+.module-section { margin-bottom: 8px; overflow-x: auto; }
+.module-section table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 6px; min-width: 600px; }
 .module-section th { background: var(--cream); text-align: left; padding: 8px 10px; font-weight: 600; border-bottom: 2px solid var(--border); white-space: nowrap; }
 .module-section td { padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; }
 .module-section td.issues { font-family: 'SF Mono', 'Cascadia Code', monospace; font-size: 0.78rem; white-space: nowrap; }
