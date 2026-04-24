@@ -1,0 +1,15 @@
+You finished. Every module, every level, the whole arc from Module 1.1 to here. That matters — not as a credential, but as evidence that you're the kind of professional who invests in their craft.
+
+Let's look back at what this course has actually given you.
+
+You started with a basic understanding of what Copilot is. You're ending with a complete practice: a workspace setup that keeps your team context persistent, a prompt library tuned to your most important SM workflows, the analytical capability to see patterns in eight sprints of data, the facilitation skills that come from preparation rather than improvisation, a coaching gym for the conversations that matter most, and a personal operating system designed to make AI assistance a habit rather than an occasional experiment.
+
+Across these six levels, a few themes have run through everything. Context is everything — generic prompts produce generic outputs, and the time you invest in bringing your team's reality into Copilot pays dividends in every session. Evidence beats opinion — whether you're escalating an organisational impediment, making the case for a process change, or reflecting on your own impact. And systems beat experiences — not what you know how to do, but what you actually do consistently, sprint after sprint.
+
+The Velocity Squad has grown throughout this course — and in some small way, so have you.
+
+Here's your call to action: don't let the operating system you designed in Module 6.3 be an artefact. Run it. Use the daily signal scan, the mid-sprint check-in, the weekly impact log. Share what you're learning with your SM community. Teach one technique from this course to a colleague. The best way to keep learning is to start teaching.
+
+The AI tools will keep evolving. But the judgment about how to use them — when to trust the output, when to question it, when to act on it and when to consult your own experience — that judgment is yours. It's what makes you a Scrum Master, not just an AI user.
+
+Well done. Go make your team proud.

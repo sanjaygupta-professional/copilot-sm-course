@@ -1,0 +1,13 @@
+Quick question: does your organisation have a Scrum Master community of practice? Agile coaching resources? Templates from other teams that have solved problems you're currently wrestling with? Facilitation guides that someone worked hard on, filed in SharePoint, and you've never found?
+
+There's a reasonable chance the answer is "probably yes, but I wouldn't know where to start looking."
+
+This module is about finding what's already there — and creating what isn't.
+
+SharePoint is where organisations put their institutional knowledge. It's also where that knowledge tends to get lost. Keyword searches return too much. Navigation is unclear. Things get filed in folders nobody opens. Copilot changes this by letting you ask natural language questions across all the SharePoint sites you have access to: find documents about our Definition of Done, find retrospective summaries from other product teams, is there an agile playbook for Accenture teams?
+
+You'll practise document discovery, site summarisation, and tracking recent changes to documentation you care about. You'll also practise what might be the most useful exercise in this module: searching across your organisation for resources you didn't know you had access to — communities of practice, facilitation libraries, coaching materials.
+
+And you'll use Copilot to draft a team wiki page for your Scrum events — a practical output you can actually publish this sprint.
+
+As Level 1 draws to a close, this module rounds out your toolkit across the full M365 surface. You've come a long way from Module 1.1. Let's finish strong.

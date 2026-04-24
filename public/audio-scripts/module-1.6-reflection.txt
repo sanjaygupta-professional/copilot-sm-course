@@ -1,0 +1,7 @@
+You've just made every future Copilot conversation smarter. That's not an exaggeration — the context you've set up today is a force multiplier for everything that comes next in this course.
+
+Two things to hold onto: memory makes responses relevant, but stale memory is dangerous. If Priya's situation changes, or Raj grows significantly in his role, update the memory or it'll give you confident advice based on outdated information. Treat your team context document the same way you'd treat any living document — review it at least once a quarter.
+
+Here's a reflection: when you asked Copilot to help prepare for a one-to-one with Raj, and it referenced the specific coaching context you'd given it — his newness to the PO role, his stakeholder management challenges — did the output feel different from a generic "how to coach a Product Owner" response? That's the difference memory makes.
+
+Your action: take fifteen minutes this week to write your real team's context document. Not the Velocity Squad — your actual team. Members, roles, current challenges, working agreements. Save it to OneDrive. That single file, referenced in future Copilot conversations, will immediately elevate the quality of every coaching prep, every ceremony analysis, every piece of advice you get from this point forward.

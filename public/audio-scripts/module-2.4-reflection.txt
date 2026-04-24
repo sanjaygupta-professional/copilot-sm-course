@@ -1,0 +1,7 @@
+This might be the most important module you've completed in the entire course. Not because it has the most techniques, but because it shapes how you use all the other techniques responsibly.
+
+The framework to keep front of mind: Green — share freely. Yellow — anonymise or generalise before sharing. Red — never put in an AI tool. And when in doubt, ask yourself: would this person be comfortable knowing I used an AI to analyse them in this way? That question will guide you well.
+
+Here's a reflection worth sitting with: looking back at the prompts you've written in this course, were there any that crossed a yellow or red boundary? Not to feel bad about it — this is how we learn. But being honest with yourself about where the line is helps you hold it more consistently going forward.
+
+Your action: share the data classification framework with your team. Don't make it a formal policy meeting — just a five-minute conversation in your next retrospective. "Here's how I'm thinking about what data I put into AI tools. Does this feel right to you? Is there anything that makes you uncomfortable?" That conversation builds trust. It also gives your team agency over their own information. That's what responsible AI leadership looks like.

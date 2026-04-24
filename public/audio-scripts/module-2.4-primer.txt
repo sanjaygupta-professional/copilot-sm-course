@@ -1,0 +1,11 @@
+This module exists because of a gap that most AI training courses skip over completely. And that gap has real consequences.
+
+Think about what you've been putting into Copilot prompts across the first few levels of this course. Priya's emotional moment in the retrospective. Marcus's confidence struggles. Individual performance patterns. Team health scores attributed to specific names. This is sensitive data about real people — your team members — and it deserves serious thought.
+
+Here's the question this module asks you to sit with: do your team members know that you're using AI to analyse them? Would they be comfortable with it? And if they wouldn't, does that mean you need to change your practice — or just be more transparent about it?
+
+Responsible AI for Scrum Masters isn't about being afraid to use AI. It's about using it thoughtfully. You'll build a data classification framework in this module — Green, Yellow, and Red tiers — that helps you make fast, consistent decisions about what's appropriate to share with Copilot. Aggregated team metrics are Green. Individual performance patterns are Yellow, handle with care. Private coaching notes and personal disclosures are Red, full stop.
+
+You'll also learn to spot AI bias in team assessments — the risk that Copilot's recommendations reflect patterns in its training data rather than the nuanced reality of your specific team. And you'll learn how to lead responsible AI conversations with your team so they're informed participants, not unknowing subjects.
+
+This is the module that makes everything else you've learned more trustworthy. Let's build the ethical foundation your practice needs.

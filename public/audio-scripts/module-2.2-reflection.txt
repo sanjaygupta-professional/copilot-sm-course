@@ -1,0 +1,7 @@
+You've just transformed your impediment log from a list into evidence. That shift — from recording problems to proving patterns — is what separates an SM who mentions impediments from an SM who drives their resolution.
+
+The most important insight: symptoms and root causes require different interventions. Treating a root cause as if it's a symptom, or escalating a symptom as if it's a root cause, wastes everyone's time. Copilot's pattern analysis helps you see the difference.
+
+Here's a reflection: when Copilot quantified the design capacity impediment — seven occurrences, forty-seven story points blocked, patterns across multiple sprints — did that number surprise you? Or did you know it was bad but not have it in one place? That's the gap that systematic tracking closes.
+
+Your action: take your actual impediment log — or build one from memory if you don't maintain one — and run the pattern analysis prompt. Find your top two systemic impediments. For each one, trace it to its root cause. Then ask yourself: have I been addressing the symptom or the cause? If it's the symptom, what would addressing the cause actually require, and who needs to be involved? That answer is your escalation brief.

@@ -1,0 +1,11 @@
+Here's something that might change how you think about Copilot: it's not just one AI. It's several. And the one you pick dramatically changes the quality of what you get back.
+
+Before this module, you've been talking to Copilot as a generalist. Now you're going to meet two specialists. The Researcher agent, which can dive deep into agile literature, surface facilitation techniques, and synthesise findings from multiple sources — like a brilliant research assistant who reads everything and remembers all of it. And the Analyst agent, which reasons with numbers, spots patterns in data, does the maths, and tells you whether your sprint planning assumptions are grounded in reality or optimism.
+
+Think about this: you've got eight sprints of velocity data from the Velocity Squad. A swing of 35 to 55 points. What's actually driving that variance? Your gut might have a theory. Analyst can tell you if it's right — and show its working.
+
+Or consider this: your team has retrospective fatigue. Same issues, different sprint. You know formats like Start Stop Continue aren't cutting it anymore. Researcher can give you five evidence-based alternatives in under two minutes, with guidance on which one works best for teams struggling with remote inclusion.
+
+In this module, you'll use both agents separately and then combine them — the real power move — to benchmark your team against industry standards and get prioritised improvement recommendations.
+
+You're about to add two very powerful tools to your kit. Let's go.

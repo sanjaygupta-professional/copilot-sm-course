@@ -1,0 +1,7 @@
+You've just seen Copilot work inside the tools you use every day — not as an external add-on, but as a collaborator built into your workflow.
+
+The pattern to remember: Chat for exploration and analysis, in-app for creation and production. When you need to think, use Chat. When you need to make something, open the app.
+
+Here's a reflection: when PowerPoint Copilot generated that sprint review deck, was it a complete first draft you'd send to stakeholders, or a strong starting point that needed refinement? Both answers are fine — the question is really about how you calibrate your expectations of AI output. Great output is the goal. Good starting point that saves an hour is also a win.
+
+Your action: the next sprint review you prepare — don't start from a blank deck. Start with a Copilot prompt, give it your sprint data, and let it build the structure. Then refine it. Time how long that takes versus your previous approach. That data point will tell you more about the value of this module than anything I can say here.

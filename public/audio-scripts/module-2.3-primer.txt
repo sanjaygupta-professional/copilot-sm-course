@@ -1,0 +1,13 @@
+Here's a question that should concern every Scrum Master: can you tell the difference between a team that's performing well and a team that's performing well right now but is quietly heading towards burnout?
+
+Velocity can't answer that question. Burndown charts can't answer it. But team health data can — if you know how to read it.
+
+Look at the Velocity Squad's health survey numbers across the last five sprints. Sustainable Pace dropped from three point five to two point five. Work-Life Balance fell from three point two to two point four. Psychological Safety declined from four point two to three point two. These aren't alarming numbers in isolation. As a trend, they're a warning system. This team is heading somewhere you don't want them to go.
+
+This module teaches you to catch that trajectory before it becomes a crisis.
+
+You'll learn to analyse team health survey data for patterns, correlations, and early warning signs. You'll use Copilot to identify coaching opportunities — which team members need attention, what kind, and how to approach the conversation. And you'll learn to track continuous improvement over time, so your retrospective actions actually show up in the data rather than disappearing into good intentions.
+
+The most important mindset shift in this module is this: team health is a leading indicator, not a lagging one. By the time unhealthy teams show up in your velocity metrics, you've already missed the window to intervene easily. This module gives you the tools to look earlier.
+
+Let's protect your team's sustainability.

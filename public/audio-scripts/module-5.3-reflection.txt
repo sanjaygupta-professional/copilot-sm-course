@@ -1,0 +1,7 @@
+You've just learned to operate at a level most Scrum Masters never reach: driving organisational change without positional authority, with evidence instead of opinion.
+
+The most important skill you practised here: translating team-level patterns into organisational language. The shift from "the design capacity is a problem" to "the current shared designer model is costing the Horizon Program approximately X story points per sprint and directly reducing sprint goal achievement by fifteen percentage points" is the shift from concern to proposal. Executives respond to proposals, not concerns.
+
+Here's a reflection: is there an organisational pattern you can currently see — one that affects your team and at least one other — that no one has made the business case for addressing? What's stopping that case from being made? Is it that the data isn't assembled? Or that no one has framed it in financial terms? Or that there's a political dynamic making it uncomfortable to raise?
+
+Your action: take the pattern you identified and build the business case for addressing it. Use Copilot to help quantify the impact. Frame it in terms of delivery reliability and cost, not just team friction. Then identify one person in your organisation who has both the interest and the authority to act on it. Have the conversation. Not to push an agenda — to share evidence and ask what they think. That conversation is how organisational change starts.

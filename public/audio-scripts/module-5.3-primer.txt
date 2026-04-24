@@ -1,0 +1,11 @@
+Here's something that might reframe how you think about your role: every impediment that persists across multiple teams and multiple sprints is an organisational problem wearing a team-sized disguise.
+
+The shared designer bottleneck isn't a David problem. It's a staffing model problem. The tech debt consuming forty percent of Catalyst Crew's sprint capacity isn't an Ana problem. It's a governance problem. The deployment pipeline confusion causing incidents across three teams isn't a technical problem. It's a process ownership problem.
+
+As a Scrum Master operating at program scale, you're the only person who can see all of these patterns together. That makes you uniquely positioned to drive change that no individual team lead or product manager can drive alone. But pattern recognition isn't enough. You need to translate it into language executives understand, build coalitions that can act on it, and drive change without the positional authority to mandate anything.
+
+This is the most advanced module in Level 5, and possibly in the entire course.
+
+You'll build executive-ready business cases with financial framing — quantifying the cost of organisational inefficiencies in terms that make CFOs pay attention. You'll navigate political dynamics without a position of authority, using influence, evidence, and coalition-building instead. You'll design an organisational agility measurement approach. And you'll practise presenting these insights to leadership in a way that creates urgency without creating defensiveness.
+
+The skills in this module separate Scrum Masters who operate within the system from those who improve the system. Let's build your change agent capabilities.

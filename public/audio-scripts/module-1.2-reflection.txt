@@ -1,0 +1,7 @@
+Nice work setting up your workspace. It might feel like plumbing right now, but you just built the foundation that makes everything else in this course faster.
+
+The key things to lock in: upload once to OneDrive, reference forever. ContextIQ means you can ask "find last month's retrospective notes" and Copilot actually finds them — no folder hunting required. And the chat-versus-in-app distinction? Use Chat when you're thinking and exploring, use in-app when you're creating a specific document.
+
+A reflection question worth asking: is there a file you reference in nearly every sprint — a team context document, a working agreements page, a prompt template — that still only lives on your desktop? What would change if that file lived in OneDrive and Copilot could always see it?
+
+Your action for this sprint: create the recommended folder structure in OneDrive and move at least three recurring files into it. Team overview, personas, working agreements. Twenty minutes of setup, weeks of time saved. Do it before your next planning session.

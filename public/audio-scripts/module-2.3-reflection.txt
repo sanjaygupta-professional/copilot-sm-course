@@ -1,0 +1,7 @@
+You've just learned to see your team differently — not just as a delivery engine, but as a group of humans whose health is your responsibility to monitor and protect.
+
+The core insight: declining Psychological Safety and Work-Life Balance are the canaries in the coal mine. When those two dimensions fall together, the team is telling you something important that they're not saying out loud. Your job is to hear it before it becomes a retention problem or a team breakdown.
+
+Here's a reflection: if you were to run a team health survey with your real team tomorrow, which dimension would you most expect to see under pressure? And more importantly — what's one thing you could do this sprint that would have a measurable positive effect on that dimension? Not a big programme. One thing.
+
+Your action: if you don't currently run team health surveys, start simple. Five dimensions, five-point scale, every sprint. That's it. The data you collect over three sprints will tell you more about your team's trajectory than any amount of observation. Use the analysis prompt from this module on the first dataset you generate and see what patterns emerge that you couldn't see clearly before.

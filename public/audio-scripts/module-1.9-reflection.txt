@@ -1,0 +1,7 @@
+Email is one of the most underestimated parts of the Scrum Master role. The quality of your stakeholder communication directly affects whether people trust your team's delivery, whether your escalations get acted on, and whether your team feels well-represented upward. This module gave you tools that raise all three.
+
+The habits to build: lead with key points, not context. Let Copilot adjust the tone, don't adjust it yourself word by word. And for escalations, always quantify the impact — story points blocked, days delayed, patterns across sprints. Numbers are what turn concerns into actions.
+
+Here's a reflection: when Jennifer Walsh's persona responded to your escalation email, what did she want more of? Most VP responses want tighter framing of the business impact and a more specific ask. Did yours have both?
+
+Your action: the next time you need to escalate something — any impediment that's persisted more than two sprints — use the escalation template from this module. Quantify it. Show what you've tried. Make a specific ask. Send it. Then notice whether the response is faster and more decisive than your previous escalations. That's the measure of whether this is working.

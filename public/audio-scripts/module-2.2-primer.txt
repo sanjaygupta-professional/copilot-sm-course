@@ -1,0 +1,13 @@
+Let me ask you something uncomfortable: how many impediments are sitting in your backlog right now that have been there for more than two sprints? Not the new ones — the persistent ones. The ones you've noted, discussed in retros, maybe escalated once, and which are still quietly draining your team's velocity every single sprint.
+
+The uncomfortable truth is that most Scrum Masters deal with impediments reactively. They address them when the team raises them, but they don't do the pattern analysis that would reveal the systemic root causes. And without that analysis, the same impediments recur, sprint after sprint, wearing different labels but carrying the same underlying cause.
+
+This module changes that.
+
+You're going to learn to do systematic impediment management with Copilot as your analyst. Take your impediment log from the last six sprints and ask Copilot to identify the patterns, quantify the impact in story points and days delayed, distinguish the symptoms from the root causes, and tell you which impediments are within your team's control versus which need organisational escalation.
+
+For the Velocity Squad, this analysis will surface something you might already suspect: the design capacity bottleneck isn't a David problem. It's a staffing model problem. And that distinction matters enormously for how you address it.
+
+You'll also build the data-backed escalation case that makes leadership take action — because organisations respond to quantified impact, not descriptions of inconvenience.
+
+Let's turn your impediment log into your most powerful change management tool.

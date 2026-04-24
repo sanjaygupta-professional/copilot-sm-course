@@ -1,0 +1,13 @@
+Let me tell you why some Copilot prompts produce extraordinary results and others produce something that reads like a Wikipedia article for a very general topic.
+
+It's not magic. It's structure. And you're about to understand it at a level most Copilot users never reach.
+
+This module is advanced prompt engineering for Scrum Masters — but "advanced" doesn't mean complicated. It means intentional. Once you understand the anatomy of a high-performing prompt — what makes it specific rather than vague, grounded rather than generic, chained rather than isolated — you stop getting lucky with good outputs and start producing them consistently.
+
+You'll dissect prompts you've already used in this course and understand exactly why they worked. You'll learn chain-of-thought prompting, which asks Copilot to reason step by step rather than jump to conclusions — dramatically improving the quality of complex analyses. You'll build reusable prompt chains that connect ceremony outputs to improvement tracking, so the output of your retrospective analysis becomes the input for next sprint's action tracking.
+
+And you'll learn something genuinely valuable: how to debug a prompt when Copilot gives you a disappointing response. Not every output is Copilot's fault. Most of the time, a generic response reflects a generic prompt. This module gives you a systematic way to find the gap and fix it.
+
+If Level 1 was about using Copilot, this module is about mastering it. The difference shows up in every prompt you write from this point forward.
+
+Let's take your prompting to the next level.

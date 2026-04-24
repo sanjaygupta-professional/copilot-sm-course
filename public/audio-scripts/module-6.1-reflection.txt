@@ -1,0 +1,7 @@
+You've just graduated from using AI to using AI systematically. That difference compounds every week.
+
+The principle to build your workflows around: automate the predictable, preserve judgment for the nuanced. Meeting documentation is highly predictable — automate it. Coaching conversation decisions are highly nuanced — keep those human. Most of your SM work falls clearly into one category or the other.
+
+Here's a reflection: when you ran the time-sink audit, where did the biggest surprise land? For most Scrum Masters, it's not which tasks take time — they know that. It's realising how many of those tasks follow the same pattern every week, every sprint, without variation. Pattern is the key word. If it's predictable, it can be automated or dramatically accelerated.
+
+Your action: pick your single biggest recurring time-sink and design an agent workflow for it this sprint. Just one. Map the inputs, the processing steps, and the output format. Build the prompt chain. Run it once with real data. Measure the time saved compared to your usual approach. That one workflow, productionised, will give you back hours every month. Then build the next one. That's how eight-to-twelve hours per week becomes two.

@@ -1,0 +1,11 @@
+Quick thought experiment: imagine if every time you hired a brilliant assistant, they started each day having completely forgotten everything they knew about your team. Your team members' names, your current challenges, the history that shapes every decision. You'd spend half the day just getting them up to speed. That's what it's like to use Copilot without memory.
+
+This module solves that problem — and it's more impactful than it sounds.
+
+Copilot Memory lets you teach the AI about your context once and have it available in every conversation. Your team composition. Your sprint cadence. The challenges you're actively working on. David's shared capacity situation. Priya's remote inclusion challenges. Raj's growth as a new Product Owner. Once Copilot knows these things, every response it gives you becomes more specific, more relevant, and more useful — without you having to explain your situation from scratch every time.
+
+You'll learn two approaches in this module. Using Copilot's built-in memory feature, if your organisation has enabled it. And creating a team context document stored in OneDrive, which works even without the memory feature and gives you even more control over what Copilot knows.
+
+And here's the advanced move: layering context. Combining Copilot's long-term memory of your team with a freshly uploaded file — today's standup notes, this sprint's burndown — so every response draws on both the persistent picture and the current moment.
+
+Think about what genuinely contextual AI assistance could mean for your coaching conversations, your ceremony prep, your one-to-ones. That's what we're building today. Let's go.

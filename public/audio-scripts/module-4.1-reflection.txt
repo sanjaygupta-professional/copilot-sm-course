@@ -1,0 +1,7 @@
+You've just built the metrics foundation that most Scrum Masters never get around to creating — and you've seen how quickly Copilot can process eight sprints of data and surface insights that would take hours to calculate manually.
+
+The distinction that matters most: vanity metrics feel good, actionable metrics drive change. Sprint velocity is a vanity metric when tracked alone. Sprint velocity combined with goal achievement rate, carryover percentage, and team health trends is an actionable story about what your team needs to do differently.
+
+Here's a reflection: which of the ten metrics that matter did you find most surprising? Often it's the combination metrics — sprint goal achievement rate alongside velocity variance — that reveal things that neither metric shows alone. Where did your team's data create a picture you didn't expect?
+
+Your action: choose three metrics from the ten that you're not currently tracking and start tracking them this sprint. Just three. Add them to a simple spreadsheet or your existing Jira dashboard. In three sprints, run the analysis prompt from this module on the data you've gathered. The patterns that emerge will immediately tell you where your highest-leverage improvements are. Start the clock.

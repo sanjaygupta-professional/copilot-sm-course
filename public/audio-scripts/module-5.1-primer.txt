@@ -1,0 +1,13 @@
+Welcome to Level 5. Things are about to get more complex — and considerably more interesting.
+
+Here's a question: in the last week, how many different roles did you actually play as Scrum Master? You facilitated a ceremony — that's the facilitator hat. You coached someone through a difficult moment — coach. You removed a blocker — impediment remover. You created training material for a new team member — trainer. You communicated cross-team status to a stakeholder — bridge.
+
+Most Scrum Masters don't realise they're wearing seven different hats. And most critically, they apply the same hat — usually facilitation — to situations that actually require a completely different one.
+
+This module builds your role fluency. The ability to diagnose, within sixty seconds, which hat a situation requires — and to switch into that mode deliberately rather than defaulting to whatever comes most naturally to you.
+
+You'll map all seven SM role modes and understand what Copilot strategy works best for each. You'll practise diagnosing situations from a real week of SM activities. You'll navigate the Tuckman team maturity curve and understand which SM behaviours a forming team needs versus a norming team versus a performing team. And you'll confront the "SM doing PM work" anti-pattern — one of the most common traps at program scale.
+
+In the Horizon Program, you're not just serving the Velocity Squad. You're covering multiple teams at different maturity levels with different needs. That complexity is what Level 5 prepares you for.
+
+Let's develop your range.

@@ -1,0 +1,7 @@
+You've just shifted from reactive to predictive. That's a meaningful upgrade to how you serve your team.
+
+The leading indicators to prioritise: standup note patterns — same person, same blocker, multiple days. Burndown flatness in the middle third of a sprint. PR review queue backing up. Unplanned work appearing after Day 3. These are your Day 5 warning signals. When two or more fire together, something needs your attention immediately.
+
+Here's a reflection: looking back at a recent sprint that didn't deliver as planned — were any of these signals visible mid-sprint? Honestly? The answer for most Scrum Masters is yes, in hindsight. The goal of this module is to make that hindsight real-time.
+
+Your action: set a mid-sprint check-in as a recurring calendar event. Day 5 or Day 6 of every sprint. Five minutes with your standup notes and burndown. Run the signal detection prompt from this module. Ask: are any warning patterns present? If yes, what's the right intervention right now, not at the sprint review? That five-minute habit, consistently applied, will change the trajectory of multiple sprints this year.

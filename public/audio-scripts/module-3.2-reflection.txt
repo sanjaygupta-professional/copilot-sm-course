@@ -1,0 +1,7 @@
+You've built a visual library that didn't exist before this module. That's a tangible output you can use starting this sprint.
+
+The four categories to keep active: sprint review backgrounds for stakeholder engagement, retrospective aids to keep sessions fresh, team celebrations to honour real milestones, and process visuals for documentation that people actually read.
+
+Here's a reflection: which category of visual would make the biggest difference to your team right now? If you've had three flat retrospectives in a row, a creative facilitation visual might break the pattern. If your team hasn't been celebrated properly in a while, a milestone graphic might matter more than anything process-related. Trust your instinct about where the energy needs to go.
+
+Your action: create one visual this sprint for something your team actually achieved. It doesn't have to be a major milestone — a consistently clean Definition of Done, a week where no standups ran over time, someone stepping up and owning a difficult story. Make it visible. Put it in the sprint review or the team channel. Watch what it does to the energy. Celebration is a leadership act. Use your new capability to make it feel like one.

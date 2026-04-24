@@ -1,0 +1,11 @@
+Let's get into the good stuff. Here's a provocative claim: the four tasks in this module used to eat ninety minutes of your week. After today, they'll take fifteen minutes combined. Does that sound too good? Let's put it to the test.
+
+Here's what I want you to think about as you work through this module: how much of your Scrum Master value actually comes from reading notes and writing things up — versus the thinking, the conversations, the facilitation, the human judgment? The uncomfortable answer for many SMs is that a lot of their time goes to the former when their real value lives in the latter.
+
+This module covers four core tasks. Processing Daily Scrum notes into a clear picture of blockers, patterns, and your action items as SM. Synthesising raw retrospective feedback into themes that actually drive change. Transforming a single set of sprint data into three different communications — one for your team, one for stakeholders, one for leadership. And extracting impediments that are hiding in meeting notes, not labelled as blockers but absolutely slowing things down.
+
+Each one has a prompt you can use today with the Velocity Squad's sample files. Each one will save you real time starting this sprint.
+
+The question I want you to carry into this module is this: once you've seen what Copilot can do with these tasks, what will you do with the time you get back? That's not a rhetorical question — it's a design challenge. Think about it while you work through the exercises.
+
+Let's dive in.

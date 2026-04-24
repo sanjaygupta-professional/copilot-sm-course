@@ -1,0 +1,7 @@
+You've just learned to work with two very different cognitive partners — one that researches the world, one that reasons with your data. Used together, they're remarkably powerful.
+
+The thing to hold onto: Researcher gives you breadth and context, Analyst gives you precision and proof. Neither replaces your judgment — both make your judgment better informed.
+
+Here's a reflection worth sitting with: when Analyst showed you the Velocity Squad's capacity numbers — Lisa at thirteen and a half points, Priya at nine point six, David at just three — did it confirm what you already suspected, or did it surprise you? The value of Analyst isn't always in the numbers themselves — it's in making your assumptions visible so you can test them.
+
+Your action: before your next sprint planning session, use Analyst to calculate your team's actual capacity — not an approximation, but the real maths, person by person, day by day. Bring the output to planning and share it with the team. Watch how the conversation changes when the numbers are visible to everyone, not just in your head.

@@ -1,0 +1,7 @@
+You've just developed the coordination capabilities that distinguish a team-level SM from a program-level SM. That's a significant professional expansion.
+
+The principle to hold onto: at program scale, your value is in creating transparency, not in holding information. The Scrum of Scrums brief, the dependency map, the shared resource framework — these aren't just tools. They're systems that make the program resilient without requiring you to be the single point of knowledge.
+
+Here's a reflection: in the SoS preparation exercise, when you synthesised all four teams into a single brief, what stood out as the most critical risk? Usually it's the cascading dependency — where one team's delay creates blockers for two or three others. Did you catch that pattern? That's exactly the thing that only someone with cross-team visibility can see.
+
+Your action: if you coordinate with any other teams, create your version of the SoS brief this sprint. Even if it's informal — a summary in the channel, not a formal document. The act of synthesising cross-team status forces you to identify dependencies and risks that stay invisible as long as you're only looking at your own team. Start the habit at whatever scale you currently operate. Scale up as you grow into larger programs.

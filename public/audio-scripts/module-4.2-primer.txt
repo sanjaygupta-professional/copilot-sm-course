@@ -1,0 +1,11 @@
+Most Scrum Masters learn about sprint failures at the Sprint Review. By then, it's too late to change anything. The team is demoralised, the stakeholders are disappointed, and you're in recovery mode. But here's the thing: in almost every sprint failure, the signals were visible on Day 5. The data was there. Nobody was looking at it.
+
+This module teaches you to look earlier.
+
+The Velocity Squad's Sprint 44 is a case study. Velocity dropped from forty-five to thirty-five. Sprint goal achievement fell to fifty percent. The team felt blindsided. But three days before the sprint ended, the daily standup notes showed the same two team members hitting the same blocker for the third day in a row. The burndown was flat. The PR review queue was backed up. The signals were there. They just weren't being read.
+
+You're going to build an early warning system in this module. Five leading indicators that predict sprint failure three to five days before it becomes visible in velocity. Automated signal detection prompts you can run mid-sprint to check whether warning patterns are emerging. And intervention playbooks — predefined responses for when specific signals fire, so you're not making it up under pressure.
+
+The mindset shift this module requires is subtle but important: your job isn't to predict the future. It's to notice the present sooner. Everything you need to see is already there in your data. You just need a system to surface it.
+
+Let's build your windshield.

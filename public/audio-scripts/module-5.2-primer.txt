@@ -1,0 +1,13 @@
+Here's the challenge at program scale: every team thinks they're independent — until a dependency bites them mid-sprint. The Velocity Squad's API changes affect Nexus Team's mobile notifications. Catalyst Crew's search indexing depends on Insight Engine's analytics pipeline. And you, as the SM spanning all four Horizon Program teams, are the only person with visibility across all of it.
+
+That visibility is your superpower. But only if you have systems to use it.
+
+This module covers multi-team coordination — the practices that make dependencies visible, conflicts resolvable, and information flowing without turning you into a bottleneck or burying everyone in synchronisation meetings.
+
+You'll build a Scrum of Scrums preparation brief — a single-page synthesis that Jennifer Walsh can scan in two minutes and understand the state of all four teams. You'll learn to surface cross-team dependencies before they become mid-sprint surprises. You'll handle the David and Tom shared resource conflicts without damaging relationships. And you'll create program-level transparency mechanisms that scale as the program grows.
+
+The key insight this module offers: your job at program scale isn't to manage all the moving parts. It's to create systems that make the moving parts manageable by everyone — so you're a coordinator of flow, not a centralised decision point that everything has to pass through.
+
+The Horizon Program needs a Scrum Master who can see the whole picture. This module gives you the tools to act on what you see.
+
+Let's coordinate at scale.

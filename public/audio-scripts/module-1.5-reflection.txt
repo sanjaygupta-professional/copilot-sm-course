@@ -1,0 +1,7 @@
+You've just discovered what might be the most human use of AI in this entire course — using it to understand other humans better.
+
+The key insight to take away: different people genuinely have different concerns about the same idea, and those concerns are predictable if you take the time to model them. Persona prompting lets you do that in two minutes instead of learning the hard way in a meeting.
+
+Here's a question: when the developer persona pushed back on your standup proposal, and the stakeholder persona asked about Friday escalations — did those reactions feel realistic? Did they surface a concern you hadn't fully thought through? That's the test of a good persona exercise.
+
+Your action for this sprint: think of one conversation you've been putting off — a difficult coaching conversation, a process change proposal, an escalation you need to make. Run it through the relevant persona first. Get the objections. Prepare for them. Then have the real conversation. Notice the difference in how prepared you feel, and how the conversation actually goes. That experience will make you a persona-prompting convert.

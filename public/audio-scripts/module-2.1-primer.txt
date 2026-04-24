@@ -1,0 +1,11 @@
+Here's a challenge for you: think about the last ceremony you facilitated that didn't go quite the way you hoped. Maybe sprint planning ran long. Maybe the retrospective felt flat. Maybe voices got lost. Now — how long before that ceremony did you start preparing? And when you prepared, was it structured, or was it mostly "I'll figure it out in the room"?
+
+Level 2 starts here, and it starts with a significant upgrade to how you show up for your ceremonies.
+
+Copilot as a facilitation partner changes the preparation game entirely. Instead of arriving with a rough agenda, you arrive with a facilitation guide — complete with timebox allocations, specific questions to ask at each stage, signals to watch for that indicate the team is about to overcommit or shut down, and pre-planned interventions for when things go off track.
+
+This module covers all four Scrum ceremonies. Sprint planning, with its capacity maths and its tendency to run over time. The Daily Scrum, with its 25-minute creep and its quiet voices. The Sprint Review, where you need to engage stakeholders while the team demonstrates their work. And the Retrospective — especially the retrospective — where fresh formats and genuine psychological safety make the difference between action that sticks and conversation that doesn't.
+
+The most valuable skill you'll build here isn't the prompting — it's the habit of thinking through your ceremonies before they happen, systematically and with intention. Copilot is the forcing function for that habit.
+
+Your facilitation is about to get noticeably more deliberate. Let's build it.

@@ -1,0 +1,9 @@
+You've just completed Level 1, and that's genuinely worth a moment of acknowledgement. You started as a Scrum Master who knew Copilot existed. You're ending as one who can use it across Chat, Word, Excel, PowerPoint, Teams, Outlook, and SharePoint — with real skills in each.
+
+The Level 1 toolkit is now yours: file upload, OneDrive persistence, ContextIQ search, agent selection, persona prompting, memory, in-app Copilot, meeting intelligence, email drafting, and document discovery. Each one a time-saver. Together, they're a significant practice upgrade.
+
+Here's the reflection for this module specifically: did the SharePoint natural language search find documents you didn't know existed? Or was the most valuable exercise the wiki page creation — having a professional, ready-to-publish document in minutes? Both are worth noting. The former expands what you know is available to you. The latter shows you how quickly you can create structure for your team.
+
+Your action to close out Level 1: pick one thing from each of the last three modules — Teams, Outlook, and SharePoint — and commit to using it in your next sprint. Not all of it. Just one thing from each. Enable transcription. Use the escalation template. Run one SharePoint natural language search. Three small habits from three modules. That's Level 1 becoming real.
+
+See you in Level 2.

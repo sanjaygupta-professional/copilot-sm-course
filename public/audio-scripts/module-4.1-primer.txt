@@ -1,0 +1,11 @@
+Here's a provocative claim: velocity is the most-tracked metric in Scrum and one of the least useful in isolation. Tracking only velocity is like measuring a car's speed while ignoring fuel level, engine temperature, and tyre pressure. You know how fast you're going. You have no idea if you're about to break down.
+
+Welcome to Level 4 — and to a completely different relationship with your team's data.
+
+The Velocity Squad has eight sprints of history: forty-eight, fifty-two, forty-five, thirty-eight, thirty-five, forty-two, fifty-five, forty-eight. What does that tell you? On its own, not much. But combined with sprint goal achievement rates, carryover patterns, cycle time, and team health data, it tells you everything. Where the variance comes from. Which sprints were structurally healthy and which were lucky. What your actual planning velocity should be.
+
+This module teaches you to build a metrics practice that drives decisions, not just reports. You'll define the ten metrics that actually matter — a mix of delivery, health, and process metrics — and learn the crucial distinction between vanity metrics and actionable ones. You'll build dashboards that serve different audiences: your team, your management, your executives. And you'll apply statistical thinking to understand what's signal versus noise in your sprint data.
+
+By the end of this module, you'll be the Scrum Master in the room who understands your team's data more deeply than anyone else — and can explain what it means in terms that matter to whoever is listening.
+
+Let's get data-driven.
