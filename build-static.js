@@ -760,11 +760,17 @@ h1, h2, h3 { font-family: 'Bebas Neue', 'Impact', sans-serif; font-weight: 400; 
 
 /* ─── Audio Players ─────────────────────────────────────────────────────── */
 .audio-player {
-  display: flex; flex-direction: column; gap: 0.4rem;
+  display: flex; flex-direction: row; gap: 0.85rem; align-items: center;
   border: 1.5px solid var(--border); padding: 0.75rem 1rem;
   margin: 1.25rem 0; font-family: 'Courier New', monospace;
   background: var(--bg-secondary);
 }
+.audio-avatar {
+  width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
+  border: 1.5px solid var(--level-accent); overflow: hidden;
+}
+.audio-avatar img { width: 100%; height: 100%; display: block; }
+.audio-body { display: flex; flex-direction: column; gap: 0.35rem; flex: 1; min-width: 0; }
 .audio-primer { border-color: var(--level-accent); }
 .audio-reflection { border-color: #7a6a5a; }
 .audio-label {
@@ -773,9 +779,10 @@ h1, h2, h3 { font-family: 'Bebas Neue', 'Impact', sans-serif; font-weight: 400; 
 }
 .audio-reflection .audio-label { color: #9a8a7a; }
 .audio-controls { display: flex; align-items: center; gap: 0.75rem; }
+.audio-controls { display: flex; align-items: center; gap: 0.6rem; }
 .audio-play-btn {
   background: var(--level-accent); color: #fff; border: none;
-  width: 2rem; height: 2rem; font-size: 0.85rem;
+  width: 1.85rem; height: 1.85rem; font-size: 0.8rem;
   cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center;
 }
 .audio-reflection .audio-play-btn { background: #7a6a5a; }
@@ -785,7 +792,7 @@ h1, h2, h3 { font-family: 'Bebas Neue', 'Impact', sans-serif; font-weight: 400; 
 }
 .audio-progress-fill { height: 100%; width: 0%; background: var(--level-accent); transition: width 0.25s linear; }
 .audio-reflection .audio-progress-fill { background: #9a8a7a; }
-.audio-time { font-size: 0.7rem; color: var(--text-secondary); min-width: 3rem; text-align: right; }
+.audio-time { font-size: 0.7rem; color: var(--text-secondary); min-width: 2.8rem; text-align: right; }
 .audio-desc { font-size: 0.68rem; color: var(--text-secondary); letter-spacing: 0.04em; }
 
 /* Tables */
@@ -1829,13 +1836,16 @@ function buildIndexPage() {
       </p>
     </div>
     <div class="audio-player audio-primer" data-src="audio/course-welcome.mp3">
-      <div class="audio-label">&#9670; COURSE WELCOME</div>
-      <div class="audio-controls">
-        <button class="audio-play-btn">&#9654;</button>
-        <div class="audio-progress-bar"><div class="audio-progress-fill"></div></div>
-        <span class="audio-time">0:00</span>
+      <div class="audio-avatar"><img src="alice-avatar.svg" alt="Alice"></div>
+      <div class="audio-body">
+        <div class="audio-label">&#9670; BEFORE YOU BEGIN</div>
+        <div class="audio-controls">
+          <button class="audio-play-btn">&#9654;</button>
+          <div class="audio-progress-bar"><div class="audio-progress-fill"></div></div>
+          <span class="audio-time">0:00</span>
+        </div>
+        <div class="audio-desc">Alice &middot; Course welcome &middot; ~2.5 min</div>
       </div>
-      <div class="audio-desc">Listen before you begin &middot; ~2.5 min</div>
     </div>
 
     <div class="stats-row">
@@ -1864,13 +1874,16 @@ function buildIndexPage() {
       ${resourceSections}
     </div>
     <div class="audio-player audio-reflection" data-src="audio/course-completion.mp3">
-      <div class="audio-label">&#9670; COURSE COMPLETION</div>
-      <div class="audio-controls">
-        <button class="audio-play-btn">&#9654;</button>
-        <div class="audio-progress-bar"><div class="audio-progress-fill"></div></div>
-        <span class="audio-time">0:00</span>
+      <div class="audio-avatar" style="border-color:#7a6a5a"><img src="alice-avatar.svg" alt="Alice"></div>
+      <div class="audio-body">
+        <div class="audio-label">&#9670; COURSE COMPLETION</div>
+        <div class="audio-controls">
+          <button class="audio-play-btn">&#9654;</button>
+          <div class="audio-progress-bar"><div class="audio-progress-fill"></div></div>
+          <span class="audio-time">0:00</span>
+        </div>
+        <div class="audio-desc">Alice &middot; Listen when all modules complete &middot; ~1.5 min</div>
       </div>
-      <div class="audio-desc">Listen when you've completed all modules &middot; ~1.5 min</div>
     </div>
   `;
 
@@ -1924,26 +1937,32 @@ function buildModulePage(mod, index) {
       ${objectivesHtml}
     </div>
     <div class="audio-player audio-primer" data-src="audio/module-${mod.id}-primer.mp3">
-      <div class="audio-label">&#9670; PRIME YOUR MIND</div>
-      <div class="audio-controls">
-        <button class="audio-play-btn">&#9654;</button>
-        <div class="audio-progress-bar"><div class="audio-progress-fill"></div></div>
-        <span class="audio-time">0:00</span>
+      <div class="audio-avatar"><img src="alice-avatar.svg" alt="Alice"></div>
+      <div class="audio-body">
+        <div class="audio-label">&#9670; BEFORE YOU BEGIN</div>
+        <div class="audio-controls">
+          <button class="audio-play-btn">&#9654;</button>
+          <div class="audio-progress-bar"><div class="audio-progress-fill"></div></div>
+          <span class="audio-time">0:00</span>
+        </div>
+        <div class="audio-desc">Alice &middot; Listen before reading &middot; ~2 min</div>
       </div>
-      <div class="audio-desc">Listen before reading &middot; ~2 min</div>
     </div>
     ${toc.mobile}
     <div class="content">
       ${contentHtml}
     </div>
     <div class="audio-player audio-reflection" data-src="audio/module-${mod.id}-reflection.mp3">
-      <div class="audio-label">&#9670; REFLECT + ACT</div>
-      <div class="audio-controls">
-        <button class="audio-play-btn">&#9654;</button>
-        <div class="audio-progress-bar"><div class="audio-progress-fill"></div></div>
-        <span class="audio-time">0:00</span>
+      <div class="audio-avatar" style="border-color:#7a6a5a"><img src="alice-avatar.svg" alt="Alice"></div>
+      <div class="audio-body">
+        <div class="audio-label">&#9670; REFLECT + ACT</div>
+        <div class="audio-controls">
+          <button class="audio-play-btn">&#9654;</button>
+          <div class="audio-progress-bar"><div class="audio-progress-fill"></div></div>
+          <span class="audio-time">0:00</span>
+        </div>
+        <div class="audio-desc">Alice &middot; Listen after reading &middot; ~1 min</div>
       </div>
-      <div class="audio-desc">Listen after reading &middot; ~1 min</div>
     </div>
     <div class="mark-complete-section">
       <button class="mark-complete-btn" data-module="${mod.id}">Mark as Complete</button>
