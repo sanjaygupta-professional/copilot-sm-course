@@ -36,6 +36,9 @@
         - name: Build static site
           run: node build-static.js
 
+        - name: Generate service worker
+          run: npx workbox-cli generateSW workbox-config.js
+
         - name: Upload artifact
           uses: actions/upload-pages-artifact@v3
           with:

@@ -1463,6 +1463,9 @@ function htmlPage({ title, bodyContent, isIndex = false, levelId = null, hasProg
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${escapeHtml(title)} - Copilot SM Course</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1a1a2e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <style>${CSS}</style>
   <style>:root{${levelCssVars}}</style>
 </head>
@@ -1490,6 +1493,7 @@ function htmlPage({ title, bodyContent, isIndex = false, levelId = null, hasProg
     COPILOT_FOR_AI-ENABLED_SCRUM_MASTERS &middot; V2.0 &middot; INTERNAL_TRAINING_MATERIAL
   </footer>
   <script>${JS}</script>
+  <script>if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js');</script>
 </body>
 </html>`;
 }
@@ -2570,6 +2574,13 @@ function build() {
   const experimentalHtml = buildExperimentalViewer();
   fs.writeFileSync(path.join(OUTPUT_DIR, 'experimental.html'), experimentalHtml);
   console.log('  experimental.html (dynamic SPA)');
+
+  // Copy public/ assets (manifest.json, icons/) into output
+  const publicDir = path.join(PROJECT_ROOT, 'public');
+  if (fs.existsSync(publicDir)) {
+    fs.cpSync(publicDir, OUTPUT_DIR, { recursive: true });
+    console.log('  public assets (manifest.json, icons/)');
+  }
 
   const totalFiles = 3 + moduleCount + resourceCount + testingCount;
   console.log(`\nDone! Generated ${totalFiles} HTML files in final-version-static-site/`);
