@@ -1836,7 +1836,7 @@ function buildIndexPage() {
       </p>
     </div>
     <div class="audio-player audio-primer" data-src="audio/course-welcome.mp3">
-      <div class="audio-avatar"><img src="alice-avatar.svg" alt="Alice"></div>
+      <div class="audio-avatar"><img src="sanjay-avatar.svg" alt="Sanjay"></div>
       <div class="audio-body">
         <div class="audio-label">&#9670; BEFORE YOU BEGIN</div>
         <div class="audio-controls">
@@ -1874,7 +1874,7 @@ function buildIndexPage() {
       ${resourceSections}
     </div>
     <div class="audio-player audio-reflection" data-src="audio/course-completion.mp3">
-      <div class="audio-avatar" style="border-color:#7a6a5a"><img src="alice-avatar.svg" alt="Alice"></div>
+      <div class="audio-avatar" style="border-color:#7a6a5a"><img src="sanjay-avatar.svg" alt="Sanjay"></div>
       <div class="audio-body">
         <div class="audio-label">&#9670; COURSE COMPLETION</div>
         <div class="audio-controls">
@@ -1937,7 +1937,7 @@ function buildModulePage(mod, index) {
       ${objectivesHtml}
     </div>
     <div class="audio-player audio-primer" data-src="audio/module-${mod.id}-primer.mp3">
-      <div class="audio-avatar"><img src="alice-avatar.svg" alt="Alice"></div>
+      <div class="audio-avatar"><img src="narrator-avatar.svg" alt="Narrator"></div>
       <div class="audio-body">
         <div class="audio-label">&#9670; BEFORE YOU BEGIN</div>
         <div class="audio-controls">
