@@ -4,3 +4,4 @@ viewer/dist/
 viewer/public/content/
 .playwright-mcp/
 .env
+public/audio/voice-design/

@@ -16,7 +16,7 @@ if (fs.existsSync(envFile)) {
 
 const VOICE_ALICE = 'Xb7hH8MSUJpSbSDYk0k2';        // Alice — module reflections
 const VOICE_AUTHORITY = 'Qc0h5B5Mqs8oaH4sFZ9X';    // Attenborough-style — module primers
-const VOICE_USER = '';                              // Sanjay — course welcome/completion (TBD)
+const VOICE_USER = '34mjCR4Jyt3q12BOXn7m';          // Sanjay — designed voice for course welcome/completion
 const MODEL_ID = 'eleven_multilingual_v2';
 
 function pickVoice(name) {
