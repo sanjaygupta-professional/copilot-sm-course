@@ -1,13 +1,13 @@
-Here's a question that might reframe how you think about your tools: how much time do you spend copy-pasting? You synthesise notes in Copilot Chat, then open Word to write the summary. You analyse velocity in Chat, then switch to Excel to create the chart. You plan a presentation in Chat, then build it from scratch in PowerPoint.
+Here's a question that might reframe how you think about your tools: how much time do you spend copy-pasting? You synthesise notes in Co-pilot Chat, then open Word to write the summary. You analyse velocity in Chat, then switch to Excel to create the chart. You plan a presentation in Chat, then build it from scratch in PowerPoint.
 
 What if those transitions just... disappeared?
 
-This module is about Copilot inside your Microsoft 365 applications — not Copilot Chat on the web, but the AI assistant that lives inside the documents you're already creating. Same AI. Different context. Far more powerful for certain tasks.
+This module is about Co-pilot inside your Microsoft 365 applications — not Co-pilot Chat on the web, but the AI assistant that lives inside the documents you're already creating. Same AI. Different context. Far more powerful for certain tasks.
 
-You'll use Word Copilot to generate a professional Sprint 47 summary document — ready to share with stakeholders — in the time it takes to describe what you want. You'll use Excel Copilot to analyse velocity trends, calculate statistics, and create a chart comparing committed versus completed, without building a single formula by hand. And you'll use PowerPoint Copilot to create a five-slide sprint review deck from bullet-point data — giving you a polished, reviewable draft in minutes instead of hours.
+You'll use Word Co-pilot to generate a professional Sprint 47 summary document — ready to share with stakeholders — in the time it takes to describe what you want. You'll use Excel Co-pilot to analyse velocity trends, calculate statistics, and create a chart comparing committed versus completed, without building a single formula by hand. And you'll use PowerPoint Co-pilot to create a five-slide sprint review deck from bullet-point data — giving you a polished, reviewable draft in minutes instead of hours.
 
-The key skill you're building here is knowing which surface to use for which task. Chat is your thinking partner. In-app Copilot is your production assistant. Both are powerful. Neither replaces the other. Together, they cover your whole workflow.
+The key skill you're building here is knowing which surface to use for which task. Chat is your thinking partner. In-app Co-pilot is your production assistant. Both are powerful. Neither replaces the other. Together, they cover your whole workflow.
 
-By the end of this module, you'll be navigating between them fluidly — and the question won't be "can I use Copilot for this?" but "which Copilot is the right one here?"
+By the end of this module, you'll be navigating between them fluidly — and the question won't be "can I use Co-pilot for this?" but "which Co-pilot is the right one here?"
 
 Let's explore.

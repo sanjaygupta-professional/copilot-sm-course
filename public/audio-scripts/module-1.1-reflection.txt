@@ -1,9 +1,9 @@
 You've taken your first steps, and that matters more than it sounds. Most people read about tools. You're actually using one.
 
-Let's make sure the big ideas are sticking. Microsoft Copilot isn't separate software — it lives inside the apps you already work in. You access it through your browser, through a keyboard shortcut, or right inside Word and Teams. And the Velocity Squad — Raj, Lisa, Marcus, Priya, James, Emma, David — these are your people for the whole course. Their challenges are your laboratory.
+Let's make sure the big ideas are sticking. Microsoft Co-pilot isn't separate software — it lives inside the apps you already work in. You access it through your browser, through a keyboard shortcut, or right inside Word and Teams. And the Velocity Squad — Raj, Lisa, Marcus, Priya, James, Emma, David — these are your people for the whole course. Their challenges are your laboratory.
 
-A couple of questions worth reflecting on: When you ran that first Copilot prompt about your Scrum Master challenges, did the output feel generic, or did it feel like advice from someone who understood your situation? And if it felt generic — what context could you have added to make it sharper?
+A couple of questions worth reflecting on: When you ran that first Co-pilot prompt about your Scrum Master challenges, did the output feel generic, or did it feel like advice from someone who understood your situation? And if it felt generic — what context could you have added to make it sharper?
 
-Here's your call to action: before your next sprint, open Copilot and describe your actual team to it. Not the fictional Velocity Squad — your real team. Tell it your sprint cadence, your biggest current challenge, and one team dynamic you're trying to improve. See what it gives you.
+Here's your call to action: before your next sprint, open Co-pilot and describe your actual team to it. Not the fictional Velocity Squad — your real team. Tell it your sprint cadence, your biggest current challenge, and one team dynamic you're trying to improve. See what it gives you.
 
 That single habit — bringing context before asking questions — will make every module that follows dramatically more useful. Go make it real.

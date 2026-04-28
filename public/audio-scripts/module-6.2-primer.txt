@@ -2,7 +2,7 @@ There's a fundamental challenge in Scrum Master development that this module add
 
 Until now.
 
-This module gives you a coaching gym. A space where Copilot plays any team member, with any level of difficulty, and then steps out of character to give you honest feedback on your approach. It's not a replacement for real experience — nothing is. But it's the most effective practice environment that exists outside of live situations.
+This module gives you a coaching gym. A space where Co-pilot plays any team member, with any level of difficulty, and then steps out of character to give you honest feedback on your approach. It's not a replacement for real experience — nothing is. But it's the most effective practice environment that exists outside of live situations.
 
 You'll work with the difficulty ladder: the same scenario at escalating challenge levels. Marcus at difficulty level one is genuinely trying to engage. Marcus at difficulty level three says "everything's fine" and deflects every question. Marcus at difficulty level five actively resists your attempts to create space for him. Each level teaches you something different about your coaching instincts and where they break down.
 

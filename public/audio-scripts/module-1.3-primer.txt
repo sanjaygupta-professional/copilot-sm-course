@@ -6,6 +6,6 @@ This module covers four core tasks. Processing Daily Scrum notes into a clear pi
 
 Each one has a prompt you can use today with the Velocity Squad's sample files. Each one will save you real time starting this sprint.
 
-The question I want you to carry into this module is this: once you've seen what Copilot can do with these tasks, what will you do with the time you get back? That's not a rhetorical question — it's a design challenge. Think about it while you work through the exercises.
+The question I want you to carry into this module is this: once you've seen what Co-pilot can do with these tasks, what will you do with the time you get back? That's not a rhetorical question — it's a design challenge. Think about it while you work through the exercises.
 
 Let's dive in.

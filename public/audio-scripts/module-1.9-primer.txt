@@ -2,10 +2,10 @@ Let's be honest about something: writing emails takes longer than it should. Esp
 
 This module hands you a very capable writing partner.
 
-Copilot in Outlook can draft stakeholder updates from bullet points — giving you a polished, audience-appropriate email in seconds that you can tweak rather than write from scratch. It can read a thirty-message email thread and tell you exactly what's been decided, what's still open, and what you need to do next. It can help you write an escalation email that quantifies the impact of the design capacity problem, shows what you've already tried, and makes a clear ask — without sounding like a complaint.
+Co-pilot in Outlook can draft stakeholder updates from bullet points — giving you a polished, audience-appropriate email in seconds that you can tweak rather than write from scratch. It can read a thirty-message email thread and tell you exactly what's been decided, what's still open, and what you need to do next. It can help you write an escalation email that quantifies the impact of the design capacity problem, shows what you've already tried, and makes a clear ask — without sounding like a complaint.
 
 And it can help you prepare for a one-to-one by pulling together open items from recent communications so you walk into the conversation with context, not just good intentions.
 
-The escalation exercise in this module is particularly worth your attention. Writing escalations well is genuinely hard. Getting the tone right — data-driven but not cold, urgent but not alarmist, solution-oriented but not naive — is a skill. Copilot doesn't write the escalation for you. It gives you a strong draft that forces you to think about whether you've framed the problem as clearly as you should.
+The escalation exercise in this module is particularly worth your attention. Writing escalations well is genuinely hard. Getting the tone right — data-driven but not cold, urgent but not alarmist, solution-oriented but not naive — is a skill. Co-pilot doesn't write the escalation for you. It gives you a strong draft that forces you to think about whether you've framed the problem as clearly as you should.
 
 Your communications are about to get noticeably better. Let's go.

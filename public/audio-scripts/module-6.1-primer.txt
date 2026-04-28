@@ -1,11 +1,11 @@
-Welcome to Level 6. This is where you stop using Copilot for individual tasks and start thinking in systems.
+Welcome to Level 6. This is where you stop using Co-pilot for individual tasks and start thinking in systems.
 
 Here's a revealing number: the average Scrum Master spends eight to twelve hours per week on documentation, reporting, and status tracking. That's one to one-and-a-half full working days, every week, on work that largely follows predictable patterns. Survey data from SM practitioners shows the same time-sinks repeatedly: meeting documentation takes three to four hours a week, sprint reporting two to three, blocker tracking and follow-up one to two.
 
 What would you do with eight hours a week if that time were freed up? More coaching? Deeper retrospective facilitation? Organisational change work? That's the question this module sets up.
 
-You're going to move from one-off Copilot prompts to agent workflows — multi-step chains that handle entire processes end to end. Not just "process these standup notes" but a complete Monday morning workflow: pull last week's signals, flag patterns, draft the weekly SM update, and populate the impediment tracking log. One workflow, five minutes, done.
+You're going to move from one-off Co-pilot prompts to agent workflows — multi-step chains that handle entire processes end to end. Not just "process these standup notes" but a complete Monday morning workflow: pull last week's signals, flag patterns, draft the weekly SM update, and populate the impediment tracking log. One workflow, five minutes, done.
 
-You'll design these workflows for your specific time-sinks. And you'll learn the critical skill that separates effective automation from reckless automation: knowing where human judgment has to stay in the loop. Copilot can draft the escalation email. You decide whether to send it. Copilot can identify coaching conversation topics. You decide how to approach them. The human judgment boundary is not a limitation of AI — it's the thing that makes automation trustworthy.
+You'll design these workflows for your specific time-sinks. And you'll learn the critical skill that separates effective automation from reckless automation: knowing where human judgment has to stay in the loop. Co-pilot can draft the escalation email. You decide whether to send it. Co-pilot can identify coaching conversation topics. You decide how to approach them. The human judgment boundary is not a limitation of AI — it's the thing that makes automation trustworthy.
 
 Let's build your operating system.

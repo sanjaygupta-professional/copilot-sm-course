@@ -1,6 +1,6 @@
-Here's something that might change how you think about Copilot: it's not just one AI. It's several. And the one you pick dramatically changes the quality of what you get back.
+Here's something that might change how you think about Co-pilot: it's not just one AI. It's several. And the one you pick dramatically changes the quality of what you get back.
 
-Before this module, you've been talking to Copilot as a generalist. Now you're going to meet two specialists. The Researcher agent, which can dive deep into agile literature, surface facilitation techniques, and synthesise findings from multiple sources — like a brilliant research assistant who reads everything and remembers all of it. And the Analyst agent, which reasons with numbers, spots patterns in data, does the maths, and tells you whether your sprint planning assumptions are grounded in reality or optimism.
+Before this module, you've been talking to Co-pilot as a generalist. Now you're going to meet two specialists. The Researcher agent, which can dive deep into agile literature, surface facilitation techniques, and synthesise findings from multiple sources — like a brilliant research assistant who reads everything and remembers all of it. And the Analyst agent, which reasons with numbers, spots patterns in data, does the maths, and tells you whether your sprint planning assumptions are grounded in reality or optimism.
 
 Think about this: you've got eight sprints of velocity data from the Velocity Squad. A swing of 35 to 55 points. What's actually driving that variance? Your gut might have a theory. Analyst can tell you if it's right — and show its working.
 

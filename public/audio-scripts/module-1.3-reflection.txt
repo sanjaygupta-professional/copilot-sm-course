@@ -1,7 +1,7 @@
 You just worked through the four tasks that define a Scrum Master's weekly routine — and you did each one in a fraction of the usual time. Let that sink in for a moment.
 
-The techniques that matter most: structured prompts that tell Copilot exactly what to look for. Asking it to cite specific evidence rather than generalise. Asking for different versions of the same content for different audiences.
+The techniques that matter most: structured prompts that tell Co-pilot exactly what to look for. Asking it to cite specific evidence rather than generalise. Asking for different versions of the same content for different audiences.
 
-Here's a reflection for you: when Copilot synthesised the retrospective notes and surfaced the "inclusion" theme — Priya's explicit mention, Marcus's implicit signal — did you notice how it found the connection that raw notes would have buried? Would you have spotted that pattern yourself in twenty minutes of reading? Be honest.
+Here's a reflection for you: when Co-pilot synthesised the retrospective notes and surfaced the "inclusion" theme — Priya's explicit mention, Marcus's implicit signal — did you notice how it found the connection that raw notes would have buried? Would you have spotted that pattern yourself in twenty minutes of reading? Be honest.
 
 Your action for this sprint: take your next Daily Scrum notes and run the analysis prompt on them. Don't wait for the perfect set of notes. Do it this week, with real data, and see what surfaces. Then share the output with your team and ask them if it captured what mattered. That feedback loop will make you a better prompt writer faster than any tutorial can.

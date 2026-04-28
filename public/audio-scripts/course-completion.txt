@@ -2,9 +2,9 @@ You finished. Every module, every level, the whole arc from Module 1.1 to here. 
 
 Let's look back at what this course has actually given you.
 
-You started with a basic understanding of what Copilot is. You're ending with a complete practice: a workspace setup that keeps your team context persistent, a prompt library tuned to your most important SM workflows, the analytical capability to see patterns in eight sprints of data, the facilitation skills that come from preparation rather than improvisation, a coaching gym for the conversations that matter most, and a personal operating system designed to make AI assistance a habit rather than an occasional experiment.
+You started with a basic understanding of what Co-pilot is. You're ending with a complete practice: a workspace setup that keeps your team context persistent, a prompt library tuned to your most important SM workflows, the analytical capability to see patterns in eight sprints of data, the facilitation skills that come from preparation rather than improvisation, a coaching gym for the conversations that matter most, and a personal operating system designed to make AI assistance a habit rather than an occasional experiment.
 
-Across these six levels, a few themes have run through everything. Context is everything — generic prompts produce generic outputs, and the time you invest in bringing your team's reality into Copilot pays dividends in every session. Evidence beats opinion — whether you're escalating an organisational impediment, making the case for a process change, or reflecting on your own impact. And systems beat experiences — not what you know how to do, but what you actually do consistently, sprint after sprint.
+Across these six levels, a few themes have run through everything. Context is everything — generic prompts produce generic outputs, and the time you invest in bringing your team's reality into Co-pilot pays dividends in every session. Evidence beats opinion — whether you're escalating an organisational impediment, making the case for a process change, or reflecting on your own impact. And systems beat experiences — not what you know how to do, but what you actually do consistently, sprint after sprint.
 
 The Velocity Squad has grown throughout this course — and in some small way, so have you.
 

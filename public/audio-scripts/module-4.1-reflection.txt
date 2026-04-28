@@ -1,4 +1,4 @@
-You've just built the metrics foundation that most Scrum Masters never get around to creating — and you've seen how quickly Copilot can process eight sprints of data and surface insights that would take hours to calculate manually.
+You've just built the metrics foundation that most Scrum Masters never get around to creating — and you've seen how quickly Co-pilot can process eight sprints of data and surface insights that would take hours to calculate manually.
 
 The distinction that matters most: vanity metrics feel good, actionable metrics drive change. Sprint velocity is a vanity metric when tracked alone. Sprint velocity combined with goal achievement rate, carryover percentage, and team health trends is an actionable story about what your team needs to do differently.
 

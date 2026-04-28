@@ -1844,7 +1844,7 @@ function buildIndexPage() {
           <div class="audio-progress-bar"><div class="audio-progress-fill"></div></div>
           <span class="audio-time">0:00</span>
         </div>
-        <div class="audio-desc">Alice &middot; Course welcome &middot; ~2.5 min</div>
+        <div class="audio-desc">Course welcome &middot; ~2.5 min</div>
       </div>
     </div>
 
@@ -1882,7 +1882,7 @@ function buildIndexPage() {
           <div class="audio-progress-bar"><div class="audio-progress-fill"></div></div>
           <span class="audio-time">0:00</span>
         </div>
-        <div class="audio-desc">Alice &middot; Listen when all modules complete &middot; ~1.5 min</div>
+        <div class="audio-desc">Listen when all modules complete &middot; ~1.5 min</div>
       </div>
     </div>
   `;
@@ -1945,7 +1945,7 @@ function buildModulePage(mod, index) {
           <div class="audio-progress-bar"><div class="audio-progress-fill"></div></div>
           <span class="audio-time">0:00</span>
         </div>
-        <div class="audio-desc">Alice &middot; Listen before reading &middot; ~2 min</div>
+        <div class="audio-desc">Listen before reading &middot; ~2 min</div>
       </div>
     </div>
     ${toc.mobile}
@@ -1961,7 +1961,7 @@ function buildModulePage(mod, index) {
           <div class="audio-progress-bar"><div class="audio-progress-fill"></div></div>
           <span class="audio-time">0:00</span>
         </div>
-        <div class="audio-desc">Alice &middot; Listen after reading &middot; ~1 min</div>
+        <div class="audio-desc">Listen after reading &middot; ~1 min</div>
       </div>
     </div>
     <div class="mark-complete-section">

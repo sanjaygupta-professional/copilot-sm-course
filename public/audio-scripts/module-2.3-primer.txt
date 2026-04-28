@@ -6,7 +6,7 @@ Look at the Velocity Squad's health survey numbers across the last five sprints.
 
 This module teaches you to catch that trajectory before it becomes a crisis.
 
-You'll learn to analyse team health survey data for patterns, correlations, and early warning signs. You'll use Copilot to identify coaching opportunities — which team members need attention, what kind, and how to approach the conversation. And you'll learn to track continuous improvement over time, so your retrospective actions actually show up in the data rather than disappearing into good intentions.
+You'll learn to analyse team health survey data for patterns, correlations, and early warning signs. You'll use Co-pilot to identify coaching opportunities — which team members need attention, what kind, and how to approach the conversation. And you'll learn to track continuous improvement over time, so your retrospective actions actually show up in the data rather than disappearing into good intentions.
 
 The most important mindset shift in this module is this: team health is a leading indicator, not a lagging one. By the time unhealthy teams show up in your velocity metrics, you've already missed the window to intervene easily. This module gives you the tools to look earlier.
 

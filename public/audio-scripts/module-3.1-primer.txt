@@ -2,7 +2,7 @@ Quick show of hands — how many of your sprint review decks look exactly like e
 
 What if your next sprint review actually captured people's attention?
 
-This module introduces you to DALL-E 3 image generation through Copilot — and if you've never used AI to create visuals before, prepare to be a little amazed. You describe what you want in plain English, and Copilot generates a custom image. No design software. No stock photo subscriptions. No design skills required.
+This module introduces you to DALL-E 3 image generation through Co-pilot — and if you've never used AI to create visuals before, prepare to be a little amazed. You describe what you want in plain English, and Co-pilot generates a custom image. No design software. No stock photo subscriptions. No design skills required.
 
 Before you dive in, though, there are three things worth knowing. What DALL-E 3 is genuinely great at — illustrations, concept visuals, abstract graphics, celebration graphics for team milestones. What it's less suited for — precise diagrams with specific text labels, photos of real people, technically exact flowcharts. And how to write a prompt that actually produces what you want, because image prompting has its own specific patterns that are different from text prompting.
 

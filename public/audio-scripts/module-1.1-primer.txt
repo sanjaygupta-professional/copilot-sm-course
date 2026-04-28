@@ -2,13 +2,13 @@ Here's a question worth sitting with before you dive in: what if the biggest bot
 
 And here's a second one: if you didn't have to type up Daily Scrum notes, synthesize retrospective themes, or write three versions of the same sprint update — what would you do with that time instead?
 
-Welcome to the Microsoft Copilot for Scrum Masters course. This first module is your orientation — and it's shorter than you might think, because we believe in learning by doing, not by reading long introductions.
+Welcome to the Microsoft Co-pilot for Scrum Masters course. This first module is your orientation — and it's shorter than you might think, because we believe in learning by doing, not by reading long introductions.
 
-Here's what you're going to discover: Microsoft Copilot isn't a chatbot that gives you generic advice. It's an AI assistant woven directly into the Microsoft 365 tools you already use — Word, Excel, PowerPoint, Outlook, Teams. It understands your files. It remembers your context. It can analyse ceremony notes, research agile practices, calculate sprint capacity, and help you write better in less time.
+Here's what you're going to discover: Microsoft Co-pilot isn't a chatbot that gives you generic advice. It's an AI assistant woven directly into the Microsoft 365 tools you already use — Word, Excel, PowerPoint, Outlook, Teams. It understands your files. It remembers your context. It can analyse ceremony notes, research agile practices, calculate sprint capacity, and help you write better in less time.
 
 Throughout this entire course, you're stepping into a real role: Scrum Master for the Velocity Squad at Accenture. Seven team members. Real challenges. Velocity that swings wildly, a retrospective culture showing signs of fatigue, a remote developer feeling left out. These aren't invented problems — they're the exact challenges Scrum Masters face every week.
 
-By the end of this module, you'll know exactly how to access Copilot, you'll have made your first AI-assisted move as a Scrum Master, and you'll have met the team you'll be working with for the rest of the course.
+By the end of this module, you'll know exactly how to access Co-pilot, you'll have made your first AI-assisted move as a Scrum Master, and you'll have met the team you'll be working with for the rest of the course.
 
 No technical skills required. No setup headaches. Just you, plain English, and a very capable AI partner.
 

@@ -2,12 +2,12 @@ Quick question before we start: how much time do you spend hunting for files? Up
 
 If your honest answer is "more than I'd like" — this module is going to fix that.
 
-Setting up your Scrum Master workspace in Copilot is one of those things that takes twenty minutes once and saves you hours every week. This module is about doing it right.
+Setting up your Scrum Master workspace in Co-pilot is one of those things that takes twenty minutes once and saves you hours every week. This module is about doing it right.
 
-You're going to learn three ways to get your files into Copilot. Direct upload — the simplest, for one-off analysis. OneDrive integration — the smart one, for files you use repeatedly like team context and prompt templates. And ContextIQ — Microsoft's ability to search across your entire M365 environment, including SharePoint, Teams, and Outlook, just by asking a question in plain English.
+You're going to learn three ways to get your files into Co-pilot. Direct upload — the simplest, for one-off analysis. OneDrive integration — the smart one, for files you use repeatedly like team context and prompt templates. And ContextIQ — Microsoft's ability to search across your entire M365 environment, including SharePoint, Teams, and Outlook, just by asking a question in plain English.
 
-You'll also get clear on a distinction that trips people up early on: Copilot Chat versus in-app Copilot. They're not the same thing, and using the wrong one for the wrong task is like using a hammer to tighten a screw. Both work. Neither works well.
+You'll also get clear on a distinction that trips people up early on: Co-pilot Chat versus in-app Co-pilot. They're not the same thing, and using the wrong one for the wrong task is like using a hammer to tighten a screw. Both work. Neither works well.
 
-By the end of this module, you'll have an organised folder structure in OneDrive, your key team files uploaded and accessible, and a Copilot workspace that actually knows who you are. That context — that persistent knowledge of your team — is what makes the difference between generic AI responses and genuinely useful ones.
+By the end of this module, you'll have an organised folder structure in OneDrive, your key team files uploaded and accessible, and a Co-pilot workspace that actually knows who you are. That context — that persistent knowledge of your team — is what makes the difference between generic AI responses and genuinely useful ones.
 
 Let's build your foundation.

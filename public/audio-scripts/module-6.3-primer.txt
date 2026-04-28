@@ -6,8 +6,8 @@ Systems beat experiences every time, long-term.
 
 This is the capstone module. What you build here is what you'll actually use on Monday morning — not a collection of impressive prompts, but a personal operating system. A weekly rhythm with specific AI-assisted activities mapped to specific days and time slots. A ninety-day adoption plan with milestones you can hold yourself accountable to. Accountability structures that make continuous improvement stick rather than fade.
 
-You'll also reflect on how far you've come. Module 1.1 introduced you to Copilot. This module asks you to design how you'll integrate everything you've learned into the actual practice of being a Scrum Master. That's a significant arc.
+You'll also reflect on how far you've come. Module 1.1 introduced you to Co-pilot. This module asks you to design how you'll integrate everything you've learned into the actual practice of being a Scrum Master. That's a significant arc.
 
-And at the very end of this module, there's one final exercise that I hope you'll take seriously — a reflection on the question that makes Level 6 worth all of Level 1 through 5: not what can Copilot do for you, but what kind of Scrum Master do you want to be, now that you have these capabilities?
+And at the very end of this module, there's one final exercise that I hope you'll take seriously — a reflection on the question that makes Level 6 worth all of Level 1 through 5: not what can Co-pilot do for you, but what kind of Scrum Master do you want to be, now that you have these capabilities?
 
 This is your final module. Make it count.

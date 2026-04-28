@@ -1,7 +1,7 @@
 You've just unlocked the intelligence that's been sitting in your meetings all along, unprocessed.
 
-The core insight: your Scrum ceremonies are goldmines of information — blockers, decisions, commitments, emotional signals — and most of it evaporates within an hour of the meeting ending. Copilot changes that, but only if transcription is running. That's the habit to build: start transcription before every ceremony, every time.
+The core insight: your Scrum ceremonies are goldmines of information — blockers, decisions, commitments, emotional signals — and most of it evaporates within an hour of the meeting ending. Co-pilot changes that, but only if transcription is running. That's the habit to build: start transcription before every ceremony, every time.
 
-Here's a reflection: when you asked Copilot to extract retrospective action items and it produced a formatted checklist — was that checklist more complete or more accurate than what you typically capture manually in the heat of facilitation? Most Scrum Masters find it's both. Because you can't fully listen and fully document at the same time. Copilot can.
+Here's a reflection: when you asked Co-pilot to extract retrospective action items and it produced a formatted checklist — was that checklist more complete or more accurate than what you typically capture manually in the heat of facilitation? Most Scrum Masters find it's both. Because you can't fully listen and fully document at the same time. Co-pilot can.
 
-Your action: enable transcription in your next three ceremonies as a deliberate experiment. After each one, spend five minutes with the Copilot summary and action extraction prompts. At the end of the three ceremonies, compare the quality of your action tracking to previous sprints. The data will speak for itself.
+Your action: enable transcription in your next three ceremonies as a deliberate experiment. After each one, spend five minutes with the Co-pilot summary and action extraction prompts. At the end of the three ceremonies, compare the quality of your action tracking to previous sprints. The data will speak for itself.

@@ -2,7 +2,7 @@ I want you to think about the last time you proposed a process change to your te
 
 This module is about a technique called persona prompting — and it might be the most underrated skill in this entire course.
 
-The idea is simple but powerful: you ask Copilot to respond not as a neutral AI, but as a specific type of person with specific priorities, frustrations, and blind spots. Ask it to be a developer who values protected focus time, and it will tell you exactly why your "walk the board" standup proposal is going to land badly with half the team — before you've said a word in the meeting.
+The idea is simple but powerful: you ask Co-pilot to respond not as a neutral AI, but as a specific type of person with specific priorities, frustrations, and blind spots. Ask it to be a developer who values protected focus time, and it will tell you exactly why your "walk the board" standup proposal is going to land badly with half the team — before you've said a word in the meeting.
 
 You'll practise three things in this module. Getting honest reactions to your ideas from multiple perspectives simultaneously. Practising difficult coaching conversations before you have them for real — with a realistic simulation of someone like Marcus, who says "everything's fine" when it isn't. And testing your escalation emails with a VP persona who asks the hard questions your actual VP might ask.
 

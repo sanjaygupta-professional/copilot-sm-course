@@ -1,11 +1,11 @@
 Think about the last sprint review or retrospective you facilitated. After it ended, how long did it take you to capture all the action items? To write up what was decided? To send a summary to people who weren't in the room? And if you missed a standup — which happens — how much did it cost you to piece together what you needed to know?
 
-Those aren't problems anymore. This module covers Copilot in Microsoft Teams, and it's one of the most practically useful modules in Level 1.
+Those aren't problems anymore. This module covers Co-pilot in Microsoft Teams, and it's one of the most practically useful modules in Level 1.
 
-When Teams transcription is running during a ceremony, Copilot becomes a participant with perfect recall. You can ask it after a sprint planning: what was the sprint goal we agreed on? What concerns did the team raise about story three? Which dependencies did we identify? And it tells you — precisely, with references.
+When Teams transcription is running during a ceremony, Co-pilot becomes a participant with perfect recall. You can ask it after a sprint planning: what was the sprint goal we agreed on? What concerns did the team raise about story three? Which dependencies did we identify? And it tells you — precisely, with references.
 
-You'll practise getting structured meeting summaries from your Scrum ceremonies. Catching up on standups you missed, in under a minute. Extracting action items from retrospectives — not vague impressions, but a formatted checklist with owners and themes. And using Copilot in team channels to find decisions and discussions that happened while you were in other meetings.
+You'll practise getting structured meeting summaries from your Scrum ceremonies. Catching up on standups you missed, in under a minute. Extracting action items from retrospectives — not vague impressions, but a formatted checklist with owners and themes. And using Co-pilot in team channels to find decisions and discussions that happened while you were in other meetings.
 
-There's also a set of SM-specific prompts in this module that are genuinely powerful — including asking Copilot whether there were any emotional moments in a retrospective that deserve a private follow-up. That kind of insight is easy to miss in the chaos of facilitation.
+There's also a set of SM-specific prompts in this module that are genuinely powerful — including asking Co-pilot whether there were any emotional moments in a retrospective that deserve a private follow-up. That kind of insight is easy to miss in the chaos of facilitation.
 
 Your ceremonies are generating valuable data every week. This module teaches you to actually capture it. Let's go.

@@ -4,7 +4,7 @@ The uncomfortable truth is that most Scrum Masters deal with impediments reactiv
 
 This module changes that.
 
-You're going to learn to do systematic impediment management with Copilot as your analyst. Take your impediment log from the last six sprints and ask Copilot to identify the patterns, quantify the impact in story points and days delayed, distinguish the symptoms from the root causes, and tell you which impediments are within your team's control versus which need organisational escalation.
+You're going to learn to do systematic impediment management with Co-pilot as your analyst. Take your impediment log from the last six sprints and ask Co-pilot to identify the patterns, quantify the impact in story points and days delayed, distinguish the symptoms from the root causes, and tell you which impediments are within your team's control versus which need organisational escalation.
 
 For the Velocity Squad, this analysis will surface something you might already suspect: the design capacity bottleneck isn't a David problem. It's a staffing model problem. And that distinction matters enormously for how you address it.
 

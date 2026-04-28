@@ -6,7 +6,7 @@ Most Scrum Masters don't realise they're wearing seven different hats. And most 
 
 This module builds your role fluency. The ability to diagnose, within sixty seconds, which hat a situation requires — and to switch into that mode deliberately rather than defaulting to whatever comes most naturally to you.
 
-You'll map all seven SM role modes and understand what Copilot strategy works best for each. You'll practise diagnosing situations from a real week of SM activities. You'll navigate the Tuckman team maturity curve and understand which SM behaviours a forming team needs versus a norming team versus a performing team. And you'll confront the "SM doing PM work" anti-pattern — one of the most common traps at program scale.
+You'll map all seven SM role modes and understand what Co-pilot strategy works best for each. You'll practise diagnosing situations from a real week of SM activities. You'll navigate the Tuckman team maturity curve and understand which SM behaviours a forming team needs versus a norming team versus a performing team. And you'll confront the "SM doing PM work" anti-pattern — one of the most common traps at program scale.
 
 In the Horizon Program, you're not just serving the Velocity Squad. You're covering multiple teams at different maturity levels with different needs. That complexity is what Level 5 prepares you for.
 

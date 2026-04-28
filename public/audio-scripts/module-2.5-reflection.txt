@@ -1,7 +1,7 @@
-You now understand something that most Copilot users don't — that prompt quality drives output quality, and that quality is learnable and repeatable.
+You now understand something that most Co-pilot users don't — that prompt quality drives output quality, and that quality is learnable and repeatable.
 
 The anatomy to remember: Context grounds the response. Constraints prevent scope creep. Format shapes the output structure. Specificity kills generic answers. Chain triggers set up your follow-up moves. When a prompt has all five, the output is almost always useful. When it's missing two or more, you get Wikipedia.
 
 Here's a reflection: think back to the first prompt you wrote in Module 1.1 of this course. Then think about the last prompt you wrote before this module. Can you feel the difference in how you approach prompting now? That's the skill building. It happened gradually and it's already real.
 
-Your action: take your most-used prompt — the one you return to sprint after sprint — and run it through the anatomy check. Is the context specific to your team, or could it belong to any team? Is the format defined, or are you letting Copilot choose? Is there a constraint that focuses the output, or is it wide open? Make three improvements based on what you find. Run it again. The better output will confirm that the framework works.
+Your action: take your most-used prompt — the one you return to sprint after sprint — and run it through the anatomy check. Is the context specific to your team, or could it belong to any team? Is the format defined, or are you letting Co-pilot choose? Is there a constraint that focuses the output, or is it wide open? Make three improvements based on what you find. Run it again. The better output will confirm that the framework works.

@@ -2,6 +2,6 @@ You've just added a creative capability to your Scrum Master toolkit that most S
 
 The prompting formula to remember: subject, style, composition, mood, and colour. Leave out two of those and the result becomes unpredictable. Include all five and you get something consistently close to what you imagined.
 
-Here's a reflection: when you generated your first image, was the gap between what you described and what Copilot produced larger or smaller than you expected? Most people are surprised by how literally DALL-E 3 interprets prompts — which is why specificity matters. Vague prompts get vague-ish results. Specific prompts get specific results.
+Here's a reflection: when you generated your first image, was the gap between what you described and what Co-pilot produced larger or smaller than you expected? Most people are surprised by how literally DALL-E 3 interprets prompts — which is why specificity matters. Vague prompts get vague-ish results. Specific prompts get specific results.
 
 Your action: before your next sprint review, generate one custom visual — a background slide, a feature announcement graphic, or a team celebration image for something worth celebrating this sprint. Show it in the review and notice how the energy in the room differs from a plain slide deck. Visual communication creates engagement that text cannot. Use it deliberately.

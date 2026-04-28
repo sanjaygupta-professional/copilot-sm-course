@@ -14,8 +14,16 @@ if (fs.existsSync(envFile)) {
   });
 }
 
-const VOICE_ID = 'Xb7hH8MSUJpSbSDYk0k2'; // Alice
+const VOICE_ALICE = 'Xb7hH8MSUJpSbSDYk0k2';        // Alice — module reflections
+const VOICE_AUTHORITY = 'Qc0h5B5Mqs8oaH4sFZ9X';    // Attenborough-style — module primers
+const VOICE_USER = '';                              // Sanjay — course welcome/completion (TBD)
 const MODEL_ID = 'eleven_multilingual_v2';
+
+function pickVoice(name) {
+  if ((name === 'course-welcome' || name === 'course-completion') && VOICE_USER) return VOICE_USER;
+  if (name.endsWith('-primer')) return VOICE_AUTHORITY;
+  return VOICE_ALICE;
+}
 const API_KEY = process.env.ELEVENLABS_API_KEY;
 const SCRIPTS_DIR = path.join(__dirname, 'public', 'audio-scripts');
 const AUDIO_DIR = path.join(__dirname, 'public', 'audio');
@@ -27,7 +35,7 @@ if (!API_KEY) {
 
 fs.mkdirSync(AUDIO_DIR, { recursive: true });
 
-function tts(text) {
+function tts(text, voiceId) {
   return new Promise((resolve, reject) => {
     const body = JSON.stringify({
       text,
@@ -36,7 +44,7 @@ function tts(text) {
     });
     const req = https.request({
       hostname: 'api.elevenlabs.io',
-      path: `/v1/text-to-speech/${VOICE_ID}`,
+      path: `/v1/text-to-speech/${voiceId}`,
       method: 'POST',
       headers: {
         'xi-api-key': API_KEY,
@@ -84,7 +92,7 @@ async function main() {
     const text = fs.readFileSync(path.join(SCRIPTS_DIR, scriptFile), 'utf8').trim();
     process.stdout.write(`  GEN   ${name} (${text.length} chars) ... `);
 
-    const buf = await tts(text);
+    const buf = await tts(text, pickVoice(name));
     fs.writeFileSync(outFile, buf);
     console.log(`${(buf.length / 1024).toFixed(0)} KB`);
     generated++;
