@@ -15,49 +15,52 @@
   <path d="M 20 38 L 26 44 L 32 38" stroke="#A100FF" stroke-width="1.8" fill="none" stroke-linecap="round" clip-path="url(#av-n)"/>
 
   <!-- Neck -->
-  <rect x="22" y="32" width="8" height="8" rx="2" fill="#c89878" clip-path="url(#av-n)"/>
+  <rect x="22" y="32" width="8" height="8" rx="2" fill="#b88870" clip-path="url(#av-n)"/>
 
-  <!-- Face (lighter, slightly weathered) -->
-  <ellipse cx="26" cy="23" rx="10.5" ry="12" fill="#dca890"/>
+  <!-- Face (warm light tan, youthful) -->
+  <ellipse cx="26" cy="23" rx="10.5" ry="12" fill="#d4a890"/>
 
-  <!-- Hair — top (silver/white, slightly receding hairline for older feel) -->
-  <path d="M 17 17 Q 19 11.5 26 11.2 Q 33 11.5 35 17 Q 31 14.2 26 14.2 Q 21 14.2 17 17 Z" fill="#d8d8d8"/>
+  <!-- Hair — top (dark brown, full, slight side-sweep) -->
+  <path d="M 15.5 17 Q 18 9.5 26 9.5 Q 34 9.5 36.5 17 Q 32 13 26 13 Q 20 13 15.5 17 Z" fill="#2d1810"/>
 
-  <!-- Hair — sides (silver) -->
-  <path d="M 16 17 Q 15 22 16 28" stroke="#c8c8c8" stroke-width="2.4" fill="none" stroke-linecap="round" clip-path="url(#av-n)"/>
-  <path d="M 36 17 Q 37 22 36 28" stroke="#c8c8c8" stroke-width="2.4" fill="none" stroke-linecap="round" clip-path="url(#av-n)"/>
+  <!-- Hair — slight wave on top -->
+  <path d="M 18 13 Q 22 10 26 11 Q 30 10 34 13" stroke="#1a0e08" stroke-width="0.6" fill="none" opacity="0.7"/>
 
-  <!-- Eyebrows — silver, distinguished, slightly thicker -->
-  <path d="M 18 19.3 Q 21 17.8 23.5 19.3" stroke="#a8a8a8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-  <path d="M 28.5 19.3 Q 31 17.8 34 19.3" stroke="#a8a8a8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Hair — sides short (with subtle grey at temples for "wisdom") -->
+  <path d="M 15.5 17 Q 14.8 22 15.5 27" stroke="#2d1810" stroke-width="2.5" fill="none" stroke-linecap="round" clip-path="url(#av-n)"/>
+  <path d="M 36.5 17 Q 37.2 22 36.5 27" stroke="#2d1810" stroke-width="2.5" fill="none" stroke-linecap="round" clip-path="url(#av-n)"/>
+  <!-- Tiny grey at temples -->
+  <path d="M 15.8 19 Q 16 21 15.5 23" stroke="#7a6a62" stroke-width="0.8" fill="none" opacity="0.6" clip-path="url(#av-n)"/>
+  <path d="M 36.2 19 Q 36 21 36.5 23" stroke="#7a6a62" stroke-width="0.8" fill="none" opacity="0.6" clip-path="url(#av-n)"/>
 
-  <!-- Eyes — gentle blue-grey -->
+  <!-- Eyebrows — dark brown, defined -->
+  <path d="M 17.8 19 Q 21 17.5 23.8 19" stroke="#1a0e08" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <path d="M 28.2 19 Q 31 17.5 34.2 19" stroke="#1a0e08" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes — gentle blue-grey (kept from older version) -->
   <ellipse cx="21" cy="23" rx="2.3" ry="2.1" fill="#fff"/>
   <ellipse cx="31" cy="23" rx="2.3" ry="2.1" fill="#fff"/>
   <circle cx="21.4" cy="23.2" r="1.4" fill="#5a7585"/>
   <circle cx="31.4" cy="23.2" r="1.4" fill="#5a7585"/>
   <circle cx="21.6" cy="23.3" r="0.65" fill="#0a1015"/>
   <circle cx="31.6" cy="23.3" r="0.65" fill="#0a1015"/>
-  <circle cx="22" cy="22.8" r="0.4" fill="#fff" opacity="0.9"/>
-  <circle cx="32" cy="22.8" r="0.4" fill="#fff" opacity="0.9"/>
-
-  <!-- Crow's feet (subtle age detail) -->
-  <path d="M 17.5 23 L 19 23.5" stroke="#9a7058" stroke-width="0.4" opacity="0.5"/>
-  <path d="M 17.5 24 L 19 24" stroke="#9a7058" stroke-width="0.4" opacity="0.5"/>
-  <path d="M 33 23.5 L 34.5 23" stroke="#9a7058" stroke-width="0.4" opacity="0.5"/>
-  <path d="M 33 24 L 34.5 24" stroke="#9a7058" stroke-width="0.4" opacity="0.5"/>
+  <circle cx="22" cy="22.7" r="0.42" fill="#fff" opacity="0.95"/>
+  <circle cx="32" cy="22.7" r="0.42" fill="#fff" opacity="0.95"/>
 
   <!-- Nose -->
-  <path d="M 25 25 Q 25.5 28.5 27.5 29" stroke="#9a7058" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+  <path d="M 25 25 Q 25.5 28 27.5 28.5" stroke="#9a6850" stroke-width="0.9" fill="none" stroke-linecap="round"/>
 
-  <!-- Mouth — gentle, contemplative (slight smile) -->
-  <path d="M 21.5 31 Q 26 32.6 30.5 31" stroke="#7a5040" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <!-- Mouth — confident, gentle smile -->
+  <path d="M 21.5 31 Q 26 33 30.5 31" stroke="#7a4530" stroke-width="1.3" fill="none" stroke-linecap="round"/>
 
-  <!-- Beard — small white/silver -->
-  <path d="M 20.5 31.8 Q 22.5 35.5 26 36 Q 29.5 35.5 31.5 31.8" fill="#d8d8d8"/>
-  <path d="M 22 33 Q 26 35.5 30 33" stroke="#b8b8b8" stroke-width="0.4" fill="none" opacity="0.6"/>
+  <!-- Very light stubble shading (clean-shaven but mid-career) -->
+  <path d="M 19.5 32.8 Q 26 35.5 32.5 32.8" stroke="#3a2010" stroke-width="0.4" fill="none" opacity="0.3"/>
+
+  <!-- Subtle jawline definition -->
+  <path d="M 17.5 30 Q 19 33 22 35" stroke="#a07050" stroke-width="0.5" fill="none" opacity="0.4"/>
+  <path d="M 34.5 30 Q 33 33 30 35" stroke="#a07050" stroke-width="0.5" fill="none" opacity="0.4"/>
 
   <!-- Ears -->
-  <ellipse cx="15.5" cy="24" rx="1.6" ry="2.3" fill="#c89878"/>
-  <ellipse cx="36.5" cy="24" rx="1.6" ry="2.3" fill="#c89878"/>
+  <ellipse cx="15.5" cy="24" rx="1.6" ry="2.3" fill="#b88870"/>
+  <ellipse cx="36.5" cy="24" rx="1.6" ry="2.3" fill="#b88870"/>
 </svg>
